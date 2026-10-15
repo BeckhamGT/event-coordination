@@ -1,0 +1,84 @@
+{
+  "cli_version": "0.11.3",
+  "checkpoint_id": "01M4YRRH0BG1EHTJA59QVQ7FZP",
+  "session_id": "01a13308-fba1-7300-a78e-c4f5cc3e9210",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-15T03:12:46.591214Z",
+  "branch": "main",
+  "checkpoints_count": 6,
+  "files_touched": [
+    ".gitattributes",
+    "README.md",
+    "RUNTIME.md",
+    "apprentice-workspace/training/project-c/INDEX.md",
+    "event-planning-coordination-brief/SKILL.md",
+    "event-planning-coordination-brief/eval/baseline-input.md",
+    "event-planning-coordination-brief/eval/baseline-output.md",
+    "event-planning-coordination-brief/references/gotchas.md",
+    "event-planning-coordination-brief/references/project.json",
+    "event-planning-coordination-brief/references/sources-and-interpretation.md",
+    "event-planning-coordination-brief/references/stages-and-recovery.md",
+    "event-planning-coordination-brief/references/validation.md",
+    "event-planning-coordination-brief/scripts/pipeline.py",
+    "event-planning-coordination-brief/scripts/planning.py",
+    "event-planning-coordination-brief/scripts/rendering.py",
+    "event-planning-coordination-brief/scripts/sources.py",
+    "tests/test_pipeline.py",
+    "verification/implementation-verification.md",
+    "verification/independent-output-review.md",
+    "verification/skill-security-scan.md"
+  ],
+  "agent": "Codex",
+  "model": "gpt-6.1-sol",
+  "turn_id": "db0c1c889ed9",
+  "checkpoint_transcript_start": 649,
+  "transcript_lines_at_start": 649,
+  "compact_transcript_start": 76,
+  "token_usage": {
+    "input_tokens": 170590,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 17460608,
+    "output_tokens": 81886,
+    "api_call_count": 125,
+    "subagent_tokens_complete": false
+  },
+  "session_metrics": {
+    "turn_count": 6
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-15T03:12:46.473289Z",
+    "agent_lines": 714,
+    "agent_removed": 15,
+    "human_added": 34609,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 35323,
+    "total_lines_changed": 39256,
+    "agent_percentage": 1.8570409618911758,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 1356,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "event-planning-coordination-brief/SKILL.md": 39,
+        "event-planning-coordination-brief/eval/baseline-input.md": 11,
+        "event-planning-coordination-brief/eval/baseline-output.md": 24,
+        "event-planning-coordination-brief/references/gotchas.md": 14,
+        "event-planning-coordination-brief/references/project.json": 33,
+        "event-planning-coordination-brief/references/sources-and-interpretation.md": 51,
+        "event-planning-coordination-brief/references/stages-and-recovery.md": 35,
+        "event-planning-coordination-brief/references/validation.md": 33,
+        "event-planning-coordination-brief/scripts/planning.py": 248,
+        "event-planning-coordination-brief/scripts/rendering.py": 168,
+        "event-planning-coordination-brief/scripts/sources.py": 212,
+        "tests/test_pipeline.py": 453,
+        "verification/skill-security-scan.md": 35
+      }
+    }
+  ]
+}
