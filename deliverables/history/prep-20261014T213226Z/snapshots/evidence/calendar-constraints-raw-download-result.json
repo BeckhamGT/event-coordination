@@ -1,0 +1,11 @@
+{
+  "id": "E-CALENDAR",
+  "method": "Download original provider file_uri returned by authorized Drive fetch",
+  "started_at": "2026-10-14T21:35:45.128493+00:00",
+  "retrieval_status": "retrieved",
+  "http_status": 200,
+  "bytes": 6145,
+  "local_reference": "deliverables/snapshots/evidence/calendar-constraints.xlsx",
+  "content_hash": "sha256:2795c134b10ef86991a39863ed08437b0e4bf0aa28bc342ff1152a258d53e09d",
+  "observed_at": "2026-10-14T21:35:45.231837+00:00"
+}

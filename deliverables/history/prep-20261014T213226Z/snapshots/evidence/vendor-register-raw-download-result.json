@@ -1,0 +1,11 @@
+{
+  "id": "E-VENDORS",
+  "method": "Download original provider file_uri returned by authorized Drive fetch",
+  "started_at": "2026-10-14T21:35:45.128615+00:00",
+  "retrieval_status": "retrieved",
+  "http_status": 200,
+  "bytes": 6628,
+  "local_reference": "deliverables/snapshots/evidence/vendor-register.xlsx",
+  "content_hash": "sha256:efd99cda9d63681d759de12f0f952470650cec6eb726aafdefb1544b8118db4a",
+  "observed_at": "2026-10-14T21:35:45.235177+00:00"
+}

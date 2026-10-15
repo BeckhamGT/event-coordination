@@ -1,0 +1,50 @@
+{
+  "id": "E-ATTENDEES",
+  "name": "attendee-signals",
+  "url": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+  "kind": "drive",
+  "started_at": "2026-10-14T21:32:45.132Z",
+  "observed_at": "2026-10-14T21:32:46.833Z",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "content": ",signal_id,source,segment,signal,value,unit,observed_at,confidence\n0,SIG-001,registration_form,fellows,registered_attendees,148,people,2026-08-24 00:00:00,high\n1,SIG-002,partner_form,partners,registered_attendees,32,people,2026-08-24 00:00:00,high\n2,SIG-003,operations_plan,staff,required_on_site,18,people,2026-08-25 00:00:00,high\n3,SIG-004,programme_plan,speakers,required_on_site,12,people,2026-08-25 00:00:00,high\n4,SIG-005,forecast,walk_ins,expected_attendees,35,people,2026-08-26 00:00:00,medium\n5,SIG-006,registration_form,all,wheelchair_spaces,6,people,2026-08-24 00:00:00,high\n6,SIG-007,registration_form,all,mobility_companions,4,people,2026-08-24 00:00:00,high\n7,SIG-008,registration_form,all,live_caption_requests,23,people,2026-08-24 00:00:00,high\n8,SIG-009,registration_form,all,hearing_loop_requests,7,people,2026-08-24 00:00:00,medium\n9,SIG-010,registration_form,all,quiet_room_requests,9,people,2026-08-24 00:00:00,high\n10,SIG-011,registration_form,all,vegetarian_meals,28,meals,2026-08-24 00:00:00,high\n11,SIG-012,registration_form,all,halal_meals,12,meals,2026-08-24 00:00:00,high\n12,SIG-013,registration_form,all,severe_allergy_follow_up,4,people,2026-08-24 00:00:00,high\n",
+      "title": "Project C — Attendee Signals",
+      "url": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+      "file_name": null,
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "file_ext": null,
+      "b64_string": null,
+      "id": "1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+      "parent_ids": null,
+      "drive_id": null,
+      "created_time": "2026-08-12T15:47:39.306Z",
+      "modified_time": "2026-08-28T06:28:34.868Z",
+      "is_empty": false,
+      "file_uri": null,
+      "file_size_bytes": null,
+      "display_url": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+      "display_title": "Project C — Attendee Signals",
+      "structuredContent": {
+        "title": "Project C — Attendee Signals",
+        "content": ",signal_id,source,segment,signal,value,unit,observed_at,confidence\n0,SIG-001,registration_form,fellows,registered_attendees,148,people,2026-08-24 00:00:00,high\n1,SIG-002,partner_form,partners,registered_attendees,32,people,2026-08-24 00:00:00,high\n2,SIG-003,operations_plan,staff,required_on_site,18,people,2026-08-25 00:00:00,high\n3,SIG-004,programme_plan,speakers,required_on_site,12,people,2026-08-25 00:00:00,high\n4,SIG-005,forecast,walk_ins,expected_attendees,35,people,2026-08-26 00:00:00,medium\n5,SIG-006,registration_form,all,wheelchair_spaces,6,people,2026-08-24 00:00:00,high\n6,SIG-007,registration_form,all,mobility_companions,4,people,2026-08-24 00:00:00,high\n7,SIG-008,registration_form,all,live_caption_requests,23,people,2026-08-24 00:00:00,high\n8,SIG-009,registration_form,all,hearing_loop_requests,7,people,2026-08-24 00:00:00,medium\n9,SIG-010,registration_form,all,quiet_room_requests,9,people,2026-08-24 00:00:00,high\n10,SIG-011,registration_form,all,vegetarian_meals,28,meals,2026-08-24 00:00:00,high\n11,SIG-012,registration_form,all,halal_meals,12,meals,2026-08-24 00:00:00,high\n12,SIG-013,registration_form,all,severe_allergy_follow_up,4,people,2026-08-24 00:00:00,high\n",
+        "id": "1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+        "parent_ids": null,
+        "drive_id": null,
+        "created_time": "2026-08-12T15:47:39.306Z",
+        "modified_time": "2026-08-28T06:28:34.868Z",
+        "is_empty": false,
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "file_name": null,
+        "file_size_bytes": null,
+        "url": "https://drive.google.com/file/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU"
+      }
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "run_id": "prep-decisions-20261014T222533Z",
+  "observed_at": "2026-10-14T22:27:09.353155+00:00",
+  "method": "Reopened original XLSX captures; independent Decimal arithmetic compared with new current-run CSV calculations and learner choices",
+  "checks": [
+    {
+      "check": "Baseline from separate population signals",
+      "result": "passed",
+      "observed": 245
+    },
+    {
+      "check": "green amount and headroom with contingency included once",
+      "result": "passed",
+      "quote_subtotal": 429000,
+      "communications": 25000,
+      "included_contingency": 40000,
+      "total": 494000,
+      "remaining_headroom": 26000
+    },
+    {
+      "check": "city amount and headroom with contingency included once",
+      "result": "passed",
+      "quote_subtotal": 447000,
+      "communications": 25000,
+      "included_contingency": 40000,
+      "total": 512000,
+      "remaining_headroom": 8000
+    },
+    {
+      "check": "Allocation and commitment totals",
+      "result": "passed"
+    }
+  ],
+  "result": "passed",
+  "functional_tests": "not run"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "E-BUDGET",
+  "name": "budget",
+  "url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+  "kind": "drive",
+  "started_at": "2026-10-14T21:32:45.132Z",
+  "observed_at": "2026-10-14T21:32:47.191Z",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "content": ",category,planned_amount_twd,approval_limit_twd,committed_amount_twd,owner,record_version\n0,venue,155000,180000,0,Operations,budget-2026-08-26\n1,catering,115000,135000,0,Operations,budget-2026-08-26\n2,accessibility,65000,80000,0,Learner Experience,budget-2026-08-26\n3,production,85000,100000,0,Programme,budget-2026-08-26\n4,communications,25000,30000,0,Communications,budget-2026-08-26\n5,security,25000,35000,0,Operations,budget-2026-08-26\n6,contingency,40000,50000,0,Operations,budget-2026-08-26\n",
+      "title": "Project C — Budget",
+      "url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "file_name": null,
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "file_ext": null,
+      "b64_string": null,
+      "id": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "parent_ids": null,
+      "drive_id": null,
+      "created_time": "2026-08-12T15:47:51.685Z",
+      "modified_time": "2026-08-28T06:28:43.837Z",
+      "is_empty": false,
+      "file_uri": null,
+      "file_size_bytes": null,
+      "display_url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "display_title": "Project C — Budget",
+      "structuredContent": {
+        "title": "Project C — Budget",
+        "content": ",category,planned_amount_twd,approval_limit_twd,committed_amount_twd,owner,record_version\n0,venue,155000,180000,0,Operations,budget-2026-08-26\n1,catering,115000,135000,0,Operations,budget-2026-08-26\n2,accessibility,65000,80000,0,Learner Experience,budget-2026-08-26\n3,production,85000,100000,0,Programme,budget-2026-08-26\n4,communications,25000,30000,0,Communications,budget-2026-08-26\n5,security,25000,35000,0,Operations,budget-2026-08-26\n6,contingency,40000,50000,0,Operations,budget-2026-08-26\n",
+        "id": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+        "parent_ids": null,
+        "drive_id": null,
+        "created_time": "2026-08-12T15:47:51.685Z",
+        "modified_time": "2026-08-28T06:28:43.837Z",
+        "is_empty": false,
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "file_name": null,
+        "file_size_bytes": null,
+        "url": "https://drive.google.com/file/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM"
+      }
+    },
+    "isError": false
+  }
+}

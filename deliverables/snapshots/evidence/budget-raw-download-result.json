@@ -1,0 +1,11 @@
+{
+  "id": "E-BUDGET",
+  "method": "Download original provider file_uri returned by authorized Drive fetch",
+  "started_at": "2026-10-14T21:35:45.128347+00:00",
+  "retrieval_status": "retrieved",
+  "http_status": 200,
+  "bytes": 5721,
+  "local_reference": "deliverables/snapshots/evidence/budget.xlsx",
+  "content_hash": "sha256:72295acb63d03fe60824e23278d79e9d37484942ab374eafb46abfa0766c5227",
+  "observed_at": "2026-10-14T21:35:45.230303+00:00"
+}

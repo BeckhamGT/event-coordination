@@ -1,0 +1,10 @@
+{
+  "id": "E-ACCESS",
+  "name": "official-accessibility-index",
+  "url": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+  "method": "HTTPS GET through urllib",
+  "started_at": "2026-10-14T21:33:05.109994+00:00",
+  "retrieval_status": "unavailable",
+  "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+  "observed_at": "2026-10-14T21:33:05.124968+00:00"
+}

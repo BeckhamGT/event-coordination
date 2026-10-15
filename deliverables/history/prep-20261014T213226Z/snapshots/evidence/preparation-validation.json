@@ -1,0 +1,77 @@
+{
+  "run_id": "prep-20261014T213226Z",
+  "observed_at": "2026-10-14T21:40:29.346421+00:00",
+  "schema_sha256": "sha256:787e6ac3e2008458b311c2ab2e287a3cafb68aaa82d49a489775864ba32221ee",
+  "checks": [
+    {
+      "check": "01-scope-and-approval-gates.json",
+      "method": "Draft202012Validator with date-time checking; predecessor bytes/SHA256, IDs, run binding, consumed records and evidence resolver",
+      "result": "passed",
+      "schema_errors": [],
+      "unresolved_evidence_ids": []
+    },
+    {
+      "check": "02-source-capture.json",
+      "method": "Draft202012Validator with date-time checking; predecessor bytes/SHA256, IDs, run binding, consumed records and evidence resolver",
+      "result": "passed",
+      "schema_errors": [],
+      "unresolved_evidence_ids": []
+    },
+    {
+      "check": "03-constraint-model.json",
+      "method": "Draft202012Validator with date-time checking; predecessor bytes/SHA256, IDs, run binding, consumed records and evidence resolver",
+      "result": "passed",
+      "schema_errors": [],
+      "unresolved_evidence_ids": []
+    },
+    {
+      "check": "04-planning-baseline.json",
+      "method": "Draft202012Validator with date-time checking; predecessor bytes/SHA256, IDs, run binding, consumed records and evidence resolver",
+      "result": "passed",
+      "schema_errors": [],
+      "unresolved_evidence_ids": []
+    },
+    {
+      "check": "E-BRIEF source bytes",
+      "method": "Reopen saved representation and recalculate SHA256",
+      "result": "passed"
+    },
+    {
+      "check": "E-ATTENDEES source bytes",
+      "method": "Reopen saved representation and recalculate SHA256",
+      "result": "passed"
+    },
+    {
+      "check": "E-BUDGET source bytes",
+      "method": "Reopen saved representation and recalculate SHA256",
+      "result": "passed"
+    },
+    {
+      "check": "E-CALENDAR source bytes",
+      "method": "Reopen saved representation and recalculate SHA256",
+      "result": "passed"
+    },
+    {
+      "check": "E-VENDORS source bytes",
+      "method": "Reopen saved representation and recalculate SHA256",
+      "result": "passed"
+    },
+    {
+      "check": "E-ACCESS source bytes",
+      "method": "Reopen saved representation and recalculate SHA256",
+      "result": "passed"
+    },
+    {
+      "check": "E-FLOOR source bytes",
+      "method": "Reopen saved representation and recalculate SHA256",
+      "result": "passed"
+    }
+  ],
+  "future_checks_not_run": [
+    "Full programme overlap/duration/dependency validation",
+    "Vendor/plan/ICS/communications cross-artifact agreement",
+    "Stages05\u201309 schema and final artifact hash verification",
+    "Changed-input/failure/recovery tests"
+  ],
+  "preparation_result": "passed"
+}

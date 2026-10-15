@@ -1,0 +1,21 @@
+{
+  "session_id": "01a13308-fba1-7300-a78e-c4f5cc3e9210",
+  "agent": "Codex",
+  "model": "gpt-6.1-sol",
+  "status": "active",
+  "branch": "main",
+  "worktree_path": "/Users/user/fellowship/event-coordination/event-coordination",
+  "started_at": "2026-10-12T22:15:33.616627-04:00",
+  "last_active": "2026-10-14T17:30:53.054176-04:00",
+  "turns": 4,
+  "checkpoints": 0,
+  "tokens": {
+    "total": 1046018,
+    "input": 97691,
+    "cache_read": 945152,
+    "cache_write": 0,
+    "output": 3175
+  },
+  "last_prompt": "# Files mentioned by the user: ## project-c-event-coordination-20261014-2122.md: /Users/user/Down...",
+  "resolution": "caller-env"
+}

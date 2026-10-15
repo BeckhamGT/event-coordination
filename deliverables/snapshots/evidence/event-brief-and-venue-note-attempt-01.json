@@ -1,0 +1,20 @@
+{
+  "id": "E-BRIEF",
+  "name": "event-brief-and-venue-note",
+  "url": "https://app.notion.com/p/3ba0b700541e81d0af55dc1a8f49f5af",
+  "kind": "notion",
+  "started_at": "2026-10-14T21:32:45.130Z",
+  "observed_at": "2026-10-14T21:32:45.848Z",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"name\":\"APIResponseError\",\"code\":\"object_not_found\",\"status\":404,\"headers\":{},\"body\":\"{\\\"object\\\":\\\"error\\\",\\\"status\\\":404,\\\"code\\\":\\\"object_not_found\\\",\\\"message\\\":\\\"Could not find page with ID: 3ba0b700-541e-81d0-af55-dc1a8f49f5af. Check that you have access and that you're authenticated to the correct workspace.\\\",\\\"additional_data\\\":{\\\"integration_id\\\":\\\"1f8d872b-594c-80a4-b2f4-00370af2b13f\\\"},\\\"request_id\\\":\\\"41b5553c-315c-4232-bfa7-28a7b1908a1f\\\"}\",\"additional_data\":{\"integration_id\":\"1f8d872b-594c-80a4-b2f4-00370af2b13f\"},\"request_id\":\"41b5553c-315c-4232-bfa7-28a7b1908a1f\",\"message\":\"Could not find page with ID: 3ba0b700-541e-81d0-af55-dc1a8f49f5af. Check that you have access and that you're authenticated to the correct workspace.\"}"
+      }
+    ],
+    "structuredContent": {
+      "error_code": "NOT_FOUND"
+    },
+    "isError": true
+  }
+}

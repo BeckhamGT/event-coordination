@@ -1,0 +1,53 @@
+{
+  "run_id": "prep-decisions-20261014T222533Z",
+  "observed_at": "2026-10-14T22:28:44.313358+00:00",
+  "checks": [
+    {
+      "check": "01-scope-and-approval-gates.json",
+      "method": "Unchanged schema plus date-time, source references, consumed records, predecessor IDs/hashes and run binding after correction",
+      "result": "passed",
+      "sha256": "sha256:b608fb96510de40be695761e2087d483b17ba14c76930ac44cad03d2583b0ab7"
+    },
+    {
+      "check": "02-source-capture.json",
+      "method": "Unchanged schema plus date-time, source references, consumed records, predecessor IDs/hashes and run binding after correction",
+      "result": "passed",
+      "sha256": "sha256:5c48b7d55c1ae2f96010490d7ee95c8985065b103384f61bc6519e90a3041bf0"
+    },
+    {
+      "check": "03-constraint-model.json",
+      "method": "Unchanged schema plus date-time, source references, consumed records, predecessor IDs/hashes and run binding after correction",
+      "result": "passed",
+      "sha256": "sha256:2a52c7a466b17a6352587603d59b082d6a4691c29c1739c47725aac5ac61c2f1"
+    },
+    {
+      "check": "04-planning-baseline.json",
+      "method": "Unchanged schema plus date-time, source references, consumed records, predecessor IDs/hashes and run binding after correction",
+      "result": "passed",
+      "sha256": "sha256:aaac738ee778f6c184a1b8bf0fe0da4c0db0d09ac45be90877e6e083a098e3d1"
+    },
+    {
+      "check": "Archive and source reuse",
+      "result": "passed",
+      "method": "Rehash53 retained files and7 captured sources; history predecessor mapping checked earlier in this update"
+    },
+    {
+      "check": "Independent XLSX arithmetic",
+      "result": "passed",
+      "method": "Fresh original-workbook Decimal sums agree with current-run CSV sums"
+    },
+    {
+      "check": "Semantic policy correction",
+      "result": "passed",
+      "method": "Stale pending-policy phrase corrected; original attempted output retained; current policy matches learner choice"
+    }
+  ],
+  "preparation_result": "passed",
+  "implementation_started": false,
+  "not_run": [
+    "Full programme non-overlap and dependency verification",
+    "Four draft consistency and ICS validity",
+    "Completed9 snapshots/final artifact validation",
+    "Functional changed-input/source-failure/output-recovery tests"
+  ]
+}

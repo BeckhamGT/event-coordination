@@ -1,0 +1,427 @@
+[
+  {
+    "id": "CHECK-RAW-attendee-signals",
+    "observed_at": "2026-10-14T21:37:46.344228+00:00",
+    "method": "Original workbook openpyxl rows compared field-by-field with connector extraction; exact Decimal numerical equivalence for numeric cells",
+    "records": 13,
+    "row_counts_match": true,
+    "identities_unique": true,
+    "semantic_disagreements": [],
+    "representation_only_differences": [
+      {
+        "id": "SIG-001",
+        "field": "value",
+        "original": "148.0",
+        "extracted": "148",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-002",
+        "field": "value",
+        "original": "32.0",
+        "extracted": "32",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-003",
+        "field": "value",
+        "original": "18.0",
+        "extracted": "18",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-004",
+        "field": "value",
+        "original": "12.0",
+        "extracted": "12",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-005",
+        "field": "value",
+        "original": "35.0",
+        "extracted": "35",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-006",
+        "field": "value",
+        "original": "6.0",
+        "extracted": "6",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-007",
+        "field": "value",
+        "original": "4.0",
+        "extracted": "4",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-008",
+        "field": "value",
+        "original": "23.0",
+        "extracted": "23",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-009",
+        "field": "value",
+        "original": "7.0",
+        "extracted": "7",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-010",
+        "field": "value",
+        "original": "9.0",
+        "extracted": "9",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-011",
+        "field": "value",
+        "original": "28.0",
+        "extracted": "28",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-012",
+        "field": "value",
+        "original": "12.0",
+        "extracted": "12",
+        "result": "numerically equal"
+      },
+      {
+        "id": "SIG-013",
+        "field": "value",
+        "original": "4.0",
+        "extracted": "4",
+        "result": "numerically equal"
+      }
+    ],
+    "result": "passed"
+  },
+  {
+    "id": "CHECK-RAW-budget",
+    "observed_at": "2026-10-14T21:37:46.345531+00:00",
+    "method": "Original workbook openpyxl rows compared field-by-field with connector extraction; exact Decimal numerical equivalence for numeric cells",
+    "records": 7,
+    "row_counts_match": true,
+    "identities_unique": true,
+    "semantic_disagreements": [],
+    "representation_only_differences": [
+      {
+        "id": "venue",
+        "field": "planned_amount_twd",
+        "original": "155000.0",
+        "extracted": "155000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "venue",
+        "field": "approval_limit_twd",
+        "original": "180000.0",
+        "extracted": "180000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "venue",
+        "field": "committed_amount_twd",
+        "original": "0.0",
+        "extracted": "0",
+        "result": "numerically equal"
+      },
+      {
+        "id": "catering",
+        "field": "planned_amount_twd",
+        "original": "115000.0",
+        "extracted": "115000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "catering",
+        "field": "approval_limit_twd",
+        "original": "135000.0",
+        "extracted": "135000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "catering",
+        "field": "committed_amount_twd",
+        "original": "0.0",
+        "extracted": "0",
+        "result": "numerically equal"
+      },
+      {
+        "id": "accessibility",
+        "field": "planned_amount_twd",
+        "original": "65000.0",
+        "extracted": "65000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "accessibility",
+        "field": "approval_limit_twd",
+        "original": "80000.0",
+        "extracted": "80000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "accessibility",
+        "field": "committed_amount_twd",
+        "original": "0.0",
+        "extracted": "0",
+        "result": "numerically equal"
+      },
+      {
+        "id": "production",
+        "field": "planned_amount_twd",
+        "original": "85000.0",
+        "extracted": "85000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "production",
+        "field": "approval_limit_twd",
+        "original": "100000.0",
+        "extracted": "100000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "production",
+        "field": "committed_amount_twd",
+        "original": "0.0",
+        "extracted": "0",
+        "result": "numerically equal"
+      },
+      {
+        "id": "communications",
+        "field": "planned_amount_twd",
+        "original": "25000.0",
+        "extracted": "25000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "communications",
+        "field": "approval_limit_twd",
+        "original": "30000.0",
+        "extracted": "30000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "communications",
+        "field": "committed_amount_twd",
+        "original": "0.0",
+        "extracted": "0",
+        "result": "numerically equal"
+      },
+      {
+        "id": "security",
+        "field": "planned_amount_twd",
+        "original": "25000.0",
+        "extracted": "25000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "security",
+        "field": "approval_limit_twd",
+        "original": "35000.0",
+        "extracted": "35000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "security",
+        "field": "committed_amount_twd",
+        "original": "0.0",
+        "extracted": "0",
+        "result": "numerically equal"
+      },
+      {
+        "id": "contingency",
+        "field": "planned_amount_twd",
+        "original": "40000.0",
+        "extracted": "40000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "contingency",
+        "field": "approval_limit_twd",
+        "original": "50000.0",
+        "extracted": "50000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "contingency",
+        "field": "committed_amount_twd",
+        "original": "0.0",
+        "extracted": "0",
+        "result": "numerically equal"
+      }
+    ],
+    "result": "passed"
+  },
+  {
+    "id": "CHECK-RAW-calendar-constraints",
+    "observed_at": "2026-10-14T21:37:46.346937+00:00",
+    "method": "Original workbook openpyxl rows compared field-by-field with connector extraction; exact Decimal numerical equivalence for numeric cells",
+    "records": 8,
+    "row_counts_match": true,
+    "identities_unique": true,
+    "semantic_disagreements": [],
+    "representation_only_differences": [],
+    "result": "passed"
+  },
+  {
+    "id": "CHECK-RAW-vendor-register",
+    "observed_at": "2026-10-14T21:37:46.349747+00:00",
+    "method": "Original workbook openpyxl rows compared field-by-field with connector extraction; exact Decimal numerical equivalence for numeric cells",
+    "records": 10,
+    "row_counts_match": true,
+    "identities_unique": true,
+    "semantic_disagreements": [],
+    "representation_only_differences": [
+      {
+        "id": "Q-001",
+        "field": "quote_amount_twd",
+        "original": "155000.0",
+        "extracted": "155000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-001",
+        "field": "capacity",
+        "original": "500.0",
+        "extracted": "500",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-002",
+        "field": "quote_amount_twd",
+        "original": "155000.0",
+        "extracted": "155000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-002",
+        "field": "capacity",
+        "original": "500.0",
+        "extracted": "500",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-003",
+        "field": "quote_amount_twd",
+        "original": "108000.0",
+        "extracted": "108000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-003",
+        "field": "capacity",
+        "original": "260.0",
+        "extracted": "260",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-004",
+        "field": "quote_amount_twd",
+        "original": "126000.0",
+        "extracted": "126000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-004",
+        "field": "capacity",
+        "original": "300.0",
+        "extracted": "300",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-005",
+        "field": "quote_amount_twd",
+        "original": "42000.0",
+        "extracted": "42000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-005",
+        "field": "capacity",
+        "original": "500.0",
+        "extracted": "500",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-006",
+        "field": "quote_amount_twd",
+        "original": "78000.0",
+        "extracted": "78000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-006",
+        "field": "capacity",
+        "original": "500.0",
+        "extracted": "500",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-007",
+        "field": "quote_amount_twd",
+        "original": "52000.0",
+        "extracted": "52000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-007",
+        "field": "capacity",
+        "original": "500.0",
+        "extracted": "500",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-008",
+        "field": "quote_amount_twd",
+        "original": "55000.0",
+        "extracted": "55000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-008",
+        "field": "capacity",
+        "original": "1000.0",
+        "extracted": "1000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-009",
+        "field": "quote_amount_twd",
+        "original": "28000.0",
+        "extracted": "28000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-009",
+        "field": "capacity",
+        "original": "500.0",
+        "extracted": "500",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-010",
+        "field": "quote_amount_twd",
+        "original": "18000.0",
+        "extracted": "18000",
+        "result": "numerically equal"
+      },
+      {
+        "id": "Q-010",
+        "field": "capacity",
+        "original": "20.0",
+        "extracted": "20",
+        "result": "numerically equal"
+      }
+    ],
+    "result": "passed"
+  }
+]

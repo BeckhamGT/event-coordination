@@ -1,0 +1,3 @@
+# Preserve source observations and original exports byte for byte, including CRLF.
+deliverables/**/evidence/* -text -whitespace
+interviews/*.md -text -whitespace

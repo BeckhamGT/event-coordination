@@ -1,0 +1,27 @@
+{
+  "id": "E-FLOOR",
+  "name": "official-4f-floor-plan",
+  "url": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+  "method": "HTTPS GET with approved network access",
+  "started_at": "2026-10-14T21:33:29.551273+00:00",
+  "http_status": 200,
+  "final_url": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+  "headers": {
+    "Date": "Wed, 14 Oct 2026 21:33:30 GMT",
+    "Content-Type": "application/pdf",
+    "Content-Length": "522512",
+    "Connection": "close",
+    "Strict-Transport-Security": "max-age=3600",
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff",
+    "Accept-Ranges": "bytes",
+    "ETag": "W/\"522512-1710485827039\"",
+    "Last-Modified": "Fri, 15 Mar 2024 06:57:07 GMT",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "bytes": 522512,
+  "retrieval_status": "retrieved",
+  "content_hash": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+  "local_reference": "deliverables/snapshots/evidence/official-4f-floor-plan.pdf",
+  "observed_at": "2026-10-14T21:33:32.338276+00:00"
+}

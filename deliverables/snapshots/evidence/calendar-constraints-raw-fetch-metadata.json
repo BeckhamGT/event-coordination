@@ -1,0 +1,60 @@
+{
+  "id": "E-CALENDAR",
+  "name": "calendar-constraints",
+  "url": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+  "started_at": "2026-10-14T21:35:30.816Z",
+  "observed_at": "2026-10-14T21:35:32.478Z",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "content": "",
+      "title": "Project C — Calendar Constraints",
+      "url": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+      "file_name": "Project C — Calendar Constraints.xlsx",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "file_ext": "xlsx",
+      "b64_string": null,
+      "id": "1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+      "parent_ids": null,
+      "drive_id": null,
+      "created_time": "2026-08-12T15:48:17.350Z",
+      "modified_time": "2026-08-28T06:28:54.049Z",
+      "is_empty": null,
+      "file_uri": {
+        "file_id": "sediment://file_00000000dd3481f583ebb7194a3a0436",
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "file_name": "Project C — Calendar Constraints.xlsx"
+      },
+      "file_size_bytes": 6145,
+      "display_url": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+      "display_title": "Project C — Calendar Constraints",
+      "structuredContent": {
+        "title": "Project C — Calendar Constraints",
+        "content": "",
+        "id": "1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+        "parent_ids": null,
+        "drive_id": null,
+        "created_time": "2026-08-12T15:48:17.350Z",
+        "modified_time": "2026-08-28T06:28:54.049Z",
+        "is_empty": null,
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "file_name": "Project C — Calendar Constraints.xlsx",
+        "file_size_bytes": 6145,
+        "url": "https://drive.google.com/file/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+        "file_uri": {
+          "file_id": "sediment://file_00000000dd3481f583ebb7194a3a0436",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "file_name": "Project C — Calendar Constraints.xlsx",
+          "size": 6145
+        },
+        "file_id": "sediment://file_00000000dd3481f583ebb7194a3a0436"
+      }
+    },
+    "isError": false
+  }
+}

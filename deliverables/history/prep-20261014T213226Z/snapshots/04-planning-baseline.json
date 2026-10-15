@@ -1,0 +1,375 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "prep-20261014T213226Z-04",
+  "run_id": "prep-20261014T213226Z",
+  "stage": "planning-baseline",
+  "sequence": 4,
+  "created_at": "2026-10-14T21:39:30.174265+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "prep-20261014T213226Z-03",
+    "path": "deliverables/snapshots/03-constraint-model.json",
+    "sha256": "sha256:bb6cbd2902082107dbb43f5293ecdb6c742f5b279b5f8e01e3e7662fd602fd2c"
+  },
+  "consumed_record_ids": [
+    "HC-CLOCK",
+    "HC-MONEY",
+    "HC-ACCESS",
+    "HC-SCHEDULE",
+    "HC-DRAFT",
+    "P-FAMILIAR",
+    "P-DATE",
+    "A-BUFFER",
+    "A-COST-ALLOWANCES",
+    "U-SETUP",
+    "U-HEADCOUNT",
+    "U-LIVE",
+    "U-FALLBACK",
+    "U-APPROVAL",
+    "U-REAL-ACCESS",
+    "U-PROGRAMME",
+    "C-FALLBACK",
+    "C-TIME",
+    "C-TWO-FEASIBLE",
+    "R-DEADLINE",
+    "R-READINESS",
+    "R-DIET"
+  ],
+  "produced_record_ids": [
+    "B-HEADCOUNT",
+    "B-CAPACITY",
+    "B-SCHEDULE",
+    "B-PREREQUISITES",
+    "B-READINESS",
+    "B-BUDGET",
+    "B-COST-SENSITIVITY",
+    "B-COST-CONDITIONS",
+    "B-SPATIAL",
+    "B-ACCESS-BASIS"
+  ],
+  "state": {
+    "headcount_basis": [
+      {
+        "id": "B-HEADCOUNT",
+        "summary": "148 fellows +32 partners +18 staff +12 speakers +35 expected walk-ins = 245; registered population 180, check-in target144; no needs added.",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-INTERVIEW",
+          "E-BRIEF"
+        ],
+        "owner": null
+      },
+      {
+        "id": "B-CAPACITY",
+        "summary": "245 leaves 15 in 260 catering package and55 in300. Illustrative +10% gives270 and exceeds260; policy pending. Quiet-room9 simultaneous users vs room/staffing20; 6 wheelchair needs exactly match fictional6 spaces.",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-VENDORS",
+          "E-BRIEF"
+        ],
+        "owner": null
+      }
+    ],
+    "schedule_dependencies": [
+      {
+        "id": "B-SCHEDULE",
+        "summary": "450-minute programme minus60-minute keynote and156-minute demo/changeover block leaves234 minutes for opening, meals, breaks and other activities; this is arithmetic only, not a verified run of show.",
+        "evidence_ids": [
+          "E-CALENDAR",
+          "E-BRIEF",
+          "E-INTERVIEW"
+        ],
+        "owner": null
+      },
+      {
+        "id": "B-PREREQUISITES",
+        "summary": "Decision September4 17:00; hold expiry September5 date-only; venue confirmation before September25 14:00–16:00 walkthrough; October16 15:00–18:00 rehearsal with remote backup; October17 opening9:30 and teardown18:30. All8 calendar records retained.",
+        "evidence_ids": [
+          "E-CALENDAR"
+        ],
+        "owner": null
+      },
+      {
+        "id": "B-READINESS",
+        "summary": "Exercise R2 supports base bundles ready in07:30–09:30 and cleared17:00–18:30; no exact vendor durations or mandatory buffer inferred.",
+        "evidence_ids": [
+          "E-BRIEF"
+        ],
+        "owner": null
+      }
+    ],
+    "budget_baseline": [
+      {
+        "id": "B-BUDGET",
+        "summary": "Allocations 510000; commitments 0; ceiling520000; unallocated10000; category threshold sum610000 is not spending permission.",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-INTERVIEW",
+          "E-BRIEF"
+        ],
+        "owner": null
+      },
+      {
+        "id": "B-COST-SENSITIVITY",
+        "summary": "Base quoted services with Q003=429000; Q004=447000. Retaining communications25000 and contingency40000 gives494000 and512000; ceiling margins26000 and8000. No alternative selected.",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-VENDORS"
+        ],
+        "owner": null
+      },
+      {
+        "id": "B-COST-CONDITIONS",
+        "summary": "Catering108000/126000 vs limit135000; captions42000 +quiet staffing18000 =60000 vs accessibilitylimit80000; AV78000 vs100000; security28000 vs35000 but above planned25000. Livestream adds55000: production133000 and totals549000/567000; over threshold and ceiling, with unresolved conditions.",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF"
+        ],
+        "owner": null
+      }
+    ],
+    "accessibility_baseline": [
+      {
+        "id": "B-SPATIAL",
+        "summary": "Page1 shows Plenary Hall on right, VIP Room on left with Room401 between, wheelchair-area markers near sloped seating banks, accessible elevator/restroom symbols per legend. Areas/symbols do not enumerate six usable wheelchair seats.",
+        "evidence_ids": [
+          "E-FLOOR",
+          "E-ACCESS"
+        ],
+        "owner": null
+      },
+      {
+        "id": "B-ACCESS-BASIS",
+        "summary": "500 places including6 wheelchair spaces, quiet-room20, step-free routes and base service/dietary coordination are exercise venue-record facts; not independently certified by PDF. Current operations, widths, obstacles and acoustic performance remain outside PDF evidence.",
+        "evidence_ids": [
+          "E-BRIEF",
+          "E-FLOOR"
+        ],
+        "owner": null
+      }
+    ],
+    "calculations": {
+      "run_id": "prep-20261014T213226Z",
+      "observed_at": "2026-10-14T21:39:30.173950+00:00",
+      "methods": [
+        "Named-column CSV arithmetic from actual captures",
+        "Independent original-XLSX field-by-field verification using openpyxl; numeric comparator corrected for formatting",
+        "Reconcile expected headcount with independently retrieved event brief 245",
+        "Calendar interval subtraction and per-demo 10+3 minute multiplication"
+      ],
+      "attendance": {
+        "registered": 180,
+        "staff": 18,
+        "speakers": 12,
+        "forecast_walk_ins": 35,
+        "expected_people": 245,
+        "registered_checkin_target": 144,
+        "incorrect_all_signal_sum": 338,
+        "additional_needs_not_people": [
+          "SIG-006",
+          "SIG-007",
+          "SIG-008",
+          "SIG-009",
+          "SIG-010",
+          "SIG-011",
+          "SIG-012",
+          "SIG-013"
+        ],
+        "capacity_margins": {
+          "Q-003": 15,
+          "Q-004": 55,
+          "venue": 255,
+          "quiet_room": 11
+        },
+        "ten_percent_extra_illustration": 270,
+        "ten_percent_is_approved": false
+      },
+      "budget": {
+        "ceiling_twd": 520000,
+        "planned_allocations_twd": 510000,
+        "commitments_twd": 0,
+        "headroom_after_commitments_twd": 520000,
+        "unallocated_vs_baseline_twd": 10000,
+        "category_threshold_sum_twd": 610000,
+        "quote_only_green_twd": 429000,
+        "quote_only_city_twd": 447000,
+        "allowances_retained_twd": 65000,
+        "green_with_allowances_twd": 494000,
+        "city_with_allowances_twd": 512000,
+        "green_remaining_twd": 26000,
+        "city_remaining_twd": 8000,
+        "streaming_production_twd": 133000,
+        "streaming_threshold_excess_twd": 33000,
+        "green_streaming_total_twd": 549000,
+        "city_streaming_total_twd": 567000,
+        "interpretation": "Allocation variances are not threshold breaches. Category threshold sum does not raise total ceiling. No cost sensitivity constitutes selection or approval."
+      },
+      "calendar": {
+        "event_minutes": 450,
+        "keynote_minutes": 60,
+        "demo_minutes": 120,
+        "demo_changeover_minutes": 36,
+        "demo_block_minutes": 156,
+        "remaining_event_minutes_before_other_activities": 234,
+        "setup_readiness_window_minutes": 120,
+        "teardown_window_minutes": 90,
+        "rehearsal_minutes": 180,
+        "walkthrough_minutes": 120,
+        "full_programme_verified": false
+      },
+      "quote_date_checks": [
+        {
+          "quote_id": "Q-001",
+          "available_date": "2026-10-17 00:00:00",
+          "valid_until": "2026-09-05 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "held",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        },
+        {
+          "quote_id": "Q-002",
+          "available_date": "2026-10-24 00:00:00",
+          "valid_until": "2026-09-05 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "available",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        },
+        {
+          "quote_id": "Q-003",
+          "available_date": "2026-10-17 00:00:00",
+          "valid_until": "2026-09-07 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "available",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        },
+        {
+          "quote_id": "Q-004",
+          "available_date": "2026-10-17 00:00:00",
+          "valid_until": "2026-09-12 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "available",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        },
+        {
+          "quote_id": "Q-005",
+          "available_date": "2026-10-17 00:00:00",
+          "valid_until": "2026-09-10 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "available",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        },
+        {
+          "quote_id": "Q-006",
+          "available_date": "2026-10-17 00:00:00",
+          "valid_until": "2026-09-08 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "available",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        },
+        {
+          "quote_id": "Q-007",
+          "available_date": "2026-10-17 00:00:00",
+          "valid_until": "2026-09-08 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "available",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        },
+        {
+          "quote_id": "Q-008",
+          "available_date": "2026-10-17 00:00:00",
+          "valid_until": "2026-09-11 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "conditional",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        },
+        {
+          "quote_id": "Q-009",
+          "available_date": "2026-10-17 00:00:00",
+          "valid_until": "2026-09-15 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "available",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        },
+        {
+          "quote_id": "Q-010",
+          "available_date": "2026-10-17 00:00:00",
+          "valid_until": "2026-09-10 00:00:00",
+          "expiry_after_exercise_clock_date": true,
+          "status": "available",
+          "precision_note": "Date-only expiry; no guessed expiry hour."
+        }
+      ]
+    },
+    "full_run_status": "partial; preparation boundaries only; no selection, recommendation approval or final artifacts",
+    "learner_decisions": []
+  },
+  "unresolved": [
+    {
+      "id": "U-SETUP",
+      "summary": "No Project C facilitator verification record: identity, interview/export, coding capture, runtime/source access and submission destination. Parent onboarding is historical and includes unresolved identity/trainer checks; technical Entire capture now passes.",
+      "evidence_ids": [
+        "CHECK-SETUP"
+      ],
+      "owner": "Facilitator"
+    },
+    {
+      "id": "U-HEADCOUNT",
+      "summary": "Learner has not selected an additional buffer policy; 35 medium-confidence expected walk-ins are already included in 245. No universal buffer mandated.",
+      "evidence_ids": [
+        "E-INTERVIEW",
+        "E-ATTENDEES"
+      ],
+      "owner": "Learner"
+    },
+    {
+      "id": "U-LIVE",
+      "summary": "Q-008 requires network test and venue confirmation, neither is evidenced as completed.",
+      "evidence_ids": [
+        "E-VENDORS",
+        "E-BRIEF"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "U-FALLBACK",
+      "summary": "24 October loses keynote and no replacement speaker/date-specific base service quotes/readiness are provided.",
+      "evidence_ids": [
+        "E-CALENDAR",
+        "E-VENDORS",
+        "E-BRIEF"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "U-APPROVAL",
+      "summary": "All bookings/spending/plan/date approvals pending; available/held labels are not approval or booking.",
+      "evidence_ids": [
+        "E-BRIEF",
+        "E-INTERVIEW",
+        "E-VENDORS"
+      ],
+      "owner": "Operations and category owners"
+    },
+    {
+      "id": "U-REAL-ACCESS",
+      "summary": "Official plan is spatial evidence, not current elevator/route/acoustic certification; exercise coordination is fictional.",
+      "evidence_ids": [
+        "E-FLOOR",
+        "E-BRIEF"
+      ],
+      "owner": "Operations"
+    },
+    {
+      "id": "U-PROGRAMME",
+      "summary": "Detailed demo grouping, meal/break durations and setup/check sequence remain planner choices; no fabricated mandatory vendor durations.",
+      "evidence_ids": [
+        "E-BRIEF",
+        "E-INTERVIEW",
+        "E-CALENDAR"
+      ],
+      "owner": "Learner / Programme"
+    }
+  ],
+  "decisions": []
+}

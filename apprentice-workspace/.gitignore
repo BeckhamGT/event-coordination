@@ -1,0 +1,2 @@
+# Material you were told must not leave the business: name it *.local.* and it stays out of git.
+*.local.*

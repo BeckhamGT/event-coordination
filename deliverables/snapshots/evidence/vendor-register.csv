@@ -1,0 +1,11 @@
+,quote_id,vendor,category,option,quote_amount_twd,capacity,available_date,valid_until,status,notes
+0,Q-001,TICC,venue,4F Plenary Hall front-500 allocation plus V.I.P. Room,155000,500,2026-10-17 00:00:00,2026-09-05 00:00:00,held,Synthetic full-day package; see venue coordination note; no real reservation
+1,Q-002,TICC,venue,4F Plenary Hall front-500 allocation plus V.I.P. Room,155000,500,2026-10-24 00:00:00,2026-09-05 00:00:00,available,Keynote is unavailable on this date; Synthetic full-day package; see venue coordination note; no real reservation
+2,Q-003,Green Table,catering,lunch and two breaks,108000,260,2026-10-17 00:00:00,2026-09-07 00:00:00,available,Supports listed vegetarian and halal meals; supplied through TICC coordination in this synthetic case
+3,Q-004,City Pantry,catering,lunch and two breaks,126000,300,2026-10-17 00:00:00,2026-09-12 00:00:00,available,Allergy process requires named contacts; supplied through TICC coordination in this synthetic case
+4,Q-005,ClearText,accessibility,live captions and transcript,42000,500,2026-10-17 00:00:00,2026-09-10 00:00:00,available,Two captioners included
+5,Q-006,SoundArc,production,AV package with hearing loop,78000,500,2026-10-17 00:00:00,2026-09-08 00:00:00,available,Setup starts at 07:30; supplied through TICC coordination in this synthetic case
+6,Q-007,LiteStage,production,basic AV package,52000,500,2026-10-17 00:00:00,2026-09-08 00:00:00,available,No hearing loop included; supplied through TICC coordination in this synthetic case
+7,Q-008,StreamNorth,production,livestream add-on,55000,1000,2026-10-17 00:00:00,2026-09-11 00:00:00,conditional,Network test required; supplied through TICC coordination in this synthetic case
+8,Q-009,SafeVenue,security,four staff,28000,500,2026-10-17 00:00:00,2026-09-15 00:00:00,available,Includes first aid lead
+9,Q-010,QuietWorks,accessibility,quiet room staffing,18000,20,2026-10-17 00:00:00,2026-09-10 00:00:00,available,Room itself supplied by venue

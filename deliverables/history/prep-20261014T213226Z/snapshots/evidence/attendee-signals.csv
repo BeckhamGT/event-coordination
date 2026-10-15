@@ -1,0 +1,14 @@
+,signal_id,source,segment,signal,value,unit,observed_at,confidence
+0,SIG-001,registration_form,fellows,registered_attendees,148,people,2026-08-24 00:00:00,high
+1,SIG-002,partner_form,partners,registered_attendees,32,people,2026-08-24 00:00:00,high
+2,SIG-003,operations_plan,staff,required_on_site,18,people,2026-08-25 00:00:00,high
+3,SIG-004,programme_plan,speakers,required_on_site,12,people,2026-08-25 00:00:00,high
+4,SIG-005,forecast,walk_ins,expected_attendees,35,people,2026-08-26 00:00:00,medium
+5,SIG-006,registration_form,all,wheelchair_spaces,6,people,2026-08-24 00:00:00,high
+6,SIG-007,registration_form,all,mobility_companions,4,people,2026-08-24 00:00:00,high
+7,SIG-008,registration_form,all,live_caption_requests,23,people,2026-08-24 00:00:00,high
+8,SIG-009,registration_form,all,hearing_loop_requests,7,people,2026-08-24 00:00:00,medium
+9,SIG-010,registration_form,all,quiet_room_requests,9,people,2026-08-24 00:00:00,high
+10,SIG-011,registration_form,all,vegetarian_meals,28,meals,2026-08-24 00:00:00,high
+11,SIG-012,registration_form,all,halal_meals,12,meals,2026-08-24 00:00:00,high
+12,SIG-013,registration_form,all,severe_allergy_follow_up,4,people,2026-08-24 00:00:00,high

@@ -1,0 +1,27 @@
+{
+  "id": "E-ACCESS",
+  "name": "official-accessibility-index",
+  "url": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+  "method": "HTTPS GET with approved network access",
+  "started_at": "2026-10-14T21:33:27.648656+00:00",
+  "http_status": 200,
+  "final_url": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+  "headers": {
+    "Date": "Wed, 14 Oct 2026 21:33:29 GMT",
+    "Content-Type": "text/html;charset=utf-8",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=36B41608C51AEE65D1B9BBE884BEAC8F; Path=/; Secure; HttpOnly; SameSite=Strict",
+    "Content-Security-Policy": "frame-ancestors 'self' www.ticc.com.tw;",
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Strict-Transport-Security": "max-age=3600",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Transfer-Encoding": "chunked"
+  },
+  "bytes": 19148,
+  "retrieval_status": "retrieved",
+  "content_hash": "sha256:4e37656f70241209a76312d7cfc58fafe02296f01e8596a157658a7ab9f2a637",
+  "local_reference": "deliverables/snapshots/evidence/official-accessibility-index.html",
+  "observed_at": "2026-10-14T21:33:29.550838+00:00"
+}

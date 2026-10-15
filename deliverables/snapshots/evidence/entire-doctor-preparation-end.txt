@@ -1,0 +1,7 @@
+✓ Metadata branches: OK (no remote-tracking metadata ref found)
+
+✓ Git hooks: OK
+✓ Codex hooks: INSTALLED
+  Codex-discovered hooks: /Users/user/fellowship/event-coordination/event-coordination/.codex/hooks.json
+✓ Codex hook approval records: PRESENT
+No stuck sessions found.

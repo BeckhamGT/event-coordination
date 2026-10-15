@@ -1,0 +1,152 @@
+{
+  "run_id": "prep-20261014T213226Z",
+  "observed_at": "2026-10-14T21:39:30.173950+00:00",
+  "methods": [
+    "Named-column CSV arithmetic from actual captures",
+    "Independent original-XLSX field-by-field verification using openpyxl; numeric comparator corrected for formatting",
+    "Reconcile expected headcount with independently retrieved event brief 245",
+    "Calendar interval subtraction and per-demo 10+3 minute multiplication"
+  ],
+  "attendance": {
+    "registered": 180,
+    "staff": 18,
+    "speakers": 12,
+    "forecast_walk_ins": 35,
+    "expected_people": 245,
+    "registered_checkin_target": 144,
+    "incorrect_all_signal_sum": 338,
+    "additional_needs_not_people": [
+      "SIG-006",
+      "SIG-007",
+      "SIG-008",
+      "SIG-009",
+      "SIG-010",
+      "SIG-011",
+      "SIG-012",
+      "SIG-013"
+    ],
+    "capacity_margins": {
+      "Q-003": 15,
+      "Q-004": 55,
+      "venue": 255,
+      "quiet_room": 11
+    },
+    "ten_percent_extra_illustration": 270,
+    "ten_percent_is_approved": false
+  },
+  "budget": {
+    "ceiling_twd": 520000,
+    "planned_allocations_twd": 510000,
+    "commitments_twd": 0,
+    "headroom_after_commitments_twd": 520000,
+    "unallocated_vs_baseline_twd": 10000,
+    "category_threshold_sum_twd": 610000,
+    "quote_only_green_twd": 429000,
+    "quote_only_city_twd": 447000,
+    "allowances_retained_twd": 65000,
+    "green_with_allowances_twd": 494000,
+    "city_with_allowances_twd": 512000,
+    "green_remaining_twd": 26000,
+    "city_remaining_twd": 8000,
+    "streaming_production_twd": 133000,
+    "streaming_threshold_excess_twd": 33000,
+    "green_streaming_total_twd": 549000,
+    "city_streaming_total_twd": 567000,
+    "interpretation": "Allocation variances are not threshold breaches. Category threshold sum does not raise total ceiling. No cost sensitivity constitutes selection or approval."
+  },
+  "calendar": {
+    "event_minutes": 450,
+    "keynote_minutes": 60,
+    "demo_minutes": 120,
+    "demo_changeover_minutes": 36,
+    "demo_block_minutes": 156,
+    "remaining_event_minutes_before_other_activities": 234,
+    "setup_readiness_window_minutes": 120,
+    "teardown_window_minutes": 90,
+    "rehearsal_minutes": 180,
+    "walkthrough_minutes": 120,
+    "full_programme_verified": false
+  },
+  "quote_date_checks": [
+    {
+      "quote_id": "Q-001",
+      "available_date": "2026-10-17 00:00:00",
+      "valid_until": "2026-09-05 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "held",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    },
+    {
+      "quote_id": "Q-002",
+      "available_date": "2026-10-24 00:00:00",
+      "valid_until": "2026-09-05 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "available",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    },
+    {
+      "quote_id": "Q-003",
+      "available_date": "2026-10-17 00:00:00",
+      "valid_until": "2026-09-07 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "available",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    },
+    {
+      "quote_id": "Q-004",
+      "available_date": "2026-10-17 00:00:00",
+      "valid_until": "2026-09-12 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "available",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    },
+    {
+      "quote_id": "Q-005",
+      "available_date": "2026-10-17 00:00:00",
+      "valid_until": "2026-09-10 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "available",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    },
+    {
+      "quote_id": "Q-006",
+      "available_date": "2026-10-17 00:00:00",
+      "valid_until": "2026-09-08 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "available",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    },
+    {
+      "quote_id": "Q-007",
+      "available_date": "2026-10-17 00:00:00",
+      "valid_until": "2026-09-08 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "available",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    },
+    {
+      "quote_id": "Q-008",
+      "available_date": "2026-10-17 00:00:00",
+      "valid_until": "2026-09-11 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "conditional",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    },
+    {
+      "quote_id": "Q-009",
+      "available_date": "2026-10-17 00:00:00",
+      "valid_until": "2026-09-15 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "available",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    },
+    {
+      "quote_id": "Q-010",
+      "available_date": "2026-10-17 00:00:00",
+      "valid_until": "2026-09-10 00:00:00",
+      "expiry_after_exercise_clock_date": true,
+      "status": "available",
+      "precision_note": "Date-only expiry; no guessed expiry hour."
+    }
+  ]
+}

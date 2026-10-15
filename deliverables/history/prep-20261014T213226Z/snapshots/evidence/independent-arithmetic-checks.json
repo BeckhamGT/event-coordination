@@ -1,0 +1,38 @@
+{
+  "observed_at": "2026-10-14T21:40:45.969664+00:00",
+  "method": "Independently read original XLSX cells, calculate Decimal sums and subtract original timestamp cells; compare against separately parsed CSV calculations",
+  "correction": "First checker invocation had a SyntaxError before execution; corrected mismatched parenthesis. No first-attempt pass was claimed.",
+  "checks": [
+    {
+      "check": "Headcount",
+      "value": 245,
+      "matches_csv_calculation": true
+    },
+    {
+      "check": "Budget allocations",
+      "value": 510000,
+      "matches_csv_calculation": true
+    },
+    {
+      "check": "Commitments",
+      "value": 0,
+      "matches_csv_calculation": true
+    },
+    {
+      "check": "green preliminary full amount",
+      "value": 494000,
+      "matches_csv_calculation": true
+    },
+    {
+      "check": "city preliminary full amount",
+      "value": 512000,
+      "matches_csv_calculation": true
+    },
+    {
+      "check": "Programme window",
+      "value_minutes": 450,
+      "matches_csv_calculation": true
+    }
+  ],
+  "result": "passed"
+}

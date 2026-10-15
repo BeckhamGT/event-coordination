@@ -1,0 +1,265 @@
+{
+  "run_id": "prep-20261014T213226Z",
+  "sources": [
+    {
+      "id": "E-BRIEF",
+      "summary": "Event brief, fictional venue record, readiness R2 and programme R3; connector 404 recovered via disclosed Chrome route.",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "source_role": "event-brief",
+      "locator": "https://app.notion.com/p/3ba0b700541e81d0af55dc1a8f49f5af",
+      "retrieved_at": "2026-10-14T21:33:37.800Z",
+      "retrieval_status": "retrieved",
+      "content_type": "text/plain; rendered-page extracts",
+      "version_metadata": {
+        "brief": "EVENT-BRIEF-2026-08-26",
+        "venue": "VEN-2026-08-26",
+        "readiness": "VEN-2026-08-26-R2",
+        "programme": "PROG-2026-08-26-R3",
+        "clarifications_authored": "2026-09-12",
+        "business_clock_explicit_override": "2026-08-26 Asia/Taipei"
+      },
+      "content_hash": "sha256:194a73cf4b97aebb46606e134c56f9f27987addc57e301826daa24c08ca2d37f",
+      "local_reference": "deliverables/snapshots/evidence/event-brief-and-venue-note.txt",
+      "observations": [
+        {
+          "id": "OBS-BRIEF",
+          "summary": "Business-clock override, 245-person basis, 500-place allocation, 20-person quiet space, readiness and programme confirmations; explicitly fictional, not spending approval.",
+          "locator": {
+            "kind": "section",
+            "value": "Event brief; Venue coordination record; Exercise readiness confirmation; Exercise programme confirmation"
+          }
+        }
+      ],
+      "attempt_references": [
+        "deliverables/snapshots/evidence/event-brief-and-venue-note-attempt-01.json",
+        "deliverables/snapshots/evidence/event-brief-and-venue-note-attempt-02.json"
+      ]
+    },
+    {
+      "id": "E-ATTENDEES",
+      "summary": "Project C — Attendee Signals; original XLSX downloaded and connector-extracted CSV retained.",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "source_role": "attendee-signals",
+      "locator": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+      "retrieved_at": "2026-10-14T21:32:46.833Z",
+      "retrieval_status": "retrieved",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "version_metadata": {
+        "provider_id": "1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+        "created_time": "2026-08-12T15:47:39.306Z",
+        "modified_time": "2026-08-28T06:28:34.868Z",
+        "authored_record_versions_preserved": true,
+        "business_clock_note": "Provider timestamps may postdate exercise clock; these are authored exercise records, not evidence of earlier historical retrieval."
+      },
+      "content_hash": "sha256:3c548ac9ec61719d3b32999c5fc2a57fd2afe9f1a6043c3f6c7749bf87a275df",
+      "local_reference": "deliverables/snapshots/evidence/attendee-signals.xlsx",
+      "observations": [
+        {
+          "id": "OBS-E-ATTENDEES",
+          "summary": "Retrieved bounded complete table; source definitions remain interview-based.",
+          "locator": {
+            "kind": "cell-range",
+            "value": "signal_id rows SIG-001–SIG-013; original tab Attendee Signals A1:H14"
+          }
+        }
+      ],
+      "extracted_reference": "deliverables/snapshots/evidence/attendee-signals.csv",
+      "extracted_hash": "sha256:309f2d7332d848cac92bd1d02da27175e2371afc669aaee25a9c7ae49a4cba2f",
+      "attempt_references": [
+        "deliverables/snapshots/evidence/attendee-signals-attempt-01.json",
+        "deliverables/snapshots/evidence/attendee-signals-raw-download-result.json"
+      ],
+      "raw_downloaded_at": "2026-10-14T21:35:45.236826+00:00"
+    },
+    {
+      "id": "E-BUDGET",
+      "summary": "Project C — Budget; original XLSX downloaded and connector-extracted CSV retained.",
+      "evidence_ids": [
+        "E-BUDGET"
+      ],
+      "source_role": "budget",
+      "locator": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "retrieved_at": "2026-10-14T21:32:47.191Z",
+      "retrieval_status": "retrieved",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "version_metadata": {
+        "provider_id": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+        "created_time": "2026-08-12T15:47:51.685Z",
+        "modified_time": "2026-08-28T06:28:43.837Z",
+        "authored_record_versions_preserved": true,
+        "business_clock_note": "Provider timestamps may postdate exercise clock; these are authored exercise records, not evidence of earlier historical retrieval."
+      },
+      "content_hash": "sha256:72295acb63d03fe60824e23278d79e9d37484942ab374eafb46abfa0766c5227",
+      "local_reference": "deliverables/snapshots/evidence/budget.xlsx",
+      "observations": [
+        {
+          "id": "OBS-E-BUDGET",
+          "summary": "Retrieved bounded complete table; source definitions remain interview-based.",
+          "locator": {
+            "kind": "cell-range",
+            "value": "category rows; original tab Budget A1:G8"
+          }
+        }
+      ],
+      "extracted_reference": "deliverables/snapshots/evidence/budget.csv",
+      "extracted_hash": "sha256:30f969a842c70e012fd20f3cb10b381051ba381f1842a54c37372074b51045c6",
+      "attempt_references": [
+        "deliverables/snapshots/evidence/budget-attempt-01.json",
+        "deliverables/snapshots/evidence/budget-raw-download-result.json"
+      ],
+      "raw_downloaded_at": "2026-10-14T21:35:45.230303+00:00"
+    },
+    {
+      "id": "E-CALENDAR",
+      "summary": "Project C — Calendar Constraints; original XLSX downloaded and connector-extracted CSV retained.",
+      "evidence_ids": [
+        "E-CALENDAR"
+      ],
+      "source_role": "calendar",
+      "locator": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+      "retrieved_at": "2026-10-14T21:32:47.205Z",
+      "retrieval_status": "retrieved",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "version_metadata": {
+        "provider_id": "1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+        "created_time": "2026-08-12T15:48:17.350Z",
+        "modified_time": "2026-08-28T06:28:54.049Z",
+        "authored_record_versions_preserved": true,
+        "business_clock_note": "Provider timestamps may postdate exercise clock; these are authored exercise records, not evidence of earlier historical retrieval."
+      },
+      "content_hash": "sha256:2795c134b10ef86991a39863ed08437b0e4bf0aa28bc342ff1152a258d53e09d",
+      "local_reference": "deliverables/snapshots/evidence/calendar-constraints.xlsx",
+      "observations": [
+        {
+          "id": "OBS-E-CALENDAR",
+          "summary": "Retrieved bounded complete table; source definitions remain interview-based.",
+          "locator": {
+            "kind": "cell-range",
+            "value": "CAL-001–CAL-008; original tab Calendar Constraints A1:I9"
+          }
+        }
+      ],
+      "extracted_reference": "deliverables/snapshots/evidence/calendar-constraints.csv",
+      "extracted_hash": "sha256:c781633d7f9b98aaac41d48efc152dd7a237df22e7c4ee32455910e9ff467f6a",
+      "attempt_references": [
+        "deliverables/snapshots/evidence/calendar-constraints-attempt-01.json",
+        "deliverables/snapshots/evidence/calendar-constraints-raw-download-result.json"
+      ],
+      "raw_downloaded_at": "2026-10-14T21:35:45.231837+00:00"
+    },
+    {
+      "id": "E-VENDORS",
+      "summary": "Project C — Vendor Quotes; original XLSX downloaded and connector-extracted CSV retained.",
+      "evidence_ids": [
+        "E-VENDORS"
+      ],
+      "source_role": "vendor-record",
+      "locator": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+      "retrieved_at": "2026-10-14T21:32:48.491Z",
+      "retrieval_status": "retrieved",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "version_metadata": {
+        "provider_id": "1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+        "created_time": "2026-08-12T15:48:29.905Z",
+        "modified_time": "2026-09-12T05:09:48.640Z",
+        "authored_record_versions_preserved": true,
+        "business_clock_note": "Provider timestamps may postdate exercise clock; these are authored exercise records, not evidence of earlier historical retrieval."
+      },
+      "content_hash": "sha256:efd99cda9d63681d759de12f0f952470650cec6eb726aafdefb1544b8118db4a",
+      "local_reference": "deliverables/snapshots/evidence/vendor-register.xlsx",
+      "observations": [
+        {
+          "id": "OBS-E-VENDORS",
+          "summary": "Retrieved bounded complete table; source definitions remain interview-based.",
+          "locator": {
+            "kind": "cell-range",
+            "value": "Q-001–Q-010; original tab Vendor Quotes A1:K11"
+          }
+        }
+      ],
+      "extracted_reference": "deliverables/snapshots/evidence/vendor-register.csv",
+      "extracted_hash": "sha256:923d348593b07a2407aff0e060e67e008d53b4c26cab240430956bc89870f4b1",
+      "attempt_references": [
+        "deliverables/snapshots/evidence/vendor-register-attempt-01.json",
+        "deliverables/snapshots/evidence/vendor-register-raw-download-result.json"
+      ],
+      "raw_downloaded_at": "2026-10-14T21:35:45.235177+00:00"
+    },
+    {
+      "id": "E-ACCESS",
+      "summary": "Official accessibility index links the exact stakeholder-disclosed 4F PDF.",
+      "evidence_ids": [
+        "E-ACCESS"
+      ],
+      "source_role": "venue-page",
+      "locator": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+      "retrieved_at": "2026-10-14T21:33:29.550838+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "text/html",
+      "version_metadata": {
+        "http_last_modified": null,
+        "http_etag": null,
+        "pdf_modification": null,
+        "limitations": "Current retrieval of mutable source; floor-plan title block shows 105年11月8日; no current functional certification inferred."
+      },
+      "content_hash": "sha256:4e37656f70241209a76312d7cfc58fafe02296f01e8596a157658a7ab9f2a637",
+      "local_reference": "deliverables/snapshots/evidence/official-accessibility-index.html",
+      "observations": [
+        {
+          "id": "OBS-E-ACCESS",
+          "summary": "Official accessibility index links the exact stakeholder-disclosed 4F PDF.",
+          "locator": {
+            "kind": "section",
+            "value": "index row TICC 4F Accessible Facilities Floor Plan"
+          }
+        }
+      ],
+      "attempt_references": [
+        "deliverables/snapshots/evidence/official-accessibility-index-attempt-01.json",
+        "deliverables/snapshots/evidence/official-accessibility-index-attempt-02.json"
+      ]
+    },
+    {
+      "id": "E-FLOOR",
+      "summary": "Visually inspected page 1 against legend; layout locators identified. Symbols are facility/area markers, not exact seat counts or proof of current operations.",
+      "evidence_ids": [
+        "E-FLOOR"
+      ],
+      "source_role": "floor-plan-or-image",
+      "locator": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+      "retrieved_at": "2026-10-14T21:33:32.338276+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/pdf",
+      "version_metadata": {
+        "http_last_modified": "Fri, 15 Mar 2024 06:57:07 GMT",
+        "http_etag": "W/\"522512-1710485827039\"",
+        "pdf_modification": "2024-03-15",
+        "limitations": "Current retrieval of mutable source; floor-plan title block shows 105年11月8日; no current functional certification inferred."
+      },
+      "content_hash": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+      "local_reference": "deliverables/snapshots/evidence/official-4f-floor-plan.pdf",
+      "observations": [
+        {
+          "id": "OBS-E-FLOOR",
+          "summary": "Visually inspected page 1 against legend; layout locators identified. Symbols are facility/area markers, not exact seat counts or proof of current operations.",
+          "locator": {
+            "kind": "page-region",
+            "value": "page 1; legend at left; Plenary Hall at right; VIP Room lower-left; accessible elevator icons lower-centre/lower-right; accessible restroom icons left and bottom"
+          }
+        }
+      ],
+      "attempt_references": [
+        "deliverables/snapshots/evidence/official-4f-floor-plan-attempt-01.json",
+        "deliverables/snapshots/evidence/official-4f-floor-plan-attempt-02.json"
+      ]
+    }
+  ],
+  "additional_evidence": {
+    "E-INTERVIEW": "interviews/project-c-event-coordination-20261014-2122.md",
+    "CHECK-SETUP": "deliverables/snapshots/evidence/setup-verification.json"
+  }
+}

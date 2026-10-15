@@ -1,0 +1,14 @@
+● Enabled · branch main
+  Agents · Codex
+  Checkpoints sync to: origin
+
+── Active Sessions ─────────────────────────────────────────
+
+Codex (gpt-6.1-sol) · 01a13308-fba1-7300-a78e-c4f5cc3e9210
+> "# Files mentioned by the user: ## project-c-event-coordin..."
+started 1d ago · active 24m ago · tokens 1046k
+
+────────────────────────────────────────────────────────────
+1 session
+
+Agents: run `entire agent-help` for machine-readable usage.

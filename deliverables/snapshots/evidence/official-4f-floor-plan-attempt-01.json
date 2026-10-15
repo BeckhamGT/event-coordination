@@ -1,0 +1,10 @@
+{
+  "id": "E-FLOOR",
+  "name": "official-4f-floor-plan",
+  "url": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+  "method": "HTTPS GET through urllib",
+  "started_at": "2026-10-14T21:33:05.125194+00:00",
+  "retrieval_status": "unavailable",
+  "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+  "observed_at": "2026-10-14T21:33:05.128058+00:00"
+}

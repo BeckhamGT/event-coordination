@@ -1,0 +1,9 @@
+,constraint_id,owner,constraint_type,start_at,end_at,priority,notes,record_version
+0,CAL-001,Operations,preferred_event_window,2026-10-17T09:30:00+08:00,2026-10-17T17:00:00+08:00,hard,Preferred event date,calendar-2026-08-26
+1,CAL-002,Operations,fallback_event_window,2026-10-24T09:30:00+08:00,2026-10-24T17:00:00+08:00,soft,Fallback date,calendar-2026-08-26
+2,CAL-003,TICC,venue_hold,2026-10-17T07:30:00+08:00,2026-10-17T18:30:00+08:00,hard,Hold expires 2026-09-05,calendar-2026-08-26
+3,CAL-004,Programme,keynote_availability,2026-10-17T10:00:00+08:00,2026-10-17T11:00:00+08:00,hard,Keynote unavailable on fallback date,calendar-2026-08-26
+4,CAL-005,Operations,decision_deadline,2026-09-04T17:00:00+08:00,2026-09-04T17:00:00+08:00,hard,Plan and budget decision,calendar-2026-08-26
+5,CAL-006,Learner Experience,accessibility_walkthrough,2026-09-25T14:00:00+08:00,2026-09-25T16:00:00+08:00,hard,Venue confirmation required first,calendar-2026-08-26
+6,CAL-007,Programme,rehearsal_window,2026-10-16T15:00:00+08:00,2026-10-16T18:00:00+08:00,soft,Remote backup acceptable,calendar-2026-08-26
+7,CAL-008,TICC,teardown_deadline,2026-10-17T17:00:00+08:00,2026-10-17T18:30:00+08:00,hard,All vendors clear by 18:30,calendar-2026-08-26

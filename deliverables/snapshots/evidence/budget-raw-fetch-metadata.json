@@ -1,0 +1,60 @@
+{
+  "id": "E-BUDGET",
+  "name": "budget",
+  "url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+  "started_at": "2026-10-14T21:35:30.816Z",
+  "observed_at": "2026-10-14T21:35:32.478Z",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "content": "",
+      "title": "Project C — Budget",
+      "url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "file_name": "Project C — Budget.xlsx",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "file_ext": "xlsx",
+      "b64_string": null,
+      "id": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "parent_ids": null,
+      "drive_id": null,
+      "created_time": "2026-08-12T15:47:51.685Z",
+      "modified_time": "2026-08-28T06:28:43.837Z",
+      "is_empty": null,
+      "file_uri": {
+        "file_id": "sediment://file_00000000393481f5a0e7ae153fde93a2",
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "file_name": "Project C — Budget.xlsx"
+      },
+      "file_size_bytes": 5721,
+      "display_url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "display_title": "Project C — Budget",
+      "structuredContent": {
+        "title": "Project C — Budget",
+        "content": "",
+        "id": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+        "parent_ids": null,
+        "drive_id": null,
+        "created_time": "2026-08-12T15:47:51.685Z",
+        "modified_time": "2026-08-28T06:28:43.837Z",
+        "is_empty": null,
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "file_name": "Project C — Budget.xlsx",
+        "file_size_bytes": 5721,
+        "url": "https://drive.google.com/file/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+        "file_uri": {
+          "file_id": "sediment://file_00000000393481f5a0e7ae153fde93a2",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "file_name": "Project C — Budget.xlsx",
+          "size": 5721
+        },
+        "file_id": "sediment://file_00000000393481f5a0e7ae153fde93a2"
+      }
+    },
+    "isError": false
+  }
+}

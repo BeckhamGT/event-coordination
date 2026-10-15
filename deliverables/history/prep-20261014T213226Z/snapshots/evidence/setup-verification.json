@@ -1,0 +1,16 @@
+{
+  "observed_at": "2026-10-14T21:32:26.953625+00:00",
+  "repository": "/Users/user/fellowship/event-coordination/event-coordination",
+  "origin": "https://github.com/BeckhamGT/event-coordination.git",
+  "interview_path": "interviews/project-c-event-coordination-20261014-2122.md",
+  "interview_sha256": "sha256:89be8e951c0fa6a563e06fd0600c82d5a82a9f8b0d0118ccbef3d50d21d094d5",
+  "download_sha256": "sha256:89be8e951c0fa6a563e06fd0600c82d5a82a9f8b0d0118ccbef3d50d21d094d5",
+  "byte_identical": true,
+  "bytes": 20149,
+  "lines": 399,
+  "same_session_copies": 1,
+  "original_download_retained": true,
+  "schema_sha256": "sha256:787e6ac3e2008458b311c2ab2e287a3cafb68aaa82d49a489775864ba32221ee",
+  "schema_equals_HEAD": true,
+  "facilitator_verification": "not found; not granted by technical checks"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "E-BRIEF",
+  "url": "https://app.notion.com/p/3ba0b700541e81d0af55dc1a8f49f5af",
+  "final_url": "https://private-pecorino-70e.notion.site/Project-3-Event-Coordination-Event-Brief-3ba0b700541e81d0af55dc1a8f49f5af",
+  "observed_at": "2026-10-14T21:33:37.800Z",
+  "retrieval_status": "retrieved",
+  "method": "Chrome through disclosed URL and its redirect; rendered page AX text and main-content extraction",
+  "representation": "Permitted plain-text page extracts; not raw HTML. All substantive sections captured from browser tool output, including readiness and programme confirmations from initial complete AX response.",
+  "local_reference": "deliverables/snapshots/evidence/event-brief-and-venue-note.txt",
+  "version_metadata": {
+    "brief": "EVENT-BRIEF-2026-08-26",
+    "venue": "VEN-2026-08-26",
+    "readiness": "VEN-2026-08-26-R2",
+    "programme": "PROG-2026-08-26-R3",
+    "clarifications_authored": "2026-09-12",
+    "business_clock_explicit_override": "2026-08-26 Asia/Taipei"
+  }
+}

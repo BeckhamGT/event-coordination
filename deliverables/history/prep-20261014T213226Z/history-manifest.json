@@ -1,0 +1,274 @@
+{
+  "run_id": "prep-20261014T213226Z",
+  "retained_at": "2026-10-14T22:25:33.931181+00:00",
+  "byte_preserved": true,
+  "snapshot_path_resolution": "Original snapshot paths retain original-root meaning. Resolve each through this explicit original_path -> archived_path map, not against the new current run.",
+  "files": [
+    {
+      "original_path": "deliverables/preparation-run.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/preparation-run.json",
+      "sha256": "sha256:58595bc8a725851274120b92b32736cd25ad1832c958f0d1023b59db902853be"
+    },
+    {
+      "original_path": "deliverables/snapshots/01-scope-and-approval-gates.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/01-scope-and-approval-gates.json",
+      "sha256": "sha256:bb82ea0e505f9e312d26a6790f40c14f581487aaff2d7fad758f9e47cc269329"
+    },
+    {
+      "original_path": "deliverables/snapshots/02-source-capture.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/02-source-capture.json",
+      "sha256": "sha256:7155ecce9df0324bebc13634a5b977cc1378adb096414988e15f9c03e2cb4cd4"
+    },
+    {
+      "original_path": "deliverables/snapshots/03-constraint-model.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/03-constraint-model.json",
+      "sha256": "sha256:bb6cbd2902082107dbb43f5293ecdb6c742f5b279b5f8e01e3e7662fd602fd2c"
+    },
+    {
+      "original_path": "deliverables/snapshots/04-planning-baseline.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/04-planning-baseline.json",
+      "sha256": "sha256:36d01ffea0558f0ee60d21ba667252b050257a6ff11a3f8412139cc2b33b1715"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/attendee-signals-attempt-01.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/attendee-signals-attempt-01.json",
+      "sha256": "sha256:e24af972af19d1b9e9bcbcc8a636c3764e908bb55aaf3e88e1809ee5c99ade4a"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/attendee-signals-raw-download-result.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/attendee-signals-raw-download-result.json",
+      "sha256": "sha256:f8d555aa5c3e66c7ba91e38d2d2b5f4279dfaf1d790a82d63e61fd0b68f822b3"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/attendee-signals.csv",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/attendee-signals.csv",
+      "sha256": "sha256:309f2d7332d848cac92bd1d02da27175e2371afc669aaee25a9c7ae49a4cba2f"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/attendee-signals.xlsx",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/attendee-signals.xlsx",
+      "sha256": "sha256:3c548ac9ec61719d3b32999c5fc2a57fd2afe9f1a6043c3f6c7749bf87a275df"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/budget-attempt-01.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/budget-attempt-01.json",
+      "sha256": "sha256:5b88da1646464d90442b02dcac5f4f26efdc2bffb8cb7535a2ca4721cfaabe98"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/budget-raw-download-result.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/budget-raw-download-result.json",
+      "sha256": "sha256:45e1d271dedfe097c6c9e36aa761a7ad6f3a120ab49cdecef17351ffc5ebdd86"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/budget-raw-fetch-metadata.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/budget-raw-fetch-metadata.json",
+      "sha256": "sha256:1f3da5b086ad791941a0d54794f1d7902b2998746e1d49683849be2247ff2026"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/budget.csv",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/budget.csv",
+      "sha256": "sha256:30f969a842c70e012fd20f3cb10b381051ba381f1842a54c37372074b51045c6"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/budget.xlsx",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/budget.xlsx",
+      "sha256": "sha256:72295acb63d03fe60824e23278d79e9d37484942ab374eafb46abfa0766c5227"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/calendar-constraints-attempt-01.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/calendar-constraints-attempt-01.json",
+      "sha256": "sha256:cb024ff0e22418fa7dd291f911c69c5dabcae80e069e07b2eb1fd13d4c120384"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/calendar-constraints-raw-download-result.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/calendar-constraints-raw-download-result.json",
+      "sha256": "sha256:a40afccea7be9466190cef8328acc522f42373b9e5e5abe952805da5ada03dd9"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/calendar-constraints-raw-fetch-metadata.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/calendar-constraints-raw-fetch-metadata.json",
+      "sha256": "sha256:aeb3c3188985582476eca108ae02be7923f14ad64d7242875c48d4a0dea48a27"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/calendar-constraints.csv",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/calendar-constraints.csv",
+      "sha256": "sha256:c781633d7f9b98aaac41d48efc152dd7a237df22e7c4ee32455910e9ff467f6a"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/calendar-constraints.xlsx",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/calendar-constraints.xlsx",
+      "sha256": "sha256:2795c134b10ef86991a39863ed08437b0e4bf0aa28bc342ff1152a258d53e09d"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/capture-verification.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/capture-verification.json",
+      "sha256": "sha256:341252def41f6b6303c40d4c5978985f1734e3d31a3b30ea2b3e637468b22460"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/entire-doctor-preparation-end.txt",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/entire-doctor-preparation-end.txt",
+      "sha256": "sha256:3f2f58ac77933e3cc82c2fe524d0651a20d80f1d9a6a82c1b3e12536cccf7e11"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/entire-doctor-start.txt",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/entire-doctor-start.txt",
+      "sha256": "sha256:3f2f58ac77933e3cc82c2fe524d0651a20d80f1d9a6a82c1b3e12536cccf7e11"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/entire-session-preparation-end.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/entire-session-preparation-end.json",
+      "sha256": "sha256:f0b0ce942308b0e81c84f83d92a524aa0999c78ff16f6834a3c8e64a19403ef6"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/entire-session-start.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/entire-session-start.json",
+      "sha256": "sha256:62634d9de5f2b3fa9166ae69b78d29b3797a653b90deafaffb0da786e1d67bcb"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/entire-status-preparation-end.txt",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/entire-status-preparation-end.txt",
+      "sha256": "sha256:449be5ee74519567c6f38565edc7edc92e8d0842903b8be3939a491ac88cb7c1"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/entire-status-start.txt",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/entire-status-start.txt",
+      "sha256": "sha256:183c7f3a96aaa759cde72740138f2dc17dc178bf142fe4ac42b2ff05f40f3beb"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/event-brief-and-venue-note-attempt-01.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/event-brief-and-venue-note-attempt-01.json",
+      "sha256": "sha256:5f4ec02887ad7a5afdd16188d1a585ec49d2e7ff40c9b81b3e433a6cc98a099a"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/event-brief-and-venue-note-attempt-02.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/event-brief-and-venue-note-attempt-02.json",
+      "sha256": "sha256:41e9b255ae005e9aad35622656ad87ffa6c2b33d1c65939caf90b33c86a16a6b"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/event-brief-and-venue-note.txt",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/event-brief-and-venue-note.txt",
+      "sha256": "sha256:194a73cf4b97aebb46606e134c56f9f27987addc57e301826daa24c08ca2d37f"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/independent-arithmetic-checks.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/independent-arithmetic-checks.json",
+      "sha256": "sha256:227568ee263b7ad8d8cc4e3c315b0a0b15eb7e90725a2709ed36a37ffea033c7"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/official-4f-floor-plan-attempt-01.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-4f-floor-plan-attempt-01.json",
+      "sha256": "sha256:38a5ff15795fb647bb72dcbfb8e674a859e559c6bdfcc2ae5d0339d1fe8c3fbb"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/official-4f-floor-plan-attempt-02.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-4f-floor-plan-attempt-02.json",
+      "sha256": "sha256:28a5fc7ccd849e19c27e9485a04c6208dc6b180af981e5eb83f187ba8c3d1b7c"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/official-4f-floor-plan-extracted.txt",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-4f-floor-plan-extracted.txt",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/official-4f-floor-plan-page-1.png",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-4f-floor-plan-page-1.png",
+      "sha256": "sha256:d5a944f7d478e50260d99e54a31d871defae3bfab480d1a6e940a0c5c9b796a0"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/official-4f-floor-plan.pdf",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-4f-floor-plan.pdf",
+      "sha256": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/official-accessibility-index-attempt-01.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-accessibility-index-attempt-01.json",
+      "sha256": "sha256:7413358f45fae3823682c6670a0f27f8a5dcedb02d0914b104c40e8082f5d1eb"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/official-accessibility-index-attempt-02.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-accessibility-index-attempt-02.json",
+      "sha256": "sha256:9dfa4f227a1ad2ad41a879507a9e908ae5e685d1a72536801f64bcf7bfd4253a"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/official-accessibility-index.html",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-accessibility-index.html",
+      "sha256": "sha256:4e37656f70241209a76312d7cfc58fafe02296f01e8596a157658a7ab9f2a637"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/preparation-calculations.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/preparation-calculations.json",
+      "sha256": "sha256:217c7f3331e991395a5f18f8606a6f13c7c34c5aed982c69aba0bedf50bec57c"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/preparation-file-manifest.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/preparation-file-manifest.json",
+      "sha256": "sha256:5d6b2da769a898b339042eb45cc37161229a7f4e70f1364d4de49b57ca31a350"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/preparation-validation.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/preparation-validation.json",
+      "sha256": "sha256:224beee8ce79f4586c2185433ce11f4d42f0d880c495160bcdb66c4133512ab6"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/setup-verification-supplement.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/setup-verification-supplement.json",
+      "sha256": "sha256:22becd3f11529b9c853102e36de1d930aebedafc4c2cce03028eb04c921dc400"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/setup-verification.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/setup-verification.json",
+      "sha256": "sha256:d2e9295ffbd4a1f481e062504be844b9bdd21396a9e5ab37c9434d45b8856139"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/source-registry.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/source-registry.json",
+      "sha256": "sha256:d973e0c470f6a6bf4ed44b38923a3df0d2d389f1b693bcd67309bc569fca3d4f"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/spreadsheet-representation-checks-corrected.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/spreadsheet-representation-checks-corrected.json",
+      "sha256": "sha256:19c0a0df19645b8b33919e5b52d6e61dd4f063662a4a430b60f538331bb39c7b"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/spreadsheet-representation-checks.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/spreadsheet-representation-checks.json",
+      "sha256": "sha256:92999f62e1c0e10c5b3921bb0362745481d587564d489ecb5bfa285cd22444bb"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/vendor-register-attempt-01.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/vendor-register-attempt-01.json",
+      "sha256": "sha256:8d85bafd92a864504fb51717f3c43099dc6a31e1e6a967cba39cae5ffc6a3f99"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/vendor-register-raw-download-result.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/vendor-register-raw-download-result.json",
+      "sha256": "sha256:1ee05c26bbf330a6b14510900c442ad75c83696d465b8fec55c967cb96f00b05"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/vendor-register-raw-fetch-metadata.json",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/vendor-register-raw-fetch-metadata.json",
+      "sha256": "sha256:70f5bde5ebdb459a65bd7854506615b66570c8f32e012ad3562ab0adfbcfa855"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/vendor-register.csv",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/vendor-register.csv",
+      "sha256": "sha256:923d348593b07a2407aff0e060e67e008d53b4c26cab240430956bc89870f4b1"
+    },
+    {
+      "original_path": "deliverables/snapshots/evidence/vendor-register.xlsx",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/vendor-register.xlsx",
+      "sha256": "sha256:efd99cda9d63681d759de12f0f952470650cec6eb726aafdefb1544b8118db4a"
+    },
+    {
+      "original_path": "apprentice-workspace/training/project-c/2026-10-14_preparation-findings.md",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/preparation-notes/2026-10-14_preparation-findings.md",
+      "sha256": "sha256:db3a394455965ed55eeac39cdeedce80cbb749dc83b099c6bf7253b2518e0ad8"
+    },
+    {
+      "original_path": "apprentice-workspace/training/project-c/2026-10-14_verification-record.md",
+      "archived_path": "deliverables/history/prep-20261014T213226Z/preparation-notes/2026-10-14_verification-record.md",
+      "sha256": "sha256:540633ba4c333e8cef82e199afb4c219f72a7744ade72964c559f33bffe3606b"
+    }
+  ],
+  "supplemental_notes_retained_at": "2026-10-14T22:28:02.080329+00:00"
+}

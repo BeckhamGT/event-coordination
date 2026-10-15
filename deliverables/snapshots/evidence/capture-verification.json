@@ -1,0 +1,8 @@
+{
+  "observed_at": "2026-10-14T21:55:11.648240+00:00",
+  "current_prompt_in_transcript": true,
+  "preparation_checks_in_transcript": true,
+  "session_is_active": true,
+  "resolution": "caller-env",
+  "transcript_exit_code": 0
+}

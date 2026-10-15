@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-14T21:55:11.649675+00:00",
+  "project_setup_record_exists": false,
+  "historical_parent_record_exists": true,
+  "historical_parent_record_path": "/Users/user/fellowship/apprentice-workspace/training/onboarding/setup-record.md",
+  "historical_parent_record_sha256": "sha256:c0d6eb21b9e49f35ffe50c0cac1448c1938887fc8f79ad3430be1b94f4f0e650",
+  "last_parent_record_session": "2026-10-04",
+  "relevant_parent_gaps": [
+    "Trainer/identity ownership confirmation unresolved",
+    "Old Entire entry says blocked; superseded for this repository by current technical capture checks, not by facilitator approval"
+  ],
+  "project_facilitator_verification_status": "not found",
+  "technical_capture": {
+    "observed_at": "2026-10-14T21:55:11.648240+00:00",
+    "current_prompt_in_transcript": true,
+    "preparation_checks_in_transcript": true,
+    "session_is_active": true,
+    "resolution": "caller-env",
+    "transcript_exit_code": 0
+  },
+  "remaining_required_human_verifications": [
+    "Identity attribution",
+    "Interview authorship/export and session recording acceptance",
+    "Coding-session capture acceptance",
+    "Implementation runtime/source access acceptance",
+    "Assigned submission destination and facilitator repository access"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "E-ATTENDEES",
+  "method": "Download original provider file_uri returned by authorized Drive fetch",
+  "started_at": "2026-10-14T21:35:45.128042+00:00",
+  "retrieval_status": "retrieved",
+  "http_status": 200,
+  "bytes": 6303,
+  "local_reference": "deliverables/snapshots/evidence/attendee-signals.xlsx",
+  "content_hash": "sha256:3c548ac9ec61719d3b32999c5fc2a57fd2afe9f1a6043c3f6c7749bf87a275df",
+  "observed_at": "2026-10-14T21:35:45.236826+00:00"
+}

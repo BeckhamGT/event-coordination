@@ -1,0 +1,42 @@
+{
+  "run_id": "prep-decisions-20261014T222533Z",
+  "supersedes_run_id": "prep-20261014T213226Z",
+  "scope": "Permitted preparation update after actual learner choices; no assessed implementation",
+  "business_clock": "2026-08-26T12:00:00+08:00",
+  "current_stage": 4,
+  "status": "partial",
+  "changed_decision_ids": [
+    "D-L-01",
+    "D-L-02",
+    "D-L-03",
+    "D-L-04"
+  ],
+  "history_path": "deliverables/history/prep-20261014T213226Z",
+  "not_started": [
+    "option-generation",
+    "feasibility-testing",
+    "decision-and-approval",
+    "draft-propagation",
+    "publication-validation"
+  ],
+  "facilitator_verification": "pending; user handles this; no agent outreach or repeated reminders",
+  "learner_policy": {
+    "baseline_people": 245,
+    "forecast_walk_ins": 35,
+    "forecast_confidence": "medium",
+    "extra_margin_people": 0,
+    "communications_allowance_twd": 25000,
+    "contingency_allowance_twd": 40000,
+    "catering_comparison_quote_ids": [
+      "Q-003",
+      "Q-004"
+    ],
+    "preliminary_preference": "Q-003",
+    "final_recommendation": null,
+    "excluded_from_base_quote_ids": [
+      "Q-008"
+    ],
+    "stakeholder_approvals": "pending",
+    "facilitator_verification": "pending"
+  }
+}

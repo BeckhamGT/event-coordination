@@ -1,0 +1,60 @@
+{
+  "id": "E-VENDORS",
+  "name": "vendor-register",
+  "url": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+  "started_at": "2026-10-14T21:35:30.816Z",
+  "observed_at": "2026-10-14T21:35:32.854Z",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "content": "",
+      "title": "Project C — Vendor Quotes",
+      "url": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+      "file_name": "Project C — Vendor Quotes.xlsx",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "file_ext": "xlsx",
+      "b64_string": null,
+      "id": "1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+      "parent_ids": null,
+      "drive_id": null,
+      "created_time": "2026-08-12T15:48:29.905Z",
+      "modified_time": "2026-09-12T05:09:48.640Z",
+      "is_empty": null,
+      "file_uri": {
+        "file_id": "sediment://file_00000000458081f5b2f8c52989d57946",
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "file_name": "Project C — Vendor Quotes.xlsx"
+      },
+      "file_size_bytes": 6628,
+      "display_url": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+      "display_title": "Project C — Vendor Quotes",
+      "structuredContent": {
+        "title": "Project C — Vendor Quotes",
+        "content": "",
+        "id": "1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+        "parent_ids": null,
+        "drive_id": null,
+        "created_time": "2026-08-12T15:48:29.905Z",
+        "modified_time": "2026-09-12T05:09:48.640Z",
+        "is_empty": null,
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "file_name": "Project C — Vendor Quotes.xlsx",
+        "file_size_bytes": 6628,
+        "url": "https://drive.google.com/file/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+        "file_uri": {
+          "file_id": "sediment://file_00000000458081f5b2f8c52989d57946",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "file_name": "Project C — Vendor Quotes.xlsx",
+          "size": 6628
+        },
+        "file_id": "sediment://file_00000000458081f5b2f8c52989d57946"
+      }
+    },
+    "isError": false
+  }
+}

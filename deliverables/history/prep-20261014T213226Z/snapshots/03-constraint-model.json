@@ -1,0 +1,335 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "prep-20261014T213226Z-03",
+  "run_id": "prep-20261014T213226Z",
+  "stage": "constraint-model",
+  "sequence": 3,
+  "created_at": "2026-10-14T21:39:30.173279+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "prep-20261014T213226Z-02",
+    "path": "deliverables/snapshots/02-source-capture.json",
+    "sha256": "sha256:7155ecce9df0324bebc13634a5b977cc1378adb096414988e15f9c03e2cb4cd4"
+  },
+  "consumed_record_ids": [
+    "E-BRIEF",
+    "E-ATTENDEES",
+    "E-BUDGET",
+    "E-CALENDAR",
+    "E-VENDORS",
+    "E-ACCESS",
+    "E-FLOOR",
+    "E-INTERVIEW",
+    "CHECK-SETUP"
+  ],
+  "produced_record_ids": [
+    "HC-CLOCK",
+    "HC-MONEY",
+    "HC-ACCESS",
+    "HC-SCHEDULE",
+    "HC-DRAFT",
+    "P-FAMILIAR",
+    "P-DATE",
+    "A-BUFFER",
+    "A-COST-ALLOWANCES",
+    "U-SETUP",
+    "U-HEADCOUNT",
+    "U-LIVE",
+    "U-FALLBACK",
+    "U-APPROVAL",
+    "U-REAL-ACCESS",
+    "U-PROGRAMME",
+    "C-FALLBACK",
+    "C-TIME",
+    "C-TWO-FEASIBLE",
+    "R-DEADLINE",
+    "R-READINESS",
+    "R-DIET"
+  ],
+  "state": {
+    "hard_constraints": [
+      {
+        "id": "HC-CLOCK",
+        "summary": "Evaluate dated exercise quotes/hold at 2026-08-26T12:00:00+08:00; actual retrieval is October 14.",
+        "evidence_ids": [
+          "E-BRIEF",
+          "E-INTERVIEW"
+        ],
+        "owner": null
+      },
+      {
+        "id": "HC-MONEY",
+        "summary": "Total ceiling TWD 520000; category threshold exceptions require explicit owner approval and cannot override ceiling. Commitments consume headroom.",
+        "evidence_ids": [
+          "E-BRIEF",
+          "E-BUDGET",
+          "E-INTERVIEW"
+        ],
+        "owner": null
+      },
+      {
+        "id": "HC-ACCESS",
+        "summary": "Step-free main-programme/restroom access, wheelchair seating, captions and staffed quiet room required. Hearing-loop requests must be addressed; Q-006 supplies loop and Q-007 does not.",
+        "evidence_ids": [
+          "E-BRIEF",
+          "E-ATTENDEES",
+          "E-VENDORS"
+        ],
+        "owner": null
+      },
+      {
+        "id": "HC-SCHEDULE",
+        "summary": "17 October event 09:30–17:00; keynote 10:00–11:00; access 07:30–18:30; all vendors clear by 18:30. Twelve independent 10+3 minute team slots.",
+        "evidence_ids": [
+          "E-CALENDAR",
+          "E-INTERVIEW",
+          "E-BRIEF"
+        ],
+        "owner": null
+      },
+      {
+        "id": "HC-DRAFT",
+        "summary": "No bookings, payments, sends, invitations or production calendar writes; private medical/contact information excluded.",
+        "evidence_ids": [
+          "E-INTERVIEW",
+          "E-BRIEF"
+        ],
+        "owner": null
+      }
+    ],
+    "preferences": [
+      {
+        "id": "P-FAMILIAR",
+        "summary": "Familiar suppliers preferred, not mandatory.",
+        "evidence_ids": [
+          "E-INTERVIEW"
+        ],
+        "owner": null
+      },
+      {
+        "id": "P-DATE",
+        "summary": "17 October preferred; 24 October soft fallback must retain keynote conflict.",
+        "evidence_ids": [
+          "E-CALENDAR"
+        ],
+        "owner": null
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A-BUFFER",
+        "summary": "No additional headcount margin selected; a 10% margin is an illustrative sensitivity, not a human decision or source requirement.",
+        "evidence_ids": [
+          "E-INTERVIEW",
+          "E-ATTENDEES"
+        ],
+        "owner": "Learner"
+      },
+      {
+        "id": "A-COST-ALLOWANCES",
+        "summary": "Preliminary cost sensitivity retains communications 25000 and contingency 40000 as planning allowances, not vendor quotes/commitments.",
+        "evidence_ids": [
+          "E-BUDGET"
+        ],
+        "owner": "Learner / budget owners"
+      }
+    ],
+    "unknowns": [
+      {
+        "id": "U-SETUP",
+        "summary": "No Project C facilitator verification record: identity, interview/export, coding capture, runtime/source access and submission destination. Parent onboarding is historical and includes unresolved identity/trainer checks; technical Entire capture now passes.",
+        "evidence_ids": [
+          "CHECK-SETUP"
+        ],
+        "owner": "Facilitator"
+      },
+      {
+        "id": "U-HEADCOUNT",
+        "summary": "Learner has not selected an additional buffer policy; 35 medium-confidence expected walk-ins are already included in 245. No universal buffer mandated.",
+        "evidence_ids": [
+          "E-INTERVIEW",
+          "E-ATTENDEES"
+        ],
+        "owner": "Learner"
+      },
+      {
+        "id": "U-LIVE",
+        "summary": "Q-008 requires network test and venue confirmation, neither is evidenced as completed.",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-BRIEF"
+        ],
+        "owner": "Operations / Programme"
+      },
+      {
+        "id": "U-FALLBACK",
+        "summary": "24 October loses keynote and no replacement speaker/date-specific base service quotes/readiness are provided.",
+        "evidence_ids": [
+          "E-CALENDAR",
+          "E-VENDORS",
+          "E-BRIEF"
+        ],
+        "owner": "Operations / Programme"
+      },
+      {
+        "id": "U-APPROVAL",
+        "summary": "All bookings/spending/plan/date approvals pending; available/held labels are not approval or booking.",
+        "evidence_ids": [
+          "E-BRIEF",
+          "E-INTERVIEW",
+          "E-VENDORS"
+        ],
+        "owner": "Operations and category owners"
+      },
+      {
+        "id": "U-REAL-ACCESS",
+        "summary": "Official plan is spatial evidence, not current elevator/route/acoustic certification; exercise coordination is fictional.",
+        "evidence_ids": [
+          "E-FLOOR",
+          "E-BRIEF"
+        ],
+        "owner": "Operations"
+      },
+      {
+        "id": "U-PROGRAMME",
+        "summary": "Detailed demo grouping, meal/break durations and setup/check sequence remain planner choices; no fabricated mandatory vendor durations.",
+        "evidence_ids": [
+          "E-BRIEF",
+          "E-INTERVIEW",
+          "E-CALENDAR"
+        ],
+        "owner": "Learner / Programme"
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "C-FALLBACK",
+        "summary": "Interview calls 24 October a fallback; CAL-004 and Q-002 explicitly say keynote unavailable. Preserve as an incompatible alternative unless Programme provides an actual resolution.",
+        "evidence_ids": [
+          "E-INTERVIEW",
+          "E-CALENDAR",
+          "E-VENDORS"
+        ],
+        "owner": "Programme"
+      },
+      {
+        "id": "C-TIME",
+        "summary": "Business records have provider modifications and exercise clarifications after 26 August; source explicitly says newly authored exercise knowledge retains 26 August business clock. Retain actual retrieval/version metadata rather than claim an August historical capture.",
+        "evidence_ids": [
+          "E-BRIEF",
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-CALENDAR",
+          "E-VENDORS"
+        ],
+        "owner": "Operations"
+      },
+      {
+        "id": "C-TWO-FEASIBLE",
+        "summary": "Original brief asks for two feasible options; its explicit clarification prohibits inventing feasibility for unresolved hard dependencies. Two catering capacities may support materially different base alternatives after learner policy and full checks, but none selected in this preparation.",
+        "evidence_ids": [
+          "E-BRIEF"
+        ],
+        "owner": "Learner"
+      }
+    ],
+    "resolutions": [
+      {
+        "id": "R-DEADLINE",
+        "summary": "CAL-005 independently confirms 2026-09-04T17:00:00+08:00, resolving stage-01 provisional deadline timezone/year.",
+        "evidence_ids": [
+          "E-CALENDAR",
+          "E-INTERVIEW"
+        ],
+        "owner": null
+      },
+      {
+        "id": "R-READINESS",
+        "summary": "VEN-R2 confirms exercise base service setup/readiness by 09:30 and teardown by18:30; this resolves unspecified individual vendor durations for case-level feasibility but is no completed real test.",
+        "evidence_ids": [
+          "E-BRIEF"
+        ],
+        "owner": null
+      },
+      {
+        "id": "R-DIET",
+        "summary": "Venue record says BOTH caterers have Operations-coordinated responses for vegetarian/halal/severe-allergy requests; Q-004 allergy-contact condition is not permission to ignore safety on Q-003.",
+        "evidence_ids": [
+          "E-BRIEF",
+          "E-VENDORS",
+          "E-ATTENDEES"
+        ],
+        "owner": null
+      }
+    ],
+    "interpretation_policy": "Preserve source meanings, stable identities, date-only expiry precision, overlapping need counts, approvals and unknowns; no learner decisions fabricated."
+  },
+  "unresolved": [
+    {
+      "id": "U-SETUP",
+      "summary": "No Project C facilitator verification record: identity, interview/export, coding capture, runtime/source access and submission destination. Parent onboarding is historical and includes unresolved identity/trainer checks; technical Entire capture now passes.",
+      "evidence_ids": [
+        "CHECK-SETUP"
+      ],
+      "owner": "Facilitator"
+    },
+    {
+      "id": "U-HEADCOUNT",
+      "summary": "Learner has not selected an additional buffer policy; 35 medium-confidence expected walk-ins are already included in 245. No universal buffer mandated.",
+      "evidence_ids": [
+        "E-INTERVIEW",
+        "E-ATTENDEES"
+      ],
+      "owner": "Learner"
+    },
+    {
+      "id": "U-LIVE",
+      "summary": "Q-008 requires network test and venue confirmation, neither is evidenced as completed.",
+      "evidence_ids": [
+        "E-VENDORS",
+        "E-BRIEF"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "U-FALLBACK",
+      "summary": "24 October loses keynote and no replacement speaker/date-specific base service quotes/readiness are provided.",
+      "evidence_ids": [
+        "E-CALENDAR",
+        "E-VENDORS",
+        "E-BRIEF"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "U-APPROVAL",
+      "summary": "All bookings/spending/plan/date approvals pending; available/held labels are not approval or booking.",
+      "evidence_ids": [
+        "E-BRIEF",
+        "E-INTERVIEW",
+        "E-VENDORS"
+      ],
+      "owner": "Operations and category owners"
+    },
+    {
+      "id": "U-REAL-ACCESS",
+      "summary": "Official plan is spatial evidence, not current elevator/route/acoustic certification; exercise coordination is fictional.",
+      "evidence_ids": [
+        "E-FLOOR",
+        "E-BRIEF"
+      ],
+      "owner": "Operations"
+    },
+    {
+      "id": "U-PROGRAMME",
+      "summary": "Detailed demo grouping, meal/break durations and setup/check sequence remain planner choices; no fabricated mandatory vendor durations.",
+      "evidence_ids": [
+        "E-BRIEF",
+        "E-INTERVIEW",
+        "E-CALENDAR"
+      ],
+      "owner": "Learner / Programme"
+    }
+  ],
+  "decisions": []
+}
