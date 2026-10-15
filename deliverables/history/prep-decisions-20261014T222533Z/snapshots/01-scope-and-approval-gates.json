@@ -1,0 +1,173 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "prep-decisions-20261014T222533Z-01",
+  "run_id": "prep-decisions-20261014T222533Z",
+  "stage": "scope-and-approval-gates",
+  "sequence": 1,
+  "created_at": "2026-10-14T22:25:33.932140+00:00",
+  "status": "partial",
+  "predecessor": null,
+  "consumed_record_ids": [],
+  "produced_record_ids": [
+    "SCOPE-01",
+    "GATES-01",
+    "E-INTERVIEW",
+    "CHECK-SETUP",
+    "E-LEARNER-DECISIONS",
+    "D-L-01",
+    "D-L-02",
+    "D-L-03",
+    "D-L-04"
+  ],
+  "state": {
+    "objective": "Prepare a source-grounded Fellowship Demo Day planning basis for learner decisions; no implementation, bookings or sent communications.",
+    "decision_deadline": "2026-09-04T17:00:00+08:00",
+    "decision_deadline_basis": "Confirmed by retained CAL-005; source bytes validated before reuse.",
+    "business_clock": "2026-08-26T12:00:00+08:00",
+    "owners": [
+      "Operations",
+      "Learner Experience",
+      "Programme",
+      "Named category budget owners",
+      "Learner",
+      "Facilitator"
+    ],
+    "approval_gates": [
+      "Facilitator verifies identity, original interview/export, coding capture, runtime/source access and submission destination before assessed implementation.",
+      "Learner chooses headcount uncertainty policy and implementation approach in recorded conversation.",
+      "Operations approves overall plan, date and venue; category owners approve spending/threshold exceptions.",
+      "No production calendar writes, bookings, payments, invitations or sent communications."
+    ],
+    "scope_limit": "Preparation records and checks only; no skill implementation, programme generation or final drafts.",
+    "interview": {
+      "path": "interviews/project-c-event-coordination-20261014-2122.md",
+      "sha256": "sha256:89be8e951c0fa6a563e06fd0600c82d5a82a9f8b0d0118ccbef3d50d21d094d5",
+      "participant": "Beckham Vo",
+      "exported_metadata": "10/14/2026, 5:22:47 PM",
+      "authorship_basis": "User states they conducted interview themselves; no facilitator verification inferred."
+    },
+    "checks": {
+      "observed_at": "2026-10-14T21:32:26.953625+00:00",
+      "repository": "/Users/user/fellowship/event-coordination/event-coordination",
+      "origin": "https://github.com/BeckhamGT/event-coordination.git",
+      "interview_path": "interviews/project-c-event-coordination-20261014-2122.md",
+      "interview_sha256": "sha256:89be8e951c0fa6a563e06fd0600c82d5a82a9f8b0d0118ccbef3d50d21d094d5",
+      "download_sha256": "sha256:89be8e951c0fa6a563e06fd0600c82d5a82a9f8b0d0118ccbef3d50d21d094d5",
+      "byte_identical": true,
+      "bytes": 20149,
+      "lines": 399,
+      "same_session_copies": 1,
+      "original_download_retained": true,
+      "schema_sha256": "sha256:787e6ac3e2008458b311c2ab2e287a3cafb68aaa82d49a489775864ba32221ee",
+      "schema_equals_HEAD": true,
+      "facilitator_verification": "not found; not granted by technical checks"
+    },
+    "setup_verification_status": "partial; technical capture active; human verification records absent",
+    "source_fact_policy": "Interview statements, retrieved records, assumptions, conflicts and human decisions remain distinct.",
+    "supersedes_run_id": "prep-20261014T213226Z",
+    "changed_source_ids": [
+      "E-LEARNER-DECISIONS"
+    ],
+    "changed_decision_ids": [
+      "D-L-01",
+      "D-L-02",
+      "D-L-03",
+      "D-L-04"
+    ],
+    "change_reason": "Actual learner choices replace pending margin/allowance/base-scope/design decisions; no source facts or approvals changed.",
+    "learner_decision_source": {
+      "id": "E-LEARNER-DECISIONS",
+      "path": "deliverables/snapshots/evidence/learner-decisions-20261014.json",
+      "sha256": "sha256:f1eb38c4d78802902ce1a1f3134de523e362d9d004bb4ae4ece2e72bc50ccc54"
+    },
+    "facilitator_gate": {
+      "status": "pending",
+      "owner": "User / Facilitator",
+      "agent_followup": "Do not contact or repeatedly remind; assessed implementation awaits established verification."
+    },
+    "history": "deliverables/history/prep-20261014T213226Z"
+  },
+  "unresolved": [
+    {
+      "id": "U-SETUP",
+      "summary": "No facilitator verification record found for identity, export/capture, runtime/source access or submission destination.",
+      "evidence_ids": [
+        "CHECK-SETUP"
+      ],
+      "owner": "Facilitator"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Baseline245; no additional margin; preserve medium-confidence35 walk-ins and test >260.",
+      "rationale": "245 already includes35 forecast walk-ins; do not reduce service capacity using80% check-in target.",
+      "tradeoffs": [
+        "Q-003 retains15 spare places; above260 requires reevaluation."
+      ],
+      "evidence_ids": [
+        "E-LEARNER-DECISIONS",
+        "E-ATTENDEES",
+        "E-BRIEF",
+        "E-VENDORS"
+      ],
+      "owner": "Learner",
+      "decision_kind": "learner-draft-planning",
+      "recorded_at": "2026-10-14T22:25:33.931659+00:00",
+      "grants_stakeholder_or_facilitator_approval": false
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CarryQ-003/Q-004 for comparison; retain communications25000 and contingency40000; Q-003 is preliminary preference.",
+      "rationale": "Q-003 covers245 with15 spare places and more headroom; Q-004 retained for updated attendance.",
+      "tradeoffs": [
+        "494000 vs512000 totals include40000 contingency; remaining headroom26000 vs8000. Allocation variance differs from approval-limit breach."
+      ],
+      "evidence_ids": [
+        "E-LEARNER-DECISIONS",
+        "E-BUDGET",
+        "E-VENDORS"
+      ],
+      "owner": "Learner",
+      "decision_kind": "learner-draft-planning",
+      "recorded_at": "2026-10-14T22:25:33.931659+00:00",
+      "grants_stakeholder_or_facilitator_approval": false
+    },
+    {
+      "id": "D-L-03",
+      "summary": "ExcludeQ-008 from base; retain rejected alternative with ceiling/production-limit reasons and unresolved test.",
+      "rationale": "Livestream exceeds overall ceiling and production approval limit; category approval cannot override ceiling.",
+      "tradeoffs": [
+        "Livestream omitted from base; network test and venue confirmation remain unresolved, not completed."
+      ],
+      "evidence_ids": [
+        "E-LEARNER-DECISIONS",
+        "E-BUDGET",
+        "E-VENDORS",
+        "E-BRIEF"
+      ],
+      "owner": "Learner",
+      "decision_kind": "learner-draft-planning",
+      "recorded_at": "2026-10-14T22:25:33.931659+00:00",
+      "grants_stakeholder_or_facilitator_approval": false
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Accept proposed Python pipeline and verification/recovery approach after required verification.",
+      "rationale": "Require full non-overlapping programme, all calendar dependencies,9 linked snapshots,4 consistent drafts and reproduction command.",
+      "tradeoffs": [
+        "Keep official spatial observations distinct from fictional venue claims; October24 loses keynote; tests remain planned until executed."
+      ],
+      "evidence_ids": [
+        "E-LEARNER-DECISIONS",
+        "E-CALENDAR",
+        "E-BRIEF",
+        "E-FLOOR"
+      ],
+      "owner": "Learner",
+      "decision_kind": "learner-draft-planning",
+      "recorded_at": "2026-10-14T22:25:33.931659+00:00",
+      "grants_stakeholder_or_facilitator_approval": false
+    }
+  ]
+}

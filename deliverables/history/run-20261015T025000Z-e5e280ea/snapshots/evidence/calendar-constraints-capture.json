@@ -1,0 +1,26 @@
+{
+  "id": "E-CALENDAR",
+  "summary": "calendar-constraints",
+  "evidence_ids": [
+    "E-CALENDAR"
+  ],
+  "source_role": "calendar",
+  "locator": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+  "retrieved_at": "2026-10-15T02:50:00.440900+00:00",
+  "retrieval_status": "unavailable",
+  "content_type": "application/octet-stream",
+  "version_metadata": {},
+  "content_hash": null,
+  "local_reference": null,
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS read",
+      "url": "https://drive.google.com/uc?export=download&id=1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+      "observed_at": "2026-10-15T02:50:00.440904+00:00",
+      "completed_at": "2026-10-15T02:50:01.270669+00:00",
+      "status": "unavailable",
+      "error": "HTTPError:HTTP Error 500: Internal Server Error"
+    }
+  ]
+}

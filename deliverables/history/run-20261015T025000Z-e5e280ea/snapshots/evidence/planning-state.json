@@ -1,0 +1,338 @@
+{
+  "run_id": "run-20261015T025000Z-e5e280ea",
+  "model": {
+    "people": null,
+    "registered": 0,
+    "checkin_target": 0,
+    "population": {},
+    "needs": {},
+    "quiet_users": null,
+    "budget": [],
+    "budget_by_category": {},
+    "quotes": {},
+    "calendar": [],
+    "policy": {
+      "baseline_people": 245,
+      "extra_margin_people": 0,
+      "communications_allowance_twd": 25000,
+      "contingency_allowance_twd": 40000,
+      "ceiling_twd": 520000,
+      "preferred_caterer": "Q-003",
+      "livestream_in_base": false,
+      "decision_ids": [
+        "D-L-01",
+        "D-L-02",
+        "D-L-03",
+        "D-L-04"
+      ],
+      "facilitator_signoff_required": false
+    },
+    "ceiling_twd": 520000,
+    "planned_twd": null,
+    "committed_twd": null,
+    "venue_capacity": null,
+    "wheelchair_places": null,
+    "quiet_capacity": null,
+    "readiness_confirmed": false,
+    "step_free_case_confirmed": false,
+    "demo_ids": [],
+    "demo_minutes": null,
+    "changeover_minutes": null,
+    "brief_text": "",
+    "unknowns": [
+      {
+        "id": "U-NEEDS",
+        "summary": "Required service needs are missing; absence is not zero demand",
+        "evidence_ids": [
+          "E-ATTENDEES"
+        ],
+        "owner": "Learner Experience"
+      },
+      {
+        "id": "U-POPULATION",
+        "summary": "Complete separate population groups are unavailable",
+        "evidence_ids": [
+          "E-ATTENDEES"
+        ],
+        "owner": "Learner Experience"
+      },
+      {
+        "id": "U-READINESS",
+        "summary": "Exercise readiness confirmation for setup/checks and teardown not verified",
+        "evidence_ids": [
+          "E-BRIEF"
+        ],
+        "owner": "Operations / Programme"
+      },
+      {
+        "id": "U-DEMO-ROSTER",
+        "summary": "Explicit programme roster/durations are unavailable; do not infer demos from people",
+        "evidence_ids": [
+          "E-BRIEF"
+        ],
+        "owner": "Programme"
+      }
+    ],
+    "media_verified": true,
+    "source_failures": [
+      "E-BRIEF",
+      "E-ATTENDEES",
+      "E-BUDGET",
+      "E-CALENDAR",
+      "E-VENDORS"
+    ],
+    "business_clock": "2026-08-26T12:00:00+08:00",
+    "programme": []
+  },
+  "options": [
+    {
+      "id": "BASE-260",
+      "option_id": "BASE-260",
+      "summary": "Lower-cost260-person catering;15 spare at245",
+      "quote_ids": [
+        "Q-001",
+        "Q-003",
+        "Q-005",
+        "Q-006",
+        "Q-009",
+        "Q-010"
+      ],
+      "planning_people": null,
+      "cost_twd": null,
+      "currency": "TWD",
+      "categories": {
+        "communications": 25000,
+        "contingency": 40000
+      },
+      "headroom_twd": null,
+      "feasibility": "conditional",
+      "availability_status": "unverified",
+      "evidence_ids": [
+        "E-ATTENDEES",
+        "E-BUDGET",
+        "E-VENDORS",
+        "E-BRIEF",
+        "E-CALENDAR",
+        "E-FLOOR"
+      ],
+      "tradeoffs": "Lower-cost260-person catering;15 spare at245",
+      "reasons": [],
+      "unresolved": [
+        "Missing quotes:Q-001,Q-003,Q-005,Q-006,Q-009,Q-010",
+        "Budget source unavailable or invalid",
+        "Missing budget category:communications",
+        "Missing budget category:contingency",
+        "Planning population unverified",
+        "Quiet-room occupancy/demand unverified",
+        "Wheelchair allocation unverified",
+        "Venue readiness or step-free case coordination unverified",
+        "Programme cannot be supported by available calendar/roster",
+        "Required service needs are missing; absence is not zero demand"
+      ],
+      "allocation_variances_twd": {},
+      "approval_limit_breaches_twd": {},
+      "approval_status": "pending"
+    },
+    {
+      "id": "BASE-300",
+      "option_id": "BASE-300",
+      "summary": "Higher capacity300-person catering;55 spare at245",
+      "quote_ids": [
+        "Q-001",
+        "Q-004",
+        "Q-005",
+        "Q-006",
+        "Q-009",
+        "Q-010"
+      ],
+      "planning_people": null,
+      "cost_twd": null,
+      "currency": "TWD",
+      "categories": {
+        "communications": 25000,
+        "contingency": 40000
+      },
+      "headroom_twd": null,
+      "feasibility": "conditional",
+      "availability_status": "unverified",
+      "evidence_ids": [
+        "E-ATTENDEES",
+        "E-BUDGET",
+        "E-VENDORS",
+        "E-BRIEF",
+        "E-CALENDAR",
+        "E-FLOOR"
+      ],
+      "tradeoffs": "Higher capacity300-person catering;55 spare at245",
+      "reasons": [],
+      "unresolved": [
+        "Missing quotes:Q-001,Q-004,Q-005,Q-006,Q-009,Q-010",
+        "Budget source unavailable or invalid",
+        "Missing budget category:communications",
+        "Missing budget category:contingency",
+        "Planning population unverified",
+        "Quiet-room occupancy/demand unverified",
+        "Wheelchair allocation unverified",
+        "Venue readiness or step-free case coordination unverified",
+        "Programme cannot be supported by available calendar/roster",
+        "Required service needs are missing; absence is not zero demand"
+      ],
+      "allocation_variances_twd": {},
+      "approval_limit_breaches_twd": {},
+      "approval_status": "pending"
+    },
+    {
+      "id": "LIVESTREAM",
+      "option_id": "LIVESTREAM",
+      "summary": "Rejected base extension: livestream",
+      "quote_ids": [
+        "Q-001",
+        "Q-003",
+        "Q-005",
+        "Q-006",
+        "Q-008",
+        "Q-009",
+        "Q-010"
+      ],
+      "planning_people": null,
+      "cost_twd": null,
+      "currency": "TWD",
+      "categories": {
+        "communications": 25000,
+        "contingency": 40000
+      },
+      "headroom_twd": null,
+      "feasibility": "infeasible",
+      "availability_status": "unverified",
+      "evidence_ids": [
+        "E-ATTENDEES",
+        "E-BUDGET",
+        "E-VENDORS",
+        "E-BRIEF",
+        "E-CALENDAR",
+        "E-FLOOR"
+      ],
+      "tradeoffs": "Rejected base extension: livestream",
+      "reasons": [
+        "Learner excludes livestream from base plan"
+      ],
+      "unresolved": [
+        "Missing quotes:Q-001,Q-003,Q-005,Q-006,Q-008,Q-009,Q-010",
+        "Budget source unavailable or invalid",
+        "Missing budget category:communications",
+        "Missing budget category:contingency",
+        "Planning population unverified",
+        "Quiet-room occupancy/demand unverified",
+        "Wheelchair allocation unverified",
+        "Venue readiness or step-free case coordination unverified",
+        "Programme cannot be supported by available calendar/roster",
+        "Required service needs are missing; absence is not zero demand",
+        "Q-008 network test and venue confirmation not evidenced"
+      ],
+      "allocation_variances_twd": {},
+      "approval_limit_breaches_twd": {},
+      "approval_status": "pending"
+    },
+    {
+      "id": "BASIC-AV",
+      "option_id": "BASIC-AV",
+      "summary": "Rejected hearing-loop omission",
+      "quote_ids": [
+        "Q-001",
+        "Q-003",
+        "Q-005",
+        "Q-007",
+        "Q-009",
+        "Q-010"
+      ],
+      "planning_people": null,
+      "cost_twd": null,
+      "currency": "TWD",
+      "categories": {
+        "communications": 25000,
+        "contingency": 40000
+      },
+      "headroom_twd": null,
+      "feasibility": "infeasible",
+      "availability_status": "unverified",
+      "evidence_ids": [
+        "E-ATTENDEES",
+        "E-BUDGET",
+        "E-VENDORS",
+        "E-BRIEF",
+        "E-CALENDAR",
+        "E-FLOOR"
+      ],
+      "tradeoffs": "Rejected hearing-loop omission",
+      "reasons": [
+        "Q-007 lacks requested hearing loop; no supported substitute"
+      ],
+      "unresolved": [
+        "Missing quotes:Q-001,Q-003,Q-005,Q-007,Q-009,Q-010",
+        "Budget source unavailable or invalid",
+        "Missing budget category:communications",
+        "Missing budget category:contingency",
+        "Planning population unverified",
+        "Quiet-room occupancy/demand unverified",
+        "Wheelchair allocation unverified",
+        "Venue readiness or step-free case coordination unverified",
+        "Programme cannot be supported by available calendar/roster",
+        "Required service needs are missing; absence is not zero demand"
+      ],
+      "allocation_variances_twd": {},
+      "approval_limit_breaches_twd": {},
+      "approval_status": "pending"
+    },
+    {
+      "id": "FALLBACK",
+      "option_id": "FALLBACK",
+      "summary": "Rejected equivalent fallback: keynote unavailable",
+      "quote_ids": [
+        "Q-002",
+        "Q-003",
+        "Q-005",
+        "Q-006",
+        "Q-009",
+        "Q-010"
+      ],
+      "planning_people": null,
+      "cost_twd": null,
+      "currency": "TWD",
+      "categories": {
+        "communications": 25000,
+        "contingency": 40000
+      },
+      "headroom_twd": null,
+      "feasibility": "infeasible",
+      "availability_status": "unverified",
+      "evidence_ids": [
+        "E-ATTENDEES",
+        "E-BUDGET",
+        "E-VENDORS",
+        "E-BRIEF",
+        "E-CALENDAR",
+        "E-FLOOR"
+      ],
+      "tradeoffs": "Rejected equivalent fallback: keynote unavailable",
+      "reasons": [
+        "Keynote unavailable24October; base service quotes are17October"
+      ],
+      "unresolved": [
+        "Missing quotes:Q-002,Q-003,Q-005,Q-006,Q-009,Q-010",
+        "Budget source unavailable or invalid",
+        "Missing budget category:communications",
+        "Missing budget category:contingency",
+        "Planning population unverified",
+        "Quiet-room occupancy/demand unverified",
+        "Wheelchair allocation unverified",
+        "Venue readiness or step-free case coordination unverified",
+        "Programme cannot be supported by available calendar/roster",
+        "Required service needs are missing; absence is not zero demand"
+      ],
+      "allocation_variances_twd": {},
+      "approval_limit_breaches_twd": {},
+      "approval_status": "pending"
+    }
+  ],
+  "selected_option": null
+}

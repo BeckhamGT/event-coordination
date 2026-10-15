@@ -1,0 +1,48 @@
+{
+  "id": "E-FLOOR",
+  "summary": "official-4f-floor-plan",
+  "evidence_ids": [
+    "E-FLOOR"
+  ],
+  "source_role": "floor-plan-or-image",
+  "locator": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+  "retrieved_at": "2026-10-15T03:04:28.262728+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "application/pdf",
+  "version_metadata": {
+    "http_headers": {
+      "Content-Type": "application/pdf",
+      "Last-Modified": "Fri, 15 Mar 2024 06:57:07 GMT",
+      "ETag": "W/\"522512-1710485827039\"",
+      "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+    },
+    "transport": "public HTTPS read",
+    "source_identity": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+    "page_count": 1
+  },
+  "content_hash": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+  "local_reference": "deliverables/snapshots/evidence/official-4f-floor-plan.pdf",
+  "observations": [
+    {
+      "id": "OBS-E-FLOOR",
+      "summary": "Facility locations and wheelchair-area symbols are visible. Symbols do not establish exact usable wheelchair-space counts, route widths, current lift operation or acoustic separation.",
+      "locator": {
+        "kind": "page-region",
+        "value": "page1: left legend; Plenary Hall right; V.I.P. Room left; Room401 between; accessible elevators lower centre/right and accessible restroom symbols left/bottom"
+      },
+      "review_provenance": "prep-20261014T213226Z stage02 OBS-E-FLOOR, following actual page1 visual inspection in Codex"
+    }
+  ],
+  "attempts": [
+    {
+      "method": "HTTPS GET",
+      "url": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+      "observed_at": "2026-10-15T03:04:25.580719+00:00",
+      "completed_at": "2026-10-15T03:04:28.262736+00:00",
+      "http_status": 200,
+      "status": "retrieved",
+      "response_sha256": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    }
+  ],
+  "visual_review_verified_by_hash": true
+}

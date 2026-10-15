@@ -1,0 +1,26 @@
+{
+  "id": "E-ATTENDEES",
+  "summary": "attendee-signals",
+  "evidence_ids": [
+    "E-ATTENDEES"
+  ],
+  "source_role": "attendee-signals",
+  "locator": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+  "retrieved_at": "2026-10-15T02:50:00.440211+00:00",
+  "retrieval_status": "unavailable",
+  "content_type": "application/octet-stream",
+  "version_metadata": {},
+  "content_hash": null,
+  "local_reference": null,
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS read",
+      "url": "https://drive.google.com/uc?export=download&id=1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+      "observed_at": "2026-10-15T02:50:00.440219+00:00",
+      "completed_at": "2026-10-15T02:50:01.241586+00:00",
+      "status": "unavailable",
+      "error": "HTTPError:HTTP Error 500: Internal Server Error"
+    }
+  ]
+}

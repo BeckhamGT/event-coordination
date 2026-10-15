@@ -1,0 +1,288 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261015T030640Z-508bdc86-07",
+  "run_id": "run-20261015T030640Z-508bdc86",
+  "stage": "decision-and-approval",
+  "sequence": 7,
+  "created_at": "2026-10-15T03:06:43.405239+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261015T030640Z-508bdc86-06",
+    "path": "deliverables/snapshots/06-feasibility-testing.json",
+    "sha256": "sha256:0715a951e73bb002e9a7be91558475012e23fcfb26940e526a16917076f11cb0"
+  },
+  "consumed_record_ids": [
+    "TEST-BASE-260",
+    "TEST-BASE-300",
+    "TEST-LIVESTREAM",
+    "TEST-BASIC-AV",
+    "TEST-FALLBACK",
+    "TEST-PROGRAMME"
+  ],
+  "produced_record_ids": [
+    "RECOMMENDATION",
+    "AP-OPERATIONS",
+    "AP-venue",
+    "AP-catering",
+    "AP-accessibility",
+    "AP-production",
+    "AP-communications",
+    "AP-security",
+    "AP-contingency"
+  ],
+  "state": {
+    "recommendation": "BASE-260",
+    "tradeoffs": [
+      {
+        "id": "TRADE-BASE-260",
+        "summary": "Lower-cost catering package; current capacity margin shown in the plan;26000ceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      },
+      {
+        "id": "TRADE-BASE-300",
+        "summary": "Higher-capacity catering package; current capacity margin shown in the plan;8000ceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      },
+      {
+        "id": "TRADE-LIVESTREAM",
+        "summary": "Rejected base extension: livestream;-29000ceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      },
+      {
+        "id": "TRADE-BASIC-AV",
+        "summary": "Rejected hearing-loop omission;52000ceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      },
+      {
+        "id": "TRADE-FALLBACK",
+        "summary": "Rejected equivalent fallback: keynote unavailable;26000ceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      }
+    ],
+    "learner_decisions": [
+      {
+        "id": "D-L-01",
+        "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "rationale": "User recorded this choice in actual captured conversation",
+        "tradeoffs": [
+          "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+        ]
+      },
+      {
+        "id": "D-L-02",
+        "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+        "tradeoffs": [
+          "Contingency included;remaining headroom counted separately"
+        ]
+      },
+      {
+        "id": "D-L-03",
+        "summary": "Exclude livestream from base;retain rejected alternative",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "rationale": "Over overall ceiling and production limit;network test uncompleted",
+        "tradeoffs": [
+          "No category approval can override total ceiling"
+        ]
+      },
+      {
+        "id": "D-L-04",
+        "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "rationale": "User accepted design and requires actual cross-checks",
+        "tradeoffs": [
+          "No planned test reported as passed;source failures remain traceable"
+        ]
+      }
+    ],
+    "approval_requirements": [
+      {
+        "id": "AP-OPERATIONS",
+        "summary": "Review proposedplan,dateandvenue",
+        "evidence_ids": [
+          "E-INTERVIEW",
+          "E-BRIEF"
+        ],
+        "owner": "Operations",
+        "status": "pending"
+      },
+      {
+        "id": "AP-venue",
+        "summary": "Reviewspendingandallocation/limitstatusforvenue",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-VENDORS"
+        ],
+        "owner": "Operations",
+        "status": "pending"
+      },
+      {
+        "id": "AP-catering",
+        "summary": "Reviewspendingandallocation/limitstatusforcatering",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-VENDORS"
+        ],
+        "owner": "Operations",
+        "status": "pending"
+      },
+      {
+        "id": "AP-accessibility",
+        "summary": "Reviewspendingandallocation/limitstatusforaccessibility",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-VENDORS"
+        ],
+        "owner": "Learner Experience",
+        "status": "pending"
+      },
+      {
+        "id": "AP-production",
+        "summary": "Reviewspendingandallocation/limitstatusforproduction",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-VENDORS"
+        ],
+        "owner": "Programme",
+        "status": "pending"
+      },
+      {
+        "id": "AP-communications",
+        "summary": "Reviewspendingandallocation/limitstatusforcommunications",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-VENDORS"
+        ],
+        "owner": "Communications",
+        "status": "pending"
+      },
+      {
+        "id": "AP-security",
+        "summary": "Reviewspendingandallocation/limitstatusforsecurity",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-VENDORS"
+        ],
+        "owner": "Operations",
+        "status": "pending"
+      },
+      {
+        "id": "AP-contingency",
+        "summary": "Reviewspendingandallocation/limitstatusforcontingency",
+        "evidence_ids": [
+          "E-BUDGET",
+          "E-VENDORS"
+        ],
+        "owner": "Operations",
+        "status": "pending"
+      }
+    ],
+    "selection_rationale": "PreferQ-003onlyafterhardconstraintpasses;otherwise supported feasiblealternativeor deferral",
+    "run_status": "complete"
+  },
+  "unresolved": [],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ]
+}

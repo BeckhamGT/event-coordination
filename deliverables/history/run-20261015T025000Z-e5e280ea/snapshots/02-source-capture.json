@@ -1,0 +1,378 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261015T025000Z-e5e280ea-02",
+  "run_id": "run-20261015T025000Z-e5e280ea",
+  "stage": "source-capture",
+  "sequence": 2,
+  "created_at": "2026-10-15T02:50:03.677965+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "run-20261015T025000Z-e5e280ea-01",
+    "path": "deliverables/snapshots/01-scope-and-approval-gates.json",
+    "sha256": "sha256:344bd23e0a955a412ffcabbfc63d067db4678f36545f9bf5c7feaed11c0fc33c"
+  },
+  "consumed_record_ids": [
+    "SCOPE",
+    "E-INTERVIEW",
+    "E-LEARNER",
+    "E-CLARIFICATION",
+    "D-L-01",
+    "D-L-02",
+    "D-L-03",
+    "D-L-04"
+  ],
+  "produced_record_ids": [
+    "E-BRIEF",
+    "E-ATTENDEES",
+    "E-BUDGET",
+    "E-CALENDAR",
+    "E-VENDORS",
+    "E-ACCESS",
+    "E-FLOOR"
+  ],
+  "state": {
+    "sources": [
+      {
+        "id": "E-BRIEF",
+        "summary": "event-brief-and-venue-note",
+        "evidence_ids": [
+          "E-BRIEF"
+        ],
+        "source_role": "event-brief",
+        "locator": "https://app.notion.com/p/3ba0b700541e81d0af55dc1a8f49f5af",
+        "retrieved_at": "2026-10-15T02:50:00.440539+00:00",
+        "retrieval_status": "unavailable",
+        "content_type": "application/octet-stream",
+        "version_metadata": {},
+        "content_hash": null,
+        "local_reference": null,
+        "observations": [],
+        "attempts": [
+          {
+            "method": "HTTPS read",
+            "url": "https://private-pecorino-70e.notion.site/Project-3-Event-Coordination-Event-Brief-3ba0b700541e81d0af55dc1a8f49f5af",
+            "observed_at": "2026-10-15T02:50:00.440562+00:00",
+            "completed_at": "2026-10-15T02:50:00.752466+00:00",
+            "status": "unavailable",
+            "error": "InputError:Public HTML is a JavaScript shell, not the disclosed brief"
+          },
+          {
+            "method": "HTTPS read",
+            "url": "https://www.notion.so/api/v3/loadPageChunk",
+            "observed_at": "2026-10-15T02:50:00.752510+00:00",
+            "completed_at": "2026-10-15T02:50:01.032909+00:00",
+            "status": "unavailable",
+            "error": "InputError:Notion page identity/content could not be verified"
+          },
+          {
+            "method": "HTTPS read",
+            "url": "https://private-pecorino-70e.notion.site/api/v3/loadPageChunk",
+            "observed_at": "2026-10-15T02:50:01.032971+00:00",
+            "completed_at": "2026-10-15T02:50:01.267574+00:00",
+            "status": "unavailable",
+            "error": "InputError:Notion page identity/content could not be verified"
+          }
+        ]
+      },
+      {
+        "id": "E-ATTENDEES",
+        "summary": "attendee-signals",
+        "evidence_ids": [
+          "E-ATTENDEES"
+        ],
+        "source_role": "attendee-signals",
+        "locator": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+        "retrieved_at": "2026-10-15T02:50:00.440211+00:00",
+        "retrieval_status": "unavailable",
+        "content_type": "application/octet-stream",
+        "version_metadata": {},
+        "content_hash": null,
+        "local_reference": null,
+        "observations": [],
+        "attempts": [
+          {
+            "method": "HTTPS read",
+            "url": "https://drive.google.com/uc?export=download&id=1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+            "observed_at": "2026-10-15T02:50:00.440219+00:00",
+            "completed_at": "2026-10-15T02:50:01.241586+00:00",
+            "status": "unavailable",
+            "error": "HTTPError:HTTP Error 500: Internal Server Error"
+          }
+        ]
+      },
+      {
+        "id": "E-BUDGET",
+        "summary": "budget",
+        "evidence_ids": [
+          "E-BUDGET"
+        ],
+        "source_role": "budget",
+        "locator": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+        "retrieved_at": "2026-10-15T02:50:00.440774+00:00",
+        "retrieval_status": "unavailable",
+        "content_type": "application/octet-stream",
+        "version_metadata": {},
+        "content_hash": null,
+        "local_reference": null,
+        "observations": [],
+        "attempts": [
+          {
+            "method": "HTTPS read",
+            "url": "https://drive.google.com/uc?export=download&id=1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+            "observed_at": "2026-10-15T02:50:00.440779+00:00",
+            "completed_at": "2026-10-15T02:50:01.277636+00:00",
+            "status": "unavailable",
+            "error": "HTTPError:HTTP Error 500: Internal Server Error"
+          }
+        ]
+      },
+      {
+        "id": "E-CALENDAR",
+        "summary": "calendar-constraints",
+        "evidence_ids": [
+          "E-CALENDAR"
+        ],
+        "source_role": "calendar",
+        "locator": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+        "retrieved_at": "2026-10-15T02:50:00.440900+00:00",
+        "retrieval_status": "unavailable",
+        "content_type": "application/octet-stream",
+        "version_metadata": {},
+        "content_hash": null,
+        "local_reference": null,
+        "observations": [],
+        "attempts": [
+          {
+            "method": "HTTPS read",
+            "url": "https://drive.google.com/uc?export=download&id=1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+            "observed_at": "2026-10-15T02:50:00.440904+00:00",
+            "completed_at": "2026-10-15T02:50:01.270669+00:00",
+            "status": "unavailable",
+            "error": "HTTPError:HTTP Error 500: Internal Server Error"
+          }
+        ]
+      },
+      {
+        "id": "E-VENDORS",
+        "summary": "vendor-register",
+        "evidence_ids": [
+          "E-VENDORS"
+        ],
+        "source_role": "vendor-record",
+        "locator": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+        "retrieved_at": "2026-10-15T02:50:00.441079+00:00",
+        "retrieval_status": "unavailable",
+        "content_type": "application/octet-stream",
+        "version_metadata": {},
+        "content_hash": null,
+        "local_reference": null,
+        "observations": [],
+        "attempts": [
+          {
+            "method": "HTTPS read",
+            "url": "https://drive.google.com/uc?export=download&id=1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+            "observed_at": "2026-10-15T02:50:00.441084+00:00",
+            "completed_at": "2026-10-15T02:50:01.324216+00:00",
+            "status": "unavailable",
+            "error": "HTTPError:HTTP Error 500: Internal Server Error"
+          }
+        ]
+      },
+      {
+        "id": "E-ACCESS",
+        "summary": "official-accessibility-index",
+        "evidence_ids": [
+          "E-ACCESS"
+        ],
+        "source_role": "venue-page",
+        "locator": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+        "retrieved_at": "2026-10-15T02:50:02.603754+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html;charset=utf-8",
+        "version_metadata": {
+          "http_headers": {
+            "Content-Type": "text/html;charset=utf-8",
+            "Last-Modified": null,
+            "ETag": null,
+            "Date": "Thu, 15 Oct 2026 02:50:02 GMT"
+          },
+          "transport": "public HTTPS read",
+          "source_identity": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6"
+        },
+        "content_hash": "sha256:7fcb06b2c9593dab4bcfd00926c226fc065731cadd303c6c16b7758b3ac55e84",
+        "local_reference": "deliverables/snapshots/evidence/official-accessibility-index.html",
+        "observations": [
+          {
+            "id": "OBS-E-ACCESS",
+            "summary": "Index links exact required4F PDF",
+            "locator": {
+              "kind": "section",
+              "value": "TICC4F Accessible Facilities Floor Plan link"
+            }
+          }
+        ],
+        "attempts": [
+          {
+            "method": "HTTPS GET",
+            "url": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+            "observed_at": "2026-10-15T02:50:00.441276+00:00",
+            "completed_at": "2026-10-15T02:50:02.603778+00:00",
+            "http_status": 200,
+            "status": "retrieved",
+            "response_sha256": "sha256:7fcb06b2c9593dab4bcfd00926c226fc065731cadd303c6c16b7758b3ac55e84"
+          }
+        ]
+      },
+      {
+        "id": "E-FLOOR",
+        "summary": "official-4f-floor-plan",
+        "evidence_ids": [
+          "E-FLOOR"
+        ],
+        "source_role": "floor-plan-or-image",
+        "locator": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+        "retrieved_at": "2026-10-15T02:50:03.674848+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "application/pdf",
+        "version_metadata": {
+          "http_headers": {
+            "Content-Type": "application/pdf",
+            "Last-Modified": "Fri, 15 Mar 2024 06:57:07 GMT",
+            "ETag": "W/\"522512-1710485827039\"",
+            "Date": "Thu, 15 Oct 2026 02:50:01 GMT"
+          },
+          "transport": "public HTTPS read",
+          "source_identity": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+          "page_count": 1
+        },
+        "content_hash": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+        "local_reference": "deliverables/snapshots/evidence/official-4f-floor-plan.pdf",
+        "observations": [
+          {
+            "id": "OBS-E-FLOOR",
+            "summary": "Facility locations and wheelchair-area symbols are visible. Symbols do not establish exact usable wheelchair-space counts, route widths, current lift operation or acoustic separation.",
+            "locator": {
+              "kind": "page-region",
+              "value": "page1: left legend; Plenary Hall right; V.I.P. Room left; Room401 between; accessible elevators lower centre/right and accessible restroom symbols left/bottom"
+            },
+            "review_provenance": "prep-20261014T213226Z stage02 OBS-E-FLOOR, following actual page1 visual inspection in Codex"
+          }
+        ],
+        "attempts": [
+          {
+            "method": "HTTPS GET",
+            "url": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+            "observed_at": "2026-10-15T02:50:00.442063+00:00",
+            "completed_at": "2026-10-15T02:50:03.674867+00:00",
+            "http_status": 200,
+            "status": "retrieved",
+            "response_sha256": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+          }
+        ],
+        "visual_review_verified_by_hash": true
+      }
+    ],
+    "changed_source_ids": [
+      "E-BRIEF",
+      "E-ATTENDEES",
+      "E-BUDGET",
+      "E-CALENDAR",
+      "E-VENDORS",
+      "E-ACCESS"
+    ],
+    "mode": "live remote retrieval",
+    "interpretation_not_yet_completed": true
+  },
+  "unresolved": [
+    {
+      "id": "U-E-BRIEF",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-ATTENDEES",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-BUDGET",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-BUDGET"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-CALENDAR",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-CALENDAR"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-VENDORS",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-VENDORS"
+      ],
+      "owner": "Operations / source owner"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+# Independent actual-output review
+
+Reviewed on **2026-10-14, America/New_York** (checks completed at 2026-10-15T03:09:07Z) against final live run **`run-20261015T030818Z-00ca2bd3`**. Result: **passed for the checks below; no remaining disagreement with the four current drafts was found**. Stakeholder approvals and future business actions remain pending.
+
+This review reopened the actual current files. Its arithmetic and calendar checker used `openpyxl`, `csv`, `icalendar`, `jsonschema` and SHA-256 directly, without importing the pipeline's parser, model, scheduler, renderer or validator. Reading the implementation's summary was not counted as independent verification.
+
+| Check performed | Evidence and independent method | Actual result |
+|---|---|---|
+| Attendance | Current `attendee-signals.xlsx`, SIG-001–013; sum only the five separate populations and compare the actual CSV and Markdown drafts | **245 = 148 + 32 + 18 + 12 + 35**. Registered population **180**; 80% target **144**. Accessibility, companion and dietary rows were excluded from the population sum. The **35 walk-ins remain medium confidence**; no extra margin or reduction to service capacity was applied. |
+| Costs and categories | Current `budget.xlsx` and `vendor-register.xlsx`; independently sum the CSV's selected quote IDs by category, add allowances/commitments, and parse the plan's category amounts | Allocations **510,000**, commitments **0**. BASE-260 **494,000** and BASE-300 **512,000** both include communications **25,000** and contingency **40,000**. Remaining headroom is separately **26,000 / 8,000**. Security is **3,000 above allocation**, below its approval limit. Neither base option breaches a category limit. |
+| Rejections and quote conditions | Current Q-001–010 rows and original VEN/R2 text; compare dates with **2026-08-26 12:00 Asia/Taipei**, not retrieval day | All ten quote expiry dates follow the exercise clock. Q-003/Q-004 capacities **260/300** leave **15/55** places. Prices are fixed packages. Livestream totals **549,000**, with production **133,000**, failing the **520,000** ceiling and **100,000** production limit; network test and venue confirmation remain unresolved. Q-007 omits the hearing loop; October 24 loses the keynote and lacks equivalent dated base services. |
+| Programme and dependencies | Independently parse the actual ICS; compare all eight CAL rows, every activity interval/dependency, and R3's explicit roster and 10+3-minute requirements | **22 contiguous activity blocks**, 07:30–18:30; programme **09:30–17:00**, keynote **10:00–11:00**, **12 distinct demos × 13 minutes = 156 minutes**, lunch **60 minutes**, two breaks **20 minutes each**. Setup/readiness ends by opening; teardown clears by 18:30. No activity overlaps or unmet chronological dependencies were found. Source windows are labelled containing constraints, not concurrent programme activities. |
+| Calendar and approvals | Compare actual ICS source components with CAL-001–008, inspect every status/UID/timezone and all stage-07 approval rows | All eight source meanings and exact times survive. CAL-005 is a `VTODO` due at **September 4, 17:00 Taipei**, without an invented duration. `Asia/Taipei` has `VTIMEZONE`; event times round-trip correctly. All events are **TENTATIVE**, no attendees or delivery actions exist, and all Operations/spending approvals remain **pending**. Venue confirmation before the walkthrough is explicitly **not completed**; rehearsal retains its remote-backup condition. |
+| Four-draft agreement | Read the complete plan and communications, parse all five CSV options and every ICS description; compare common context and stage-09 byte hashes | Matching **245**, BASE-260 recommendation, current totals, headroom, allowances, dates and pending approvals. Four communications are individually **UNSENT DRAFT**, with audience, purpose, conditions and approval owner. The CSV is bound to this run by its actual artifact hash; Markdown/ICS also carry the run identity. No booking, payment, sent message or completed business prerequisite is claimed. |
+| Accessibility and official evidence | Read current VEN/R2; render the retained official PDF with `pdftoppm` and visually inspect the whole page and legend; verify the final PDF retains the identical inspected byte hash | Page 1 supports the Plenary Hall at right, V.I.P. Room at left, Room 401 between, wheelchair-area symbols and accessible elevator/restroom locators. **500 places, six wheelchair spaces, 20 quiet-room places and operational coordination are explicitly fictional VEN facts**, not official certifications. Current demand **nine concurrent quiet-room users** fits staffing/space capacity 20. Both caterers' dietary/allergy response is supported by VEN; named contacts remain private with Operations. The plan does not claim the diagram proves current lift operation, clear routes, widths, exact seat counts or acoustic separation. |
+| Snapshots, evidence and change provenance | Independently validate all nine snapshots; rehash seven source representations, every predecessor, all four actual drafts, and every stage-01 implementation entry | All checks matched. Final stage 01 correctly records **no newly changed learner decisions** on this revalidation run; the frozen implementation hashes match actual package files. Actual live retrievals **2026-10-15T03:08:18.563075Z–03:08:22.147921Z** remain separate from the August business clock. |
+
+## Actual source failure and recovery
+
+The archived real run `run-20261015T025000Z-e5e280ea` was **blocked**, with no recommendation: the public Notion page was a JavaScript shell, nested API records were not interpreted successfully, and four Drive download requests returned **HTTP 500**. The official accessibility index and floor plan succeeded. This was an actual access/parser failure, not an injected test scenario.
+
+The later live reads use the disclosed Sheets export route and correctly unwrap the Notion response. All seven sources were retrieved again through HTTP reads; the final run is **complete** with BASE-260 and actual output validation successful. The old blocked run, its failures and all **26 archived file hashes** were independently checked against its history manifest. Subsequent complete runs, including the earlier provenance-correction runs, remain in history. Archived source bytes were not silently substituted for the final live retrievals.
+
+## Corrections and remaining limits
+
+Earlier checks found and prompted corrections to timezone serialization, the missing second refreshment break, changed-input prose, semantic identity validation, exact ICS identity/time checks, unsafe archive paths, prior-chain diagnosis and malformed provenance recovery. An intermediate run incorrectly repeated a clarification as a newly changed decision; that run remains in history, and final stage 01 records the unchanged choices accurately. This review does not rewrite earlier observations or count planned tests as passed.
+
+`verification/tests-current.log` records the executed **23-test** Python 3.9 suite: **passed in 3.814 seconds**. It includes malformed scope and source-registry subcases, exact-byte retention, recovery without invented decisions, changed inputs, missing meanings/sources, and path/symlink protections. All test mutations used temporary roots.
+
+The 35-person forecast remains uncertain. Actual venue/spending approvals, the future walkthrough and Q-008's optional network/venue conditions are not completed. The base plan's readiness/capacity support is an exercise confirmation, not a real deployment test. Source schemas and business meanings materially outside the documented exercise mappings require maintainer/source-owner review.
+
+## Exact reviewed artifact hashes
+
+| Artifact | SHA-256 |
+|---|---|
+| `vendor-comparison.csv` | `7c126bd618a9e19862f05093a2caaaaa36bb91e51ee4f0a2707e4299dae29590` |
+| `event-plan.md` | `37e0baf7e2631644f62a8bd54245c2401d86d85ea50781594d414d8bd09362e5` |
+| `event-calendar.ics` | `4231b946dbfef17a300fa6da7e8d82e1e8cc90d090a7d40e473e80e02e3a71e3` |
+| `draft-communications.md` | `da1662c7b736a56de5f4b092429bb27063240b385682326734162b70b479a6df` |
+
+Inspected official PDF SHA-256: `8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367`, page 1.

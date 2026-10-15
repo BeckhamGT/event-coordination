@@ -1,0 +1,26 @@
+{
+  "id": "E-BUDGET",
+  "summary": "budget",
+  "evidence_ids": [
+    "E-BUDGET"
+  ],
+  "source_role": "budget",
+  "locator": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+  "retrieved_at": "2026-10-15T02:50:00.440774+00:00",
+  "retrieval_status": "unavailable",
+  "content_type": "application/octet-stream",
+  "version_metadata": {},
+  "content_hash": null,
+  "local_reference": null,
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS read",
+      "url": "https://drive.google.com/uc?export=download&id=1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "observed_at": "2026-10-15T02:50:00.440779+00:00",
+      "completed_at": "2026-10-15T02:50:01.277636+00:00",
+      "status": "unavailable",
+      "error": "HTTPError:HTTP Error 500: Internal Server Error"
+    }
+  ]
+}

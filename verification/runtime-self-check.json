@@ -1,0 +1,9 @@
+{
+  "observed_at": "2026-10-15T02:50:20.765863+00:00",
+  "python": "3.9.6",
+  "platform": "Darwin",
+  "dependency_check": "No broken requirements found.",
+  "source_mode": "Default CLI performs actual public HTTPS reads;explicit observed-source audit retains original retrieval metadata",
+  "interview_sha256": "89be8e951c0fa6a563e06fd0600c82d5a82a9f8b0d0118ccbef3d50d21d094d5",
+  "facilitator_signoff_required": false
+}

@@ -1,0 +1,396 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Quillhaven//Draft event planning//EN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Asia/Taipei
+COMMENT:This timezone only works from 1970-01-01 to 2038-01-01.
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZNAME:CST
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19740401T010000
+RDATE:19750401T010000,19790701T010000
+TZNAME:CDT
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0900
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19741001T000000
+RDATE:19751001T000000,19791001T000000
+TZNAME:CST
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0800
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:CAL-001 preferred_event_window
+DTSTART;TZID=Asia/Taipei:20261017T093000
+DTEND;TZID=Asia/Taipei:20261017T170000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-cal-001@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Preferred event date\;source constraint\,not
+  a booking
+STATUS:TENTATIVE
+X-RECORD-KIND:constraint
+X-SOURCE-RECORD:CAL-001
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CAL-002 fallback_event_window
+DTSTART;TZID=Asia/Taipei:20261024T093000
+DTEND;TZID=Asia/Taipei:20261024T170000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-cal-002@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Fallback date\;source constraint\,not a book
+ ing
+STATUS:TENTATIVE
+X-RECORD-KIND:constraint
+X-SOURCE-RECORD:CAL-002
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CAL-003 venue_hold
+DTSTART;TZID=Asia/Taipei:20261017T073000
+DTEND;TZID=Asia/Taipei:20261017T183000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-cal-003@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Hold expires 2026-09-05\;source constraint\,
+ not a booking
+STATUS:TENTATIVE
+X-RECORD-KIND:constraint
+X-SOURCE-RECORD:CAL-003
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CAL-004 keynote_availability
+DTSTART;TZID=Asia/Taipei:20261017T100000
+DTEND;TZID=Asia/Taipei:20261017T110000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-cal-004@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Keynote unavailable on fallback date\;source
+  constraint\,not a booking
+STATUS:TENTATIVE
+X-RECORD-KIND:constraint
+X-SOURCE-RECORD:CAL-004
+END:VEVENT
+BEGIN:VTODO
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Plan and budget decision\;source constraint\
+ ,not a booking
+DTSTAMP:20261015T030428Z
+DUE;TZID=Asia/Taipei:20260904T170000
+STATUS:NEEDS-ACTION
+SUMMARY:CAL-005 decision_deadline
+UID:quillhaven-cal-005@event-coordination.example
+X-RECORD-KIND:constraint
+X-SOURCE-RECORD:CAL-005
+END:VTODO
+BEGIN:VEVENT
+SUMMARY:CAL-006 accessibility_walkthrough
+DTSTART;TZID=Asia/Taipei:20260925T140000
+DTEND;TZID=Asia/Taipei:20260925T160000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-cal-006@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Venue confirmation required first\;source co
+ nstraint\,not a booking
+STATUS:TENTATIVE
+X-RECORD-KIND:constraint
+X-SOURCE-RECORD:CAL-006
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CAL-007 rehearsal_window
+DTSTART;TZID=Asia/Taipei:20261016T150000
+DTEND;TZID=Asia/Taipei:20261016T180000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-cal-007@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Remote backup acceptable\;source constraint\
+ ,not a booking
+STATUS:TENTATIVE
+X-RECORD-KIND:constraint
+X-SOURCE-RECORD:CAL-007
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CAL-008 teardown_deadline
+DTSTART;TZID=Asia/Taipei:20261017T170000
+DTEND;TZID=Asia/Taipei:20261017T183000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-cal-008@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;All vendors clear by 18:30\;source constrain
+ t\,not a booking
+STATUS:TENTATIVE
+X-RECORD-KIND:constraint
+X-SOURCE-RECORD:CAL-008
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Draft coordinated setup and service installation
+DTSTART;TZID=Asia/Taipei:20261017T073000
+DTEND;TZID=Asia/Taipei:20261017T083000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-setup-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:SETUP
+X-RECORD-KIND:setup
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Draft caption/loop/accessibility/security readiness checks
+DTSTART;TZID=Asia/Taipei:20261017T083000
+DTEND;TZID=Asia/Taipei:20261017T093000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-readiness-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=SETUP
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:READINESS
+X-RECORD-KIND:setup
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Opening and programme orientation
+DTSTART;TZID=Asia/Taipei:20261017T093000
+DTEND;TZID=Asia/Taipei:20261017T100000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-open-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=READINESS
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:OPEN
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Keynote
+DTSTART;TZID=Asia/Taipei:20261017T100000
+DTEND;TZID=Asia/Taipei:20261017T110000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-keynote-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=OPEN
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:KEYNOTE
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Morning refreshment break
+DTSTART;TZID=Asia/Taipei:20261017T110000
+DTEND;TZID=Asia/Taipei:20261017T112000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-morning-break-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=KEYNOTE
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:MORNING-BREAK
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-01 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T112000
+DTEND;TZID=Asia/Taipei:20261017T113300
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-01-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=KEYNOTE
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-01
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-02 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T113300
+DTEND;TZID=Asia/Taipei:20261017T114600
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-02-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-01
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-02
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-03 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T114600
+DTEND;TZID=Asia/Taipei:20261017T115900
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-03-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-02
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-03
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-04 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T115900
+DTEND;TZID=Asia/Taipei:20261017T121200
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-04-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-03
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-04
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-05 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T121200
+DTEND;TZID=Asia/Taipei:20261017T122500
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-05-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-04
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-05
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-06 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T122500
+DTEND;TZID=Asia/Taipei:20261017T123800
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-06-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-05
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-06
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lunch and dietary service
+DTSTART;TZID=Asia/Taipei:20261017T123800
+DTEND;TZID=Asia/Taipei:20261017T133800
+DTSTAMP:20261015T030428Z
+UID:quillhaven-lunch-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-06
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:LUNCH
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-07 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T133800
+DTEND;TZID=Asia/Taipei:20261017T135100
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-07-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=LUNCH
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-07
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-08 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T135100
+DTEND;TZID=Asia/Taipei:20261017T140400
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-08-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-07
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-08
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-09 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T140400
+DTEND;TZID=Asia/Taipei:20261017T141700
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-09-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-08
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-09
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-10 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T141700
+DTEND;TZID=Asia/Taipei:20261017T143000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-10-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-09
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-10
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-11 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T143000
+DTEND;TZID=Asia/Taipei:20261017T144300
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-11-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-10
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-11
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-12 presentation and changeover
+DTSTART;TZID=Asia/Taipei:20261017T144300
+DTEND;TZID=Asia/Taipei:20261017T145600
+DTSTAMP:20261015T030428Z
+UID:quillhaven-demo-12-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-11
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:DEMO-12
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Afternoon break
+DTSTART;TZID=Asia/Taipei:20261017T145600
+DTEND;TZID=Asia/Taipei:20261017T151600
+DTSTAMP:20261015T030428Z
+UID:quillhaven-break-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=DEMO-12
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:BREAK
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Partner discussion and accessible networking
+DTSTART;TZID=Asia/Taipei:20261017T151600
+DTEND;TZID=Asia/Taipei:20261017T164500
+DTSTAMP:20261015T030428Z
+UID:quillhaven-partners-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=BREAK
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:PARTNERS
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Closing and next steps
+DTSTART;TZID=Asia/Taipei:20261017T164500
+DTEND;TZID=Asia/Taipei:20261017T170000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-close-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=PARTNERS
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:CLOSE
+X-RECORD-KIND:programme
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Draft teardown and vendor clearance
+DTSTART;TZID=Asia/Taipei:20261017T170000
+DTEND;TZID=Asia/Taipei:20261017T183000
+DTSTAMP:20261015T030428Z
+UID:quillhaven-teardown-2026-10-17@event-coordination.example
+DESCRIPTION:UNSENT DRAFT\;run=run-20261015T030425Z-f070bfb5\;planning_peop
+ le=245\;recommended=BASE-260\;Proposed allocation\;dependencies=CLOSE
+STATUS:TENTATIVE
+X-PLANNING-BLOCK:TEARDOWN
+X-RECORD-KIND:teardown
+END:VEVENT
+END:VCALENDAR

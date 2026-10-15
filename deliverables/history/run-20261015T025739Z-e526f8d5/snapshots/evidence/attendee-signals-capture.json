@@ -1,0 +1,39 @@
+{
+  "id": "E-ATTENDEES",
+  "summary": "attendee-signals",
+  "evidence_ids": [
+    "E-ATTENDEES"
+  ],
+  "source_role": "attendee-signals",
+  "locator": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+  "retrieved_at": "2026-10-15T02:57:40.562292+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "version_metadata": {
+    "http_headers": {
+      "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "Last-Modified": null,
+      "ETag": null,
+      "Date": "Thu, 15 Oct 2026 02:57:40 GMT"
+    },
+    "transport": "public HTTPS read",
+    "source_identity": "1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+    "tabs": [
+      "Attendee Signals"
+    ]
+  },
+  "content_hash": "sha256:973cee35cc80874fdbf9e0c9dcbc54df8196542119f5c4334b46a9d69d508323",
+  "local_reference": "deliverables/snapshots/evidence/attendee-signals.xlsx",
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS GET",
+      "url": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU/export?format=xlsx",
+      "observed_at": "2026-10-15T02:57:39.787053+00:00",
+      "completed_at": "2026-10-15T02:57:40.562303+00:00",
+      "http_status": 200,
+      "status": "retrieved",
+      "response_sha256": "sha256:973cee35cc80874fdbf9e0c9dcbc54df8196542119f5c4334b46a9d69d508323"
+    }
+  ]
+}

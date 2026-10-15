@@ -1,0 +1,39 @@
+{
+  "id": "E-VENDORS",
+  "summary": "vendor-register",
+  "evidence_ids": [
+    "E-VENDORS"
+  ],
+  "source_role": "vendor-record",
+  "locator": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+  "retrieved_at": "2026-10-15T03:06:41.791958+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "version_metadata": {
+    "http_headers": {
+      "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "Last-Modified": null,
+      "ETag": null,
+      "Date": "Thu, 15 Oct 2026 03:06:41 GMT"
+    },
+    "transport": "public HTTPS read",
+    "source_identity": "1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+    "tabs": [
+      "Vendor Quotes"
+    ]
+  },
+  "content_hash": "sha256:5ff42f60de1a73d4df4282c2a8514a7aedc908709ef9e52c7863022e4489327c",
+  "local_reference": "deliverables/snapshots/evidence/vendor-register.xlsx",
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS GET",
+      "url": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko/export?format=xlsx",
+      "observed_at": "2026-10-15T03:06:40.689680+00:00",
+      "completed_at": "2026-10-15T03:06:41.791967+00:00",
+      "http_status": 200,
+      "status": "retrieved",
+      "response_sha256": "sha256:5ff42f60de1a73d4df4282c2a8514a7aedc908709ef9e52c7863022e4489327c"
+    }
+  ]
+}

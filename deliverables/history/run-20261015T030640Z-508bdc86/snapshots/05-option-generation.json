@@ -1,0 +1,292 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261015T030640Z-508bdc86-05",
+  "run_id": "run-20261015T030640Z-508bdc86",
+  "stage": "option-generation",
+  "sequence": 5,
+  "created_at": "2026-10-15T03:06:43.403963+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261015T030640Z-508bdc86-04",
+    "path": "deliverables/snapshots/04-planning-baseline.json",
+    "sha256": "sha256:777a8742913451d1f96a002389a228d2a0a63147dcbab22b702c8aa5b361f1e3"
+  },
+  "consumed_record_ids": [
+    "B-HEADCOUNT",
+    "B-SCHEDULE",
+    "B-BUDGET",
+    "B-MEDIA"
+  ],
+  "produced_record_ids": [
+    "BASE-260",
+    "BASE-300",
+    "LIVESTREAM",
+    "BASIC-AV",
+    "FALLBACK"
+  ],
+  "state": {
+    "options": [
+      {
+        "id": "BASE-260",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ]
+      },
+      {
+        "id": "BASE-300",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-001",
+          "Q-004",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ]
+      },
+      {
+        "id": "LIVESTREAM",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-008",
+          "Q-009",
+          "Q-010"
+        ]
+      },
+      {
+        "id": "BASIC-AV",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-007",
+          "Q-009",
+          "Q-010"
+        ]
+      },
+      {
+        "id": "FALLBACK",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-002",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ]
+      }
+    ],
+    "rejected_early": [],
+    "source_quote_records": {
+      "Q-001": {
+        "quote_id": "Q-001",
+        "vendor": "TICC",
+        "category": "venue",
+        "option": "4F Plenary Hall front-500 allocation plus V.I.P. Room",
+        "quote_amount_twd": "155000.0",
+        "capacity": "500.0",
+        "available_date": "2026-10-17T00:00:00",
+        "valid_until": "2026-09-05T00:00:00",
+        "status": "held",
+        "notes": "Synthetic full-day package; see venue coordination note; no real reservation"
+      },
+      "Q-002": {
+        "quote_id": "Q-002",
+        "vendor": "TICC",
+        "category": "venue",
+        "option": "4F Plenary Hall front-500 allocation plus V.I.P. Room",
+        "quote_amount_twd": "155000.0",
+        "capacity": "500.0",
+        "available_date": "2026-10-24T00:00:00",
+        "valid_until": "2026-09-05T00:00:00",
+        "status": "available",
+        "notes": "Keynote is unavailable on this date; Synthetic full-day package; see venue coordination note; no real reservation"
+      },
+      "Q-003": {
+        "quote_id": "Q-003",
+        "vendor": "Green Table",
+        "category": "catering",
+        "option": "lunch and two breaks",
+        "quote_amount_twd": "108000.0",
+        "capacity": "260.0",
+        "available_date": "2026-10-17T00:00:00",
+        "valid_until": "2026-09-07T00:00:00",
+        "status": "available",
+        "notes": "Supports listed vegetarian and halal meals; supplied through TICC coordination in this synthetic case"
+      },
+      "Q-004": {
+        "quote_id": "Q-004",
+        "vendor": "City Pantry",
+        "category": "catering",
+        "option": "lunch and two breaks",
+        "quote_amount_twd": "126000.0",
+        "capacity": "300.0",
+        "available_date": "2026-10-17T00:00:00",
+        "valid_until": "2026-09-12T00:00:00",
+        "status": "available",
+        "notes": "Allergy process requires named contacts; supplied through TICC coordination in this synthetic case"
+      },
+      "Q-005": {
+        "quote_id": "Q-005",
+        "vendor": "ClearText",
+        "category": "accessibility",
+        "option": "live captions and transcript",
+        "quote_amount_twd": "42000.0",
+        "capacity": "500.0",
+        "available_date": "2026-10-17T00:00:00",
+        "valid_until": "2026-09-10T00:00:00",
+        "status": "available",
+        "notes": "Two captioners included"
+      },
+      "Q-006": {
+        "quote_id": "Q-006",
+        "vendor": "SoundArc",
+        "category": "production",
+        "option": "AV package with hearing loop",
+        "quote_amount_twd": "78000.0",
+        "capacity": "500.0",
+        "available_date": "2026-10-17T00:00:00",
+        "valid_until": "2026-09-08T00:00:00",
+        "status": "available",
+        "notes": "Setup starts at 07:30; supplied through TICC coordination in this synthetic case"
+      },
+      "Q-007": {
+        "quote_id": "Q-007",
+        "vendor": "LiteStage",
+        "category": "production",
+        "option": "basic AV package",
+        "quote_amount_twd": "52000.0",
+        "capacity": "500.0",
+        "available_date": "2026-10-17T00:00:00",
+        "valid_until": "2026-09-08T00:00:00",
+        "status": "available",
+        "notes": "No hearing loop included; supplied through TICC coordination in this synthetic case"
+      },
+      "Q-008": {
+        "quote_id": "Q-008",
+        "vendor": "StreamNorth",
+        "category": "production",
+        "option": "livestream add-on",
+        "quote_amount_twd": "55000.0",
+        "capacity": "1000.0",
+        "available_date": "2026-10-17T00:00:00",
+        "valid_until": "2026-09-11T00:00:00",
+        "status": "conditional",
+        "notes": "Network test required; supplied through TICC coordination in this synthetic case"
+      },
+      "Q-009": {
+        "quote_id": "Q-009",
+        "vendor": "SafeVenue",
+        "category": "security",
+        "option": "four staff",
+        "quote_amount_twd": "28000.0",
+        "capacity": "500.0",
+        "available_date": "2026-10-17T00:00:00",
+        "valid_until": "2026-09-15T00:00:00",
+        "status": "available",
+        "notes": "Includes first aid lead"
+      },
+      "Q-010": {
+        "quote_id": "Q-010",
+        "vendor": "QuietWorks",
+        "category": "accessibility",
+        "option": "quiet room staffing",
+        "quote_amount_twd": "18000.0",
+        "capacity": "20.0",
+        "available_date": "2026-10-17T00:00:00",
+        "valid_until": "2026-09-10T00:00:00",
+        "status": "available",
+        "notes": "Room itself supplied by venue"
+      }
+    },
+    "feasibility_not_yet_tested": true
+  },
+  "unresolved": [],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ]
+}

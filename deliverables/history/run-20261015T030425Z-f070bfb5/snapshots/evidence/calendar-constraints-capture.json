@@ -1,0 +1,39 @@
+{
+  "id": "E-CALENDAR",
+  "summary": "calendar-constraints",
+  "evidence_ids": [
+    "E-CALENDAR"
+  ],
+  "source_role": "calendar",
+  "locator": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+  "retrieved_at": "2026-10-15T03:04:26.203921+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "version_metadata": {
+    "http_headers": {
+      "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "Last-Modified": null,
+      "ETag": null,
+      "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+    },
+    "transport": "public HTTPS read",
+    "source_identity": "1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+    "tabs": [
+      "Calendar Constraints"
+    ]
+  },
+  "content_hash": "sha256:f6056cb9be0c662672caeeb5f5989de49e3ad21737f5e42f642b6ef3da55b735",
+  "local_reference": "deliverables/snapshots/evidence/calendar-constraints.xlsx",
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS GET",
+      "url": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s/export?format=xlsx",
+      "observed_at": "2026-10-15T03:04:25.580092+00:00",
+      "completed_at": "2026-10-15T03:04:26.203928+00:00",
+      "http_status": 200,
+      "status": "retrieved",
+      "response_sha256": "sha256:f6056cb9be0c662672caeeb5f5989de49e3ad21737f5e42f642b6ef3da55b735"
+    }
+  ]
+}

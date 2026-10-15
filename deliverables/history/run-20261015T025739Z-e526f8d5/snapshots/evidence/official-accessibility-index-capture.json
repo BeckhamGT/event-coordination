@@ -1,0 +1,45 @@
+{
+  "id": "E-ACCESS",
+  "summary": "official-accessibility-index",
+  "evidence_ids": [
+    "E-ACCESS"
+  ],
+  "source_role": "venue-page",
+  "locator": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+  "retrieved_at": "2026-10-15T02:57:41.144571+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "text/html;charset=utf-8",
+  "version_metadata": {
+    "http_headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Last-Modified": null,
+      "ETag": null,
+      "Date": "Thu, 15 Oct 2026 02:57:41 GMT"
+    },
+    "transport": "public HTTPS read",
+    "source_identity": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6"
+  },
+  "content_hash": "sha256:810e9f2aad54ad56aba8ba7d78134fc2c5bac44c358049c51e5d2ae9ddbd4a9c",
+  "local_reference": "deliverables/snapshots/evidence/official-accessibility-index.html",
+  "observations": [
+    {
+      "id": "OBS-E-ACCESS",
+      "summary": "Index links exact required4F PDF",
+      "locator": {
+        "kind": "section",
+        "value": "TICC4F Accessible Facilities Floor Plan link"
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "method": "HTTPS GET",
+      "url": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+      "observed_at": "2026-10-15T02:57:39.787237+00:00",
+      "completed_at": "2026-10-15T02:57:41.144591+00:00",
+      "http_status": 200,
+      "status": "retrieved",
+      "response_sha256": "sha256:810e9f2aad54ad56aba8ba7d78134fc2c5bac44c358049c51e5d2ae9ddbd4a9c"
+    }
+  ]
+}

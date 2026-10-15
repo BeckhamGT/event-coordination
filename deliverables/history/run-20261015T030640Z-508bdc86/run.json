@@ -1,0 +1,29 @@
+{
+  "run_id": "run-20261015T030640Z-508bdc86",
+  "status": "complete",
+  "selected_option": "BASE-260",
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "checks": [
+      "Reopened CSV identities,amounts,quotes,headcounts,feasibility and approvals",
+      "Parsed actual ICS exact source records,deadline,programme identities,timestamps,UIDs,timezone,status and nonoverlap",
+      "Actual Markdown current amounts,headcounts,approvals and programme match serialized state"
+    ],
+    "chain": {
+      "valid": true,
+      "checks": [
+        "Schema/date-time validation",
+        "Unique snapshot IDs and one run",
+        "Immediate predecessor bytes,IDs and hashes",
+        "Consumed/produced records and evidence references",
+        "Actual retained source hashes"
+      ]
+    }
+  },
+  "source_mode": "live remote retrieval",
+  "observed_at": "2026-10-15T03:06:43.446151+00:00",
+  "source_failures": [],
+  "supersedes_run_id": "run-20261015T030425Z-f070bfb5",
+  "stakeholder_approvals": "pending"
+}

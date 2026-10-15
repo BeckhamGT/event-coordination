@@ -1,0 +1,263 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261015T025000Z-e5e280ea-08",
+  "run_id": "run-20261015T025000Z-e5e280ea",
+  "stage": "draft-propagation",
+  "sequence": 8,
+  "created_at": "2026-10-15T02:50:03.683587+00:00",
+  "status": "blocked",
+  "predecessor": {
+    "snapshot_id": "run-20261015T025000Z-e5e280ea-07",
+    "path": "deliverables/snapshots/07-decision-and-approval.json",
+    "sha256": "sha256:9b3020437b52cedc2f3b750c77a1184c48d4447e2f42ccd06391fdf4ad4ed57d"
+  },
+  "consumed_record_ids": [
+    "RECOMMENDATION",
+    "AP-OPERATIONS"
+  ],
+  "produced_record_ids": [
+    "ART-1",
+    "ART-2",
+    "ART-3",
+    "ART-4"
+  ],
+  "state": {
+    "artifact_drafts": [
+      {
+        "id": "ART-1",
+        "path": "deliverables/vendor-comparison.csv",
+        "sha256": "sha256:85b7d4877719b8dad1884be19b4d0de382b802571b09d68192620526cf0aaf59",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-2",
+        "path": "deliverables/event-plan.md",
+        "sha256": "sha256:3f51a67297dc1f49a36cc8875071efb99ec530c11d758a3f622de73f68212660",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-3",
+        "path": "deliverables/event-calendar.ics",
+        "sha256": "sha256:faad4edde1c29a628b482f822def1d62ff2abe22a296c04ed6042b9890ed1dd7",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-4",
+        "path": "deliverables/draft-communications.md",
+        "sha256": "sha256:117fbedd98eb1992943de031447c7c0cc39456cdabe6e42bab9e49112535c761",
+        "validation_status": "valid"
+      }
+    ],
+    "affected_dependencies": [
+      {
+        "id": "PROPAGATION",
+        "summary": "Samecurrentmodel,headcount,quotes,categories,decisionsandcalendarfedallfour drafts",
+        "evidence_ids": [
+          "E-LEARNER",
+          "E-ATTENDEES",
+          "E-VENDORS"
+        ],
+        "owner": null
+      }
+    ],
+    "unresolved_items": [
+      {
+        "id": "U-E-BRIEF",
+        "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+        "evidence_ids": [
+          "E-BRIEF"
+        ],
+        "owner": "Operations / source owner"
+      },
+      {
+        "id": "U-E-ATTENDEES",
+        "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+        "evidence_ids": [
+          "E-ATTENDEES"
+        ],
+        "owner": "Operations / source owner"
+      },
+      {
+        "id": "U-E-BUDGET",
+        "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+        "evidence_ids": [
+          "E-BUDGET"
+        ],
+        "owner": "Operations / source owner"
+      },
+      {
+        "id": "U-E-CALENDAR",
+        "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+        "evidence_ids": [
+          "E-CALENDAR"
+        ],
+        "owner": "Operations / source owner"
+      },
+      {
+        "id": "U-E-VENDORS",
+        "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+        "evidence_ids": [
+          "E-VENDORS"
+        ],
+        "owner": "Operations / source owner"
+      },
+      {
+        "id": "U-NEEDS",
+        "summary": "Required service needs are missing; absence is not zero demand",
+        "evidence_ids": [
+          "E-ATTENDEES"
+        ],
+        "owner": "Learner Experience"
+      },
+      {
+        "id": "U-POPULATION",
+        "summary": "Complete separate population groups are unavailable",
+        "evidence_ids": [
+          "E-ATTENDEES"
+        ],
+        "owner": "Learner Experience"
+      },
+      {
+        "id": "U-READINESS",
+        "summary": "Exercise readiness confirmation for setup/checks and teardown not verified",
+        "evidence_ids": [
+          "E-BRIEF"
+        ],
+        "owner": "Operations / Programme"
+      },
+      {
+        "id": "U-DEMO-ROSTER",
+        "summary": "Explicit programme roster/durations are unavailable; do not infer demos from people",
+        "evidence_ids": [
+          "E-BRIEF"
+        ],
+        "owner": "Programme"
+      }
+    ],
+    "observed_completion": "Four fileswritten;not messages sent orcalendarpublication"
+  },
+  "unresolved": [
+    {
+      "id": "U-E-BRIEF",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-ATTENDEES",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-BUDGET",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-BUDGET"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-CALENDAR",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-CALENDAR"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-VENDORS",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-VENDORS"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-NEEDS",
+      "summary": "Required service needs are missing; absence is not zero demand",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Learner Experience"
+    },
+    {
+      "id": "U-POPULATION",
+      "summary": "Complete separate population groups are unavailable",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Learner Experience"
+    },
+    {
+      "id": "U-READINESS",
+      "summary": "Exercise readiness confirmation for setup/checks and teardown not verified",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "U-DEMO-ROSTER",
+      "summary": "Explicit programme roster/durations are unavailable; do not infer demos from people",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Programme"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ]
+}

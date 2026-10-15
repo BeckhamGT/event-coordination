@@ -1,0 +1,123 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261015T030640Z-508bdc86-09",
+  "run_id": "run-20261015T030640Z-508bdc86",
+  "stage": "publication-validation",
+  "sequence": 9,
+  "created_at": "2026-10-15T03:06:43.434986+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261015T030640Z-508bdc86-08",
+    "path": "deliverables/snapshots/08-draft-propagation.json",
+    "sha256": "sha256:fe11acc8ba3b1e4410a43efb9281482d2153091f5ab4bde8b6b3531b35f83229"
+  },
+  "consumed_record_ids": [
+    "ART-1",
+    "ART-2",
+    "ART-3",
+    "ART-4"
+  ],
+  "produced_record_ids": [
+    "VALIDATION-CURRENT"
+  ],
+  "state": {
+    "artifacts": [
+      {
+        "id": "ART-1",
+        "path": "deliverables/vendor-comparison.csv",
+        "sha256": "sha256:7c126bd618a9e19862f05093a2caaaaa36bb91e51ee4f0a2707e4299dae29590",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-2",
+        "path": "deliverables/event-plan.md",
+        "sha256": "sha256:99de085af2863f0a9bbff4054d2f7e67443bcf8279028994d161060d733cdcf7",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-3",
+        "path": "deliverables/event-calendar.ics",
+        "sha256": "sha256:2ba28810fc52cb7e63f01ed7658b03705859841494a21dcf136a7aca038bb394",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-4",
+        "path": "deliverables/draft-communications.md",
+        "sha256": "sha256:b2c69cbc32b686e6b6b752c464ac8b728974b59793aa353860f89e09b7169833",
+        "validation_status": "valid"
+      }
+    ],
+    "validation_checks": [
+      {
+        "id": "CHECK-OUTPUTS",
+        "summary": "{\"valid\": true, \"errors\": [], \"checks\": [\"Reopened CSV identities,amounts,quotes,headcounts,feasibility and approvals\", \"Parsed actual ICS exact source records,deadline,programme identities,timestamps,UIDs,timezone,status and nonoverlap\", \"Actual Markdown current amounts,headcounts,approvals and programme match serialized state\"]}",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null
+      },
+      {
+        "id": "CHECK-CHAIN",
+        "summary": "{\"valid\": true, \"checks\": [\"Schema/date-time validation\", \"Unique snapshot IDs and one run\", \"Immediate predecessor bytes,IDs and hashes\", \"Consumed/produced records and evidence references\", \"Actual retained source hashes\"]}",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null
+      }
+    ],
+    "publication_status": "validated",
+    "publication_meaning": "Draftfilesvalidated;noexternalcalendarwrite,bookingorcommunication",
+    "recommendation": "BASE-260"
+  },
+  "unresolved": [],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "E-VENDORS",
+  "summary": "vendor-register",
+  "evidence_ids": [
+    "E-VENDORS"
+  ],
+  "source_role": "vendor-record",
+  "locator": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+  "retrieved_at": "2026-10-15T02:50:00.441079+00:00",
+  "retrieval_status": "unavailable",
+  "content_type": "application/octet-stream",
+  "version_metadata": {},
+  "content_hash": null,
+  "local_reference": null,
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS read",
+      "url": "https://drive.google.com/uc?export=download&id=1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+      "observed_at": "2026-10-15T02:50:00.441084+00:00",
+      "completed_at": "2026-10-15T02:50:01.324216+00:00",
+      "status": "unavailable",
+      "error": "HTTPError:HTTP Error 500: Internal Server Error"
+    }
+  ]
+}

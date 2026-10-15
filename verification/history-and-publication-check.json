@@ -1,0 +1,272 @@
+{
+  "observed_at": "2026-10-15T03:12:14.760967+00:00",
+  "method": "Rehashed every declared historical entry; scanned tracked/untracked allowed files for high-confidence credential patterns; reopened every XLSX cell for contact review; manual text/code/official-PDF review recorded separately",
+  "history_manifests": [
+    {
+      "manifest": "deliverables/history/prep-20261014T213226Z/history-manifest.json",
+      "verified_entries": 53,
+      "prior_anomalies": []
+    },
+    {
+      "manifest": "deliverables/history/prep-decisions-20261014T222533Z/history-manifest.json",
+      "verified_entries": 54,
+      "prior_anomalies": []
+    },
+    {
+      "manifest": "deliverables/history/run-20261015T025000Z-e5e280ea/history-manifest.json",
+      "verified_entries": 26,
+      "prior_anomalies": []
+    },
+    {
+      "manifest": "deliverables/history/run-20261015T025739Z-e526f8d5/history-manifest.json",
+      "verified_entries": 31,
+      "prior_anomalies": []
+    },
+    {
+      "manifest": "deliverables/history/run-20261015T030425Z-f070bfb5/history-manifest.json",
+      "verified_entries": 31,
+      "prior_anomalies": []
+    },
+    {
+      "manifest": "deliverables/history/run-20261015T030640Z-508bdc86/history-manifest.json",
+      "verified_entries": 31,
+      "prior_anomalies": []
+    }
+  ],
+  "history_errors": [],
+  "reviewed_file_count": 342,
+  "credential_or_workbook_contact_findings": [],
+  "workbooks": [
+    {
+      "path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/attendee-signals.xlsx",
+      "tabs": [
+        "Attendee Signals"
+      ],
+      "rows_including_header": 14,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/budget.xlsx",
+      "tabs": [
+        "Budget"
+      ],
+      "rows_including_header": 8,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/calendar-constraints.xlsx",
+      "tabs": [
+        "Calendar Constraints"
+      ],
+      "rows_including_header": 9,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/vendor-register.xlsx",
+      "tabs": [
+        "Vendor Quotes"
+      ],
+      "rows_including_header": 11,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/prep-decisions-20261014T222533Z/snapshots/evidence/attendee-signals.xlsx",
+      "tabs": [
+        "Attendee Signals"
+      ],
+      "rows_including_header": 14,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/prep-decisions-20261014T222533Z/snapshots/evidence/budget.xlsx",
+      "tabs": [
+        "Budget"
+      ],
+      "rows_including_header": 8,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/prep-decisions-20261014T222533Z/snapshots/evidence/calendar-constraints.xlsx",
+      "tabs": [
+        "Calendar Constraints"
+      ],
+      "rows_including_header": 9,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/prep-decisions-20261014T222533Z/snapshots/evidence/vendor-register.xlsx",
+      "tabs": [
+        "Vendor Quotes"
+      ],
+      "rows_including_header": 11,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T025739Z-e526f8d5/snapshots/evidence/attendee-signals.xlsx",
+      "tabs": [
+        "Attendee Signals"
+      ],
+      "rows_including_header": 14,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T025739Z-e526f8d5/snapshots/evidence/budget.xlsx",
+      "tabs": [
+        "Budget"
+      ],
+      "rows_including_header": 8,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T025739Z-e526f8d5/snapshots/evidence/calendar-constraints.xlsx",
+      "tabs": [
+        "Calendar Constraints"
+      ],
+      "rows_including_header": 9,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T025739Z-e526f8d5/snapshots/evidence/vendor-register.xlsx",
+      "tabs": [
+        "Vendor Quotes"
+      ],
+      "rows_including_header": 11,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T030425Z-f070bfb5/snapshots/evidence/attendee-signals.xlsx",
+      "tabs": [
+        "Attendee Signals"
+      ],
+      "rows_including_header": 14,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T030425Z-f070bfb5/snapshots/evidence/budget.xlsx",
+      "tabs": [
+        "Budget"
+      ],
+      "rows_including_header": 8,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T030425Z-f070bfb5/snapshots/evidence/calendar-constraints.xlsx",
+      "tabs": [
+        "Calendar Constraints"
+      ],
+      "rows_including_header": 9,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T030425Z-f070bfb5/snapshots/evidence/vendor-register.xlsx",
+      "tabs": [
+        "Vendor Quotes"
+      ],
+      "rows_including_header": 11,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T030640Z-508bdc86/snapshots/evidence/attendee-signals.xlsx",
+      "tabs": [
+        "Attendee Signals"
+      ],
+      "rows_including_header": 14,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T030640Z-508bdc86/snapshots/evidence/budget.xlsx",
+      "tabs": [
+        "Budget"
+      ],
+      "rows_including_header": 8,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T030640Z-508bdc86/snapshots/evidence/calendar-constraints.xlsx",
+      "tabs": [
+        "Calendar Constraints"
+      ],
+      "rows_including_header": 9,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/history/run-20261015T030640Z-508bdc86/snapshots/evidence/vendor-register.xlsx",
+      "tabs": [
+        "Vendor Quotes"
+      ],
+      "rows_including_header": 11,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/snapshots/evidence/attendee-signals.xlsx",
+      "tabs": [
+        "Attendee Signals"
+      ],
+      "rows_including_header": 14,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/snapshots/evidence/budget.xlsx",
+      "tabs": [
+        "Budget"
+      ],
+      "rows_including_header": 8,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/snapshots/evidence/calendar-constraints.xlsx",
+      "tabs": [
+        "Calendar Constraints"
+      ],
+      "rows_including_header": 9,
+      "email_cells": 0
+    },
+    {
+      "path": "deliverables/snapshots/evidence/vendor-register.xlsx",
+      "tabs": [
+        "Vendor Quotes"
+      ],
+      "rows_including_header": 11,
+      "email_cells": 0
+    }
+  ],
+  "binary_evidence": [
+    {
+      "path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-4f-floor-plan-page-1.png",
+      "sha256": "d5a944f7d478e50260d99e54a31d871defae3bfab480d1a6e940a0c5c9b796a0"
+    },
+    {
+      "path": "deliverables/history/prep-20261014T213226Z/snapshots/evidence/official-4f-floor-plan.pdf",
+      "sha256": "8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    },
+    {
+      "path": "deliverables/history/prep-decisions-20261014T222533Z/snapshots/evidence/official-4f-floor-plan-page-1.png",
+      "sha256": "d5a944f7d478e50260d99e54a31d871defae3bfab480d1a6e940a0c5c9b796a0"
+    },
+    {
+      "path": "deliverables/history/prep-decisions-20261014T222533Z/snapshots/evidence/official-4f-floor-plan.pdf",
+      "sha256": "8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    },
+    {
+      "path": "deliverables/history/run-20261015T025000Z-e5e280ea/snapshots/evidence/official-4f-floor-plan.pdf",
+      "sha256": "8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    },
+    {
+      "path": "deliverables/history/run-20261015T025739Z-e526f8d5/snapshots/evidence/official-4f-floor-plan.pdf",
+      "sha256": "8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    },
+    {
+      "path": "deliverables/history/run-20261015T030425Z-f070bfb5/snapshots/evidence/official-4f-floor-plan.pdf",
+      "sha256": "8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    },
+    {
+      "path": "deliverables/history/run-20261015T030640Z-508bdc86/snapshots/evidence/official-4f-floor-plan.pdf",
+      "sha256": "8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    },
+    {
+      "path": "deliverables/snapshots/evidence/official-4f-floor-plan.pdf",
+      "sha256": "8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    }
+  ],
+  "limitations": "Pattern checks supplement manual review; no claim to detect every possible secret. Named attendee contacts were not supplied and are not published."
+}

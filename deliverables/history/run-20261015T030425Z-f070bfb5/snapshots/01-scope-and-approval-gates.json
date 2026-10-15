@@ -1,0 +1,142 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261015T030425Z-f070bfb5-01",
+  "run_id": "run-20261015T030425Z-f070bfb5",
+  "stage": "scope-and-approval-gates",
+  "sequence": 1,
+  "created_at": "2026-10-15T03:04:25.579123+00:00",
+  "status": "complete",
+  "predecessor": null,
+  "consumed_record_ids": [],
+  "produced_record_ids": [
+    "SCOPE",
+    "E-INTERVIEW",
+    "E-LEARNER",
+    "E-CLARIFICATION",
+    "D-L-01",
+    "D-L-02",
+    "D-L-03",
+    "D-L-04"
+  ],
+  "state": {
+    "objective": "Produce consistent review-ready Quillhaven Demo Day planning drafts",
+    "decision_deadline": "2026-09-04T17:00:00+08:00",
+    "owners": [
+      "Operations",
+      "Learner Experience",
+      "Programme",
+      "Communications",
+      "Category budget owners"
+    ],
+    "approval_gates": [
+      "Operations reviews plan,date and venue",
+      "Category owners approve spending/threshold exceptions subject to overall ceiling",
+      "No bookings,payments,sends or production-calendar changes"
+    ],
+    "business_clock": "2026-08-26T12:00:00+08:00",
+    "facilitator_signoff_required": false,
+    "clarification": "Onboarding covers identity;technical setup self-checked;not an approval record",
+    "supersedes_run_id": "run-20261015T025739Z-e526f8d5",
+    "changed_decision_ids": [],
+    "changed_source_ids": [],
+    "change_detection": "Fresh reads follow;actual changed source hashes recorded at02 without backfilling01. Unchanged recorded choices are not new decisions.",
+    "sources_to_revalidate": [
+      "E-BRIEF",
+      "E-ATTENDEES",
+      "E-BUDGET",
+      "E-CALENDAR",
+      "E-VENDORS",
+      "E-ACCESS",
+      "E-FLOOR"
+    ],
+    "prior_failed_source_ids": [],
+    "reason": "Verify source and output integrity with current implementation and preserved learner choices",
+    "implementation_hashes": {
+      "SKILL.md": "sha256:50f883ad0176ff4c94e1b4cabe1354f5f9b0cea31509a9c4f70020859faa7d58",
+      "eval/baseline-input.md": "sha256:4c0c93a8d57fd5beca60e85e2a16af0accf94d4e93cfb5b7328992f6ff18d42a",
+      "eval/baseline-output.md": "sha256:0dcc921a7248a25cf992a0f4b47486242e6b5c4ca0904d3be65b67a1b044025e",
+      "references/gotchas.md": "sha256:083e1d345a18e19f613c537d106c0a03b2161c59cbefda5d217fa48f16fd1616",
+      "references/project.json": "sha256:a17876b59312fcfd9dd9fc9461ab0d5c06d969089cafcc83a8fc1ed663281a8a",
+      "references/sources-and-interpretation.md": "sha256:d07b47aae461266dfe1b7701f92ac80c6e4d4560f3cc1430d3b48adc2c4987bb",
+      "references/stages-and-recovery.md": "sha256:e717722f3f9ac415cc04b308617ee95951a810ab026a73730055d983dd737532",
+      "references/validation.md": "sha256:d8c6f7690f94b4a53f145bb9d22b83e01420ce5eb9943050ad5012a4d7695372",
+      "scripts/pipeline.py": "sha256:813223f0da9f28b0a92a5dd38c6677b2dfc82df96dec59eafb60364970b701ed",
+      "scripts/planning.py": "sha256:b34a24a47edc763c75ddf294d38dcfc06e4d9ea40497344c3fd90e9decfda2e4",
+      "scripts/rendering.py": "sha256:12e1866f797711ce9567072a2a55054f1153834e0ceab3fbbaae193f91a10415",
+      "scripts/sources.py": "sha256:23b17fb86afe094106efcd7f04eff92060eab3160500072a5ea1862534fa92c7"
+    },
+    "mode": "live remote retrieval",
+    "policy": {
+      "baseline_people": 245,
+      "extra_margin_people": 0,
+      "communications_allowance_twd": 25000,
+      "contingency_allowance_twd": 40000,
+      "ceiling_twd": 520000,
+      "preferred_caterer": "Q-003",
+      "livestream_in_base": false,
+      "decision_ids": [
+        "D-L-01",
+        "D-L-02",
+        "D-L-03",
+        "D-L-04"
+      ],
+      "facilitator_signoff_required": false
+    },
+    "prior_output_anomalies": [],
+    "interview": {
+      "path": "interviews/project-c-event-coordination-20261014-2122.md",
+      "sha256": "sha256:89be8e951c0fa6a563e06fd0600c82d5a82a9f8b0d0118ccbef3d50d21d094d5"
+    }
+  },
+  "unresolved": [],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ]
+}

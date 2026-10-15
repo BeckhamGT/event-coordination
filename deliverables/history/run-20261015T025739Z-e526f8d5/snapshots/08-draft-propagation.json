@@ -1,0 +1,124 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261015T025739Z-e526f8d5-08",
+  "run_id": "run-20261015T025739Z-e526f8d5",
+  "stage": "draft-propagation",
+  "sequence": 8,
+  "created_at": "2026-10-15T02:57:44.140140+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261015T025739Z-e526f8d5-07",
+    "path": "deliverables/snapshots/07-decision-and-approval.json",
+    "sha256": "sha256:13a7c4de6ac4392a5079c1ffd24d2cdad4f57f7e2e7f585c766c3a4c6947bd90"
+  },
+  "consumed_record_ids": [
+    "RECOMMENDATION",
+    "AP-OPERATIONS",
+    "AP-venue",
+    "AP-catering",
+    "AP-accessibility",
+    "AP-production",
+    "AP-communications",
+    "AP-security",
+    "AP-contingency"
+  ],
+  "produced_record_ids": [
+    "ART-1",
+    "ART-2",
+    "ART-3",
+    "ART-4"
+  ],
+  "state": {
+    "artifact_drafts": [
+      {
+        "id": "ART-1",
+        "path": "deliverables/vendor-comparison.csv",
+        "sha256": "sha256:7c126bd618a9e19862f05093a2caaaaa36bb91e51ee4f0a2707e4299dae29590",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-2",
+        "path": "deliverables/event-plan.md",
+        "sha256": "sha256:f8d981c0bbfb4df91fec3f3c47fe76906a520cf167f06e6419d1041e5c8f5951",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-3",
+        "path": "deliverables/event-calendar.ics",
+        "sha256": "sha256:9e1065653c6ab1fe75d6f5dd6ae347275f687330cd9ce4367e5911c3e484e00b",
+        "validation_status": "valid"
+      },
+      {
+        "id": "ART-4",
+        "path": "deliverables/draft-communications.md",
+        "sha256": "sha256:b68f6b435215af84ddf97962c0e8217b9ef0549f2e8b017d0c3b833bb13567f3",
+        "validation_status": "valid"
+      }
+    ],
+    "affected_dependencies": [
+      {
+        "id": "PROPAGATION",
+        "summary": "Samecurrentmodel,headcount,quotes,categories,decisionsandcalendarfedallfour drafts",
+        "evidence_ids": [
+          "E-LEARNER",
+          "E-ATTENDEES",
+          "E-VENDORS"
+        ],
+        "owner": null
+      }
+    ],
+    "unresolved_items": [],
+    "observed_completion": "Four fileswritten;not messages sent orcalendarpublication"
+  },
+  "unresolved": [],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ]
+}

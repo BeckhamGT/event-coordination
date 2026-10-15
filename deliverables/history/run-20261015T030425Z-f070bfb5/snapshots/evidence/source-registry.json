@@ -1,0 +1,364 @@
+{
+  "run_id": "run-20261015T030425Z-f070bfb5",
+  "mode": "live remote retrieval",
+  "sources": [
+    {
+      "id": "E-BRIEF",
+      "summary": "event-brief-and-venue-note",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "source_role": "event-brief",
+      "locator": "https://app.notion.com/p/3ba0b700541e81d0af55dc1a8f49f5af",
+      "retrieved_at": "2026-10-15T03:04:26.024962+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/json; charset=utf-8",
+      "version_metadata": {
+        "http_headers": {
+          "Content-Type": "application/json; charset=utf-8",
+          "Last-Modified": null,
+          "ETag": "W/\"bc8f-VsdaTdYpg61djyyLq6gIh89Ltuo\"",
+          "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+        },
+        "transport": "public HTTPS read",
+        "source_identity": "3ba0b700-541e-81d0-af55-dc1a8f49f5af",
+        "declared_versions": [
+          "EVENT-BRIEF-2026-08-26",
+          "PROG-2026-08-26-R3",
+          "VEN-2026-08-26",
+          "VEN-2026-08-26-R2"
+        ]
+      },
+      "content_hash": "sha256:b4191e890b9ae72b644a3fa5de1212870b4fe39f0a3e28ca671efd527413eb43",
+      "local_reference": "deliverables/snapshots/evidence/event-brief-and-venue-note.txt",
+      "observations": [],
+      "attempts": [
+        {
+          "method": "HTTPS read",
+          "url": "https://private-pecorino-70e.notion.site/Project-3-Event-Coordination-Event-Brief-3ba0b700541e81d0af55dc1a8f49f5af",
+          "observed_at": "2026-10-15T03:04:25.579536+00:00",
+          "completed_at": "2026-10-15T03:04:25.830013+00:00",
+          "status": "unavailable",
+          "error": "InputError:Public HTML is a JavaScript shell, not the disclosed brief"
+        },
+        {
+          "method": "HTTPS POST read",
+          "url": "https://www.notion.so/api/v3/loadPageChunk",
+          "observed_at": "2026-10-15T03:04:25.830021+00:00",
+          "completed_at": "2026-10-15T03:04:26.024966+00:00",
+          "http_status": 200,
+          "status": "retrieved",
+          "response_sha256": "sha256:299b49d1e40aed95b23b293565a8592ea7e028c656b5c9ae69dc9bceba937ec4"
+        }
+      ]
+    },
+    {
+      "id": "E-ATTENDEES",
+      "summary": "attendee-signals",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "source_role": "attendee-signals",
+      "locator": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+      "retrieved_at": "2026-10-15T03:04:26.320228+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "version_metadata": {
+        "http_headers": {
+          "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "Last-Modified": null,
+          "ETag": null,
+          "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+        },
+        "transport": "public HTTPS read",
+        "source_identity": "1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+        "tabs": [
+          "Attendee Signals"
+        ],
+        "record_versions": []
+      },
+      "content_hash": "sha256:71f93578c42996e360c28f6bc6265f47d1881d0661d7866354ca44dec8df41c5",
+      "local_reference": "deliverables/snapshots/evidence/attendee-signals.xlsx",
+      "observations": [],
+      "attempts": [
+        {
+          "method": "HTTPS GET",
+          "url": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU/export?format=xlsx",
+          "observed_at": "2026-10-15T03:04:25.579904+00:00",
+          "completed_at": "2026-10-15T03:04:26.320235+00:00",
+          "http_status": 200,
+          "status": "retrieved",
+          "response_sha256": "sha256:71f93578c42996e360c28f6bc6265f47d1881d0661d7866354ca44dec8df41c5"
+        }
+      ],
+      "record_ids": [
+        "SIG-001",
+        "SIG-002",
+        "SIG-003",
+        "SIG-004",
+        "SIG-005",
+        "SIG-006",
+        "SIG-007",
+        "SIG-008",
+        "SIG-009",
+        "SIG-010",
+        "SIG-011",
+        "SIG-012",
+        "SIG-013"
+      ]
+    },
+    {
+      "id": "E-BUDGET",
+      "summary": "budget",
+      "evidence_ids": [
+        "E-BUDGET"
+      ],
+      "source_role": "budget",
+      "locator": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "retrieved_at": "2026-10-15T03:04:26.475713+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "version_metadata": {
+        "http_headers": {
+          "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "Last-Modified": null,
+          "ETag": null,
+          "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+        },
+        "transport": "public HTTPS read",
+        "source_identity": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+        "tabs": [
+          "Budget"
+        ],
+        "record_versions": [
+          "budget-2026-08-26"
+        ]
+      },
+      "content_hash": "sha256:fdb3d2ececb57b0fa326837c55723bc416469cda2b1a82c854b922d57b0f5764",
+      "local_reference": "deliverables/snapshots/evidence/budget.xlsx",
+      "observations": [],
+      "attempts": [
+        {
+          "method": "HTTPS GET",
+          "url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM/export?format=xlsx",
+          "observed_at": "2026-10-15T03:04:25.580220+00:00",
+          "completed_at": "2026-10-15T03:04:26.475719+00:00",
+          "http_status": 200,
+          "status": "retrieved",
+          "response_sha256": "sha256:fdb3d2ececb57b0fa326837c55723bc416469cda2b1a82c854b922d57b0f5764"
+        }
+      ],
+      "record_ids": [
+        "venue",
+        "catering",
+        "accessibility",
+        "production",
+        "communications",
+        "security",
+        "contingency"
+      ]
+    },
+    {
+      "id": "E-CALENDAR",
+      "summary": "calendar-constraints",
+      "evidence_ids": [
+        "E-CALENDAR"
+      ],
+      "source_role": "calendar",
+      "locator": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+      "retrieved_at": "2026-10-15T03:04:26.203921+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "version_metadata": {
+        "http_headers": {
+          "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "Last-Modified": null,
+          "ETag": null,
+          "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+        },
+        "transport": "public HTTPS read",
+        "source_identity": "1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+        "tabs": [
+          "Calendar Constraints"
+        ],
+        "record_versions": [
+          "calendar-2026-08-26"
+        ]
+      },
+      "content_hash": "sha256:f6056cb9be0c662672caeeb5f5989de49e3ad21737f5e42f642b6ef3da55b735",
+      "local_reference": "deliverables/snapshots/evidence/calendar-constraints.xlsx",
+      "observations": [],
+      "attempts": [
+        {
+          "method": "HTTPS GET",
+          "url": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s/export?format=xlsx",
+          "observed_at": "2026-10-15T03:04:25.580092+00:00",
+          "completed_at": "2026-10-15T03:04:26.203928+00:00",
+          "http_status": 200,
+          "status": "retrieved",
+          "response_sha256": "sha256:f6056cb9be0c662672caeeb5f5989de49e3ad21737f5e42f642b6ef3da55b735"
+        }
+      ],
+      "record_ids": [
+        "CAL-001",
+        "CAL-002",
+        "CAL-003",
+        "CAL-004",
+        "CAL-005",
+        "CAL-006",
+        "CAL-007",
+        "CAL-008"
+      ]
+    },
+    {
+      "id": "E-VENDORS",
+      "summary": "vendor-register",
+      "evidence_ids": [
+        "E-VENDORS"
+      ],
+      "source_role": "vendor-record",
+      "locator": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+      "retrieved_at": "2026-10-15T03:04:26.222888+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "version_metadata": {
+        "http_headers": {
+          "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "Last-Modified": null,
+          "ETag": null,
+          "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+        },
+        "transport": "public HTTPS read",
+        "source_identity": "1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+        "tabs": [
+          "Vendor Quotes"
+        ],
+        "record_versions": []
+      },
+      "content_hash": "sha256:6dfdba7cf140c341e9c26ba057b9b9433f0e0dfb99f148b7baae76bf6b45a219",
+      "local_reference": "deliverables/snapshots/evidence/vendor-register.xlsx",
+      "observations": [],
+      "attempts": [
+        {
+          "method": "HTTPS GET",
+          "url": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko/export?format=xlsx",
+          "observed_at": "2026-10-15T03:04:25.580558+00:00",
+          "completed_at": "2026-10-15T03:04:26.222894+00:00",
+          "http_status": 200,
+          "status": "retrieved",
+          "response_sha256": "sha256:6dfdba7cf140c341e9c26ba057b9b9433f0e0dfb99f148b7baae76bf6b45a219"
+        }
+      ],
+      "record_ids": [
+        "Q-001",
+        "Q-002",
+        "Q-003",
+        "Q-004",
+        "Q-005",
+        "Q-006",
+        "Q-007",
+        "Q-008",
+        "Q-009",
+        "Q-010"
+      ]
+    },
+    {
+      "id": "E-ACCESS",
+      "summary": "official-accessibility-index",
+      "evidence_ids": [
+        "E-ACCESS"
+      ],
+      "source_role": "venue-page",
+      "locator": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+      "retrieved_at": "2026-10-15T03:04:26.879018+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "text/html;charset=utf-8",
+      "version_metadata": {
+        "http_headers": {
+          "Content-Type": "text/html;charset=utf-8",
+          "Last-Modified": null,
+          "ETag": null,
+          "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+        },
+        "transport": "public HTTPS read",
+        "source_identity": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6"
+      },
+      "content_hash": "sha256:fa993f273ad1fa1d986d28c39c93a168eba5694e2a8bdcbbf89874c502bccdf7",
+      "local_reference": "deliverables/snapshots/evidence/official-accessibility-index.html",
+      "observations": [
+        {
+          "id": "OBS-E-ACCESS",
+          "summary": "Index links exact required4F PDF",
+          "locator": {
+            "kind": "section",
+            "value": "TICC4F Accessible Facilities Floor Plan link"
+          }
+        }
+      ],
+      "attempts": [
+        {
+          "method": "HTTPS GET",
+          "url": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+          "observed_at": "2026-10-15T03:04:25.580443+00:00",
+          "completed_at": "2026-10-15T03:04:26.879027+00:00",
+          "http_status": 200,
+          "status": "retrieved",
+          "response_sha256": "sha256:fa993f273ad1fa1d986d28c39c93a168eba5694e2a8bdcbbf89874c502bccdf7"
+        }
+      ]
+    },
+    {
+      "id": "E-FLOOR",
+      "summary": "official-4f-floor-plan",
+      "evidence_ids": [
+        "E-FLOOR"
+      ],
+      "source_role": "floor-plan-or-image",
+      "locator": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+      "retrieved_at": "2026-10-15T03:04:28.262728+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/pdf",
+      "version_metadata": {
+        "http_headers": {
+          "Content-Type": "application/pdf",
+          "Last-Modified": "Fri, 15 Mar 2024 06:57:07 GMT",
+          "ETag": "W/\"522512-1710485827039\"",
+          "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+        },
+        "transport": "public HTTPS read",
+        "source_identity": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+        "page_count": 1
+      },
+      "content_hash": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+      "local_reference": "deliverables/snapshots/evidence/official-4f-floor-plan.pdf",
+      "observations": [
+        {
+          "id": "OBS-E-FLOOR",
+          "summary": "Facility locations and wheelchair-area symbols are visible. Symbols do not establish exact usable wheelchair-space counts, route widths, current lift operation or acoustic separation.",
+          "locator": {
+            "kind": "page-region",
+            "value": "page1: left legend; Plenary Hall right; V.I.P. Room left; Room401 between; accessible elevators lower centre/right and accessible restroom symbols left/bottom"
+          },
+          "review_provenance": "prep-20261014T213226Z stage02 OBS-E-FLOOR, following actual page1 visual inspection in Codex"
+        }
+      ],
+      "attempts": [
+        {
+          "method": "HTTPS GET",
+          "url": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+          "observed_at": "2026-10-15T03:04:25.580719+00:00",
+          "completed_at": "2026-10-15T03:04:28.262736+00:00",
+          "http_status": 200,
+          "status": "retrieved",
+          "response_sha256": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+        }
+      ],
+      "visual_review_verified_by_hash": true
+    }
+  ],
+  "additional_evidence": {
+    "E-LEARNER": "deliverables/snapshots/evidence/learner-choice-basis.json",
+    "E-CLARIFICATION": "deliverables/snapshots/evidence/learner-choice-basis.json",
+    "E-INTERVIEW": "interviews/project-c-event-coordination-20261014-2122.md"
+  }
+}

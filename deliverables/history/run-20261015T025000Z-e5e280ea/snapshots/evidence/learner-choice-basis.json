@@ -1,0 +1,72 @@
+{
+  "id": "E-LEARNER",
+  "policy": {
+    "baseline_people": 245,
+    "extra_margin_people": 0,
+    "communications_allowance_twd": 25000,
+    "contingency_allowance_twd": 40000,
+    "ceiling_twd": 520000,
+    "preferred_caterer": "Q-003",
+    "livestream_in_base": false,
+    "decision_ids": [
+      "D-L-01",
+      "D-L-02",
+      "D-L-03",
+      "D-L-04"
+    ],
+    "facilitator_signoff_required": false
+  },
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ],
+  "source": "Actual user choices in recorded Codex conversation;see committed preparation record",
+  "clarification": "Onboarding covers identity;remaining checks are self-checks,no facilitator sign-off",
+  "clarification_type": "User-reported facilitator process clarification,not approval"
+}

@@ -1,0 +1,66 @@
+{
+  "observed_at": "2026-10-15T02:57:44.286944+00:00",
+  "scope": "entire canonical skill bundle, excluding generated Python bytecode cache",
+  "files": [
+    {
+      "path": "event-planning-coordination-brief/SKILL.md",
+      "sha256": "sha256:50f883ad0176ff4c94e1b4cabe1354f5f9b0cea31509a9c4f70020859faa7d58",
+      "bytes": 4646
+    },
+    {
+      "path": "event-planning-coordination-brief/eval/baseline-input.md",
+      "sha256": "sha256:4c0c93a8d57fd5beca60e85e2a16af0accf94d4e93cfb5b7328992f6ff18d42a",
+      "bytes": 1629
+    },
+    {
+      "path": "event-planning-coordination-brief/eval/baseline-output.md",
+      "sha256": "sha256:0dcc921a7248a25cf992a0f4b47486242e6b5c4ca0904d3be65b67a1b044025e",
+      "bytes": 3615
+    },
+    {
+      "path": "event-planning-coordination-brief/references/gotchas.md",
+      "sha256": "sha256:083e1d345a18e19f613c537d106c0a03b2161c59cbefda5d217fa48f16fd1616",
+      "bytes": 2372
+    },
+    {
+      "path": "event-planning-coordination-brief/references/project.json",
+      "sha256": "sha256:a17876b59312fcfd9dd9fc9461ab0d5c06d969089cafcc83a8fc1ed663281a8a",
+      "bytes": 3214
+    },
+    {
+      "path": "event-planning-coordination-brief/references/sources-and-interpretation.md",
+      "sha256": "sha256:d07b47aae461266dfe1b7701f92ac80c6e4d4560f3cc1430d3b48adc2c4987bb",
+      "bytes": 9032
+    },
+    {
+      "path": "event-planning-coordination-brief/references/stages-and-recovery.md",
+      "sha256": "sha256:e717722f3f9ac415cc04b308617ee95951a810ab026a73730055d983dd737532",
+      "bytes": 5111
+    },
+    {
+      "path": "event-planning-coordination-brief/references/validation.md",
+      "sha256": "sha256:d8c6f7690f94b4a53f145bb9d22b83e01420ce5eb9943050ad5012a4d7695372",
+      "bytes": 4724
+    },
+    {
+      "path": "event-planning-coordination-brief/scripts/pipeline.py",
+      "sha256": "sha256:4835c07305edc6b6bde9c6e506c51451fb50596ca7705cc9eaaa1c72ec833d42",
+      "bytes": 24261
+    },
+    {
+      "path": "event-planning-coordination-brief/scripts/planning.py",
+      "sha256": "sha256:b34a24a47edc763c75ddf294d38dcfc06e4d9ea40497344c3fd90e9decfda2e4",
+      "bytes": 20192
+    },
+    {
+      "path": "event-planning-coordination-brief/scripts/rendering.py",
+      "sha256": "sha256:12e1866f797711ce9567072a2a55054f1153834e0ceab3fbbaae193f91a10415",
+      "bytes": 22535
+    },
+    {
+      "path": "event-planning-coordination-brief/scripts/sources.py",
+      "sha256": "sha256:23b17fb86afe094106efcd7f04eff92060eab3160500072a5ea1862534fa92c7",
+      "bytes": 11122
+    }
+  ]
+}

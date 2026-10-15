@@ -1,0 +1,284 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261015T025000Z-e5e280ea-07",
+  "run_id": "run-20261015T025000Z-e5e280ea",
+  "stage": "decision-and-approval",
+  "sequence": 7,
+  "created_at": "2026-10-15T02:50:03.680879+00:00",
+  "status": "blocked",
+  "predecessor": {
+    "snapshot_id": "run-20261015T025000Z-e5e280ea-06",
+    "path": "deliverables/snapshots/06-feasibility-testing.json",
+    "sha256": "sha256:f73b4b1e79871d705040fed4a1081126fcde5cbab8bffc51ba186ec50ee8f8a9"
+  },
+  "consumed_record_ids": [
+    "TEST-BASE-260",
+    "TEST-BASE-300",
+    "TEST-LIVESTREAM",
+    "TEST-BASIC-AV",
+    "TEST-FALLBACK",
+    "TEST-PROGRAMME"
+  ],
+  "produced_record_ids": [
+    "RECOMMENDATION",
+    "AP-OPERATIONS"
+  ],
+  "state": {
+    "recommendation": null,
+    "tradeoffs": [
+      {
+        "id": "TRADE-BASE-260",
+        "summary": "Lower-cost260-person catering;15 spare at245;Noneceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      },
+      {
+        "id": "TRADE-BASE-300",
+        "summary": "Higher capacity300-person catering;55 spare at245;Noneceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      },
+      {
+        "id": "TRADE-LIVESTREAM",
+        "summary": "Rejected base extension: livestream;Noneceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      },
+      {
+        "id": "TRADE-BASIC-AV",
+        "summary": "Rejected hearing-loop omission;Noneceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      },
+      {
+        "id": "TRADE-FALLBACK",
+        "summary": "Rejected equivalent fallback: keynote unavailable;Noneceilingheadroom;contingencyincluded",
+        "evidence_ids": [
+          "E-ATTENDEES",
+          "E-BUDGET",
+          "E-VENDORS",
+          "E-BRIEF",
+          "E-CALENDAR",
+          "E-FLOOR"
+        ],
+        "owner": null
+      }
+    ],
+    "learner_decisions": [
+      {
+        "id": "D-L-01",
+        "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "rationale": "User recorded this choice in actual captured conversation",
+        "tradeoffs": [
+          "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+        ]
+      },
+      {
+        "id": "D-L-02",
+        "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+        "tradeoffs": [
+          "Contingency included;remaining headroom counted separately"
+        ]
+      },
+      {
+        "id": "D-L-03",
+        "summary": "Exclude livestream from base;retain rejected alternative",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "rationale": "Over overall ceiling and production limit;network test uncompleted",
+        "tradeoffs": [
+          "No category approval can override total ceiling"
+        ]
+      },
+      {
+        "id": "D-L-04",
+        "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+        "evidence_ids": [
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "rationale": "User accepted design and requires actual cross-checks",
+        "tradeoffs": [
+          "No planned test reported as passed;source failures remain traceable"
+        ]
+      }
+    ],
+    "approval_requirements": [
+      {
+        "id": "AP-OPERATIONS",
+        "summary": "Review proposedplan,dateandvenue",
+        "evidence_ids": [
+          "E-INTERVIEW",
+          "E-BRIEF"
+        ],
+        "owner": "Operations",
+        "status": "pending"
+      }
+    ],
+    "selection_rationale": "PreferQ-003onlyafterhardconstraintpasses;otherwise supported feasiblealternativeor deferral",
+    "run_status": "blocked"
+  },
+  "unresolved": [
+    {
+      "id": "U-E-BRIEF",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-ATTENDEES",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-BUDGET",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-BUDGET"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-CALENDAR",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-CALENDAR"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-VENDORS",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-VENDORS"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-NEEDS",
+      "summary": "Required service needs are missing; absence is not zero demand",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Learner Experience"
+    },
+    {
+      "id": "U-POPULATION",
+      "summary": "Complete separate population groups are unavailable",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Learner Experience"
+    },
+    {
+      "id": "U-READINESS",
+      "summary": "Exercise readiness confirmation for setup/checks and teardown not verified",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "U-DEMO-ROSTER",
+      "summary": "Explicit programme roster/durations are unavailable; do not infer demos from people",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Programme"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ]
+}

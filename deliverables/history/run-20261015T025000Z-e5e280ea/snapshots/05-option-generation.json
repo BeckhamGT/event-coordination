@@ -1,0 +1,244 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261015T025000Z-e5e280ea-05",
+  "run_id": "run-20261015T025000Z-e5e280ea",
+  "stage": "option-generation",
+  "sequence": 5,
+  "created_at": "2026-10-15T02:50:03.679814+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "run-20261015T025000Z-e5e280ea-04",
+    "path": "deliverables/snapshots/04-planning-baseline.json",
+    "sha256": "sha256:340c05f9b7686cb20e2db506bd509b1866d9da59d2b5cdfeb2daf7ae6bd9c216"
+  },
+  "consumed_record_ids": [
+    "B-HEADCOUNT",
+    "B-SCHEDULE",
+    "B-BUDGET",
+    "B-MEDIA"
+  ],
+  "produced_record_ids": [
+    "BASE-260",
+    "BASE-300",
+    "LIVESTREAM",
+    "BASIC-AV",
+    "FALLBACK"
+  ],
+  "state": {
+    "options": [
+      {
+        "id": "BASE-260",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ]
+      },
+      {
+        "id": "BASE-300",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-001",
+          "Q-004",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ]
+      },
+      {
+        "id": "LIVESTREAM",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-008",
+          "Q-009",
+          "Q-010"
+        ]
+      },
+      {
+        "id": "BASIC-AV",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-007",
+          "Q-009",
+          "Q-010"
+        ]
+      },
+      {
+        "id": "FALLBACK",
+        "summary": "Unevaluated candidate package",
+        "evidence_ids": [
+          "E-VENDORS",
+          "E-LEARNER"
+        ],
+        "owner": null,
+        "quote_ids": [
+          "Q-002",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ]
+      }
+    ],
+    "rejected_early": [],
+    "source_quote_records": {},
+    "feasibility_not_yet_tested": true
+  },
+  "unresolved": [
+    {
+      "id": "U-E-BRIEF",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-ATTENDEES",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-BUDGET",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-BUDGET"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-CALENDAR",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-CALENDAR"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-E-VENDORS",
+      "summary": "Source unavailable;dependent claims withheld:see actual attempt records",
+      "evidence_ids": [
+        "E-VENDORS"
+      ],
+      "owner": "Operations / source owner"
+    },
+    {
+      "id": "U-NEEDS",
+      "summary": "Required service needs are missing; absence is not zero demand",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Learner Experience"
+    },
+    {
+      "id": "U-POPULATION",
+      "summary": "Complete separate population groups are unavailable",
+      "evidence_ids": [
+        "E-ATTENDEES"
+      ],
+      "owner": "Learner Experience"
+    },
+    {
+      "id": "U-READINESS",
+      "summary": "Exercise readiness confirmation for setup/checks and teardown not verified",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "U-DEMO-ROSTER",
+      "summary": "Explicit programme roster/durations are unavailable; do not infer demos from people",
+      "evidence_ids": [
+        "E-BRIEF"
+      ],
+      "owner": "Programme"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-L-01",
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
+    },
+    {
+      "id": "D-L-02",
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
+    },
+    {
+      "id": "D-L-03",
+      "summary": "Exclude livestream from base;retain rejected alternative",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
+    },
+    {
+      "id": "D-L-04",
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
+      "evidence_ids": [
+        "E-LEARNER"
+      ],
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
+    }
+  ]
+}

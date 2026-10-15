@@ -1,0 +1,33 @@
+{
+  "business_clock": "2026-08-26T12:00:00+08:00",
+  "decision_deadline": "2026-09-04T17:00:00+08:00",
+  "expected_schema_sha256": "787e6ac3e2008458b311c2ab2e287a3cafb68aaa82d49a489775864ba32221ee",
+  "policy": {
+    "baseline_people": 245,
+    "extra_margin_people": 0,
+    "communications_allowance_twd": 25000,
+    "contingency_allowance_twd": 40000,
+    "ceiling_twd": 520000,
+    "preferred_caterer": "Q-003",
+    "livestream_in_base": false,
+    "decision_ids": ["D-L-01", "D-L-02", "D-L-03", "D-L-04"],
+    "facilitator_signoff_required": false
+  },
+  "interview": "interviews/project-c-event-coordination-20261014-2122.md",
+  "interview_sha256": "89be8e951c0fa6a563e06fd0600c82d5a82a9f8b0d0118ccbef3d50d21d094d5",
+  "sources": [
+    {"id":"E-BRIEF","name":"event-brief-and-venue-note","role":"event-brief","kind":"notion","url":"https://app.notion.com/p/3ba0b700541e81d0af55dc1a8f49f5af","page_id":"3ba0b700-541e-81d0-af55-dc1a8f49f5af","public_url":"https://private-pecorino-70e.notion.site/Project-3-Event-Coordination-Event-Brief-3ba0b700541e81d0af55dc1a8f49f5af","filename":"event-brief-and-venue-note.txt"},
+    {"id":"E-ATTENDEES","name":"attendee-signals","role":"attendee-signals","kind":"xlsx","url":"https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU","file_id":"1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU","filename":"attendee-signals.xlsx"},
+    {"id":"E-BUDGET","name":"budget","role":"budget","kind":"xlsx","url":"https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM","file_id":"1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM","filename":"budget.xlsx"},
+    {"id":"E-CALENDAR","name":"calendar-constraints","role":"calendar","kind":"xlsx","url":"https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s","file_id":"1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s","filename":"calendar-constraints.xlsx"},
+    {"id":"E-VENDORS","name":"vendor-register","role":"vendor-record","kind":"xlsx","url":"https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko","file_id":"1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko","filename":"vendor-register.xlsx"},
+    {"id":"E-ACCESS","name":"official-accessibility-index","role":"venue-page","kind":"html","url":"https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6","filename":"official-accessibility-index.html"},
+    {"id":"E-FLOOR","name":"official-4f-floor-plan","role":"floor-plan-or-image","kind":"pdf","url":"https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf","filename":"official-4f-floor-plan.pdf"}
+  ],
+  "visual_review": {
+    "sha256": "8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+    "recorded_in": "prep-20261014T213226Z stage02 OBS-E-FLOOR, following actual page1 visual inspection in Codex",
+    "locator": "page1: left legend; Plenary Hall right; V.I.P. Room left; Room401 between; accessible elevators lower centre/right and accessible restroom symbols left/bottom",
+    "observation": "Facility locations and wheelchair-area symbols are visible. Symbols do not establish exact usable wheelchair-space counts, route widths, current lift operation or acoustic separation."
+  }
+}

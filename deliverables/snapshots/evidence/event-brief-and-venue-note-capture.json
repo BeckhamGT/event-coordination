@@ -1,0 +1,50 @@
+{
+  "id": "E-BRIEF",
+  "summary": "event-brief-and-venue-note",
+  "evidence_ids": [
+    "E-BRIEF"
+  ],
+  "source_role": "event-brief",
+  "locator": "https://app.notion.com/p/3ba0b700541e81d0af55dc1a8f49f5af",
+  "retrieved_at": "2026-10-15T03:08:18.688938+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "application/json; charset=utf-8",
+  "version_metadata": {
+    "http_headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Last-Modified": null,
+      "ETag": "W/\"bc8f-VsdaTdYpg61djyyLq6gIh89Ltuo\"",
+      "Date": "Thu, 15 Oct 2026 03:08:18 GMT"
+    },
+    "transport": "public HTTPS read",
+    "source_identity": "3ba0b700-541e-81d0-af55-dc1a8f49f5af",
+    "declared_versions": [
+      "EVENT-BRIEF-2026-08-26",
+      "PROG-2026-08-26-R3",
+      "VEN-2026-08-26",
+      "VEN-2026-08-26-R2"
+    ]
+  },
+  "content_hash": "sha256:b4191e890b9ae72b644a3fa5de1212870b4fe39f0a3e28ca671efd527413eb43",
+  "local_reference": "deliverables/snapshots/evidence/event-brief-and-venue-note.txt",
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS read",
+      "url": "https://private-pecorino-70e.notion.site/Project-3-Event-Coordination-Event-Brief-3ba0b700541e81d0af55dc1a8f49f5af",
+      "observed_at": "2026-10-15T03:08:18.150064+00:00",
+      "completed_at": "2026-10-15T03:08:18.516700+00:00",
+      "status": "unavailable",
+      "error": "InputError:Public HTML is a JavaScript shell, not the disclosed brief"
+    },
+    {
+      "method": "HTTPS POST read",
+      "url": "https://www.notion.so/api/v3/loadPageChunk",
+      "observed_at": "2026-10-15T03:08:18.516708+00:00",
+      "completed_at": "2026-10-15T03:08:18.688945+00:00",
+      "http_status": 200,
+      "status": "retrieved",
+      "response_sha256": "sha256:299b49d1e40aed95b23b293565a8592ea7e028c656b5c9ae69dc9bceba937ec4"
+    }
+  ]
+}

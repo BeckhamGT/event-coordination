@@ -1,0 +1,39 @@
+{
+  "id": "E-BUDGET",
+  "summary": "budget",
+  "evidence_ids": [
+    "E-BUDGET"
+  ],
+  "source_role": "budget",
+  "locator": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+  "retrieved_at": "2026-10-15T03:04:26.475713+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "version_metadata": {
+    "http_headers": {
+      "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "Last-Modified": null,
+      "ETag": null,
+      "Date": "Thu, 15 Oct 2026 03:04:26 GMT"
+    },
+    "transport": "public HTTPS read",
+    "source_identity": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+    "tabs": [
+      "Budget"
+    ]
+  },
+  "content_hash": "sha256:fdb3d2ececb57b0fa326837c55723bc416469cda2b1a82c854b922d57b0f5764",
+  "local_reference": "deliverables/snapshots/evidence/budget.xlsx",
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS GET",
+      "url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM/export?format=xlsx",
+      "observed_at": "2026-10-15T03:04:25.580220+00:00",
+      "completed_at": "2026-10-15T03:04:26.475719+00:00",
+      "http_status": 200,
+      "status": "retrieved",
+      "response_sha256": "sha256:fdb3d2ececb57b0fa326837c55723bc416469cda2b1a82c854b922d57b0f5764"
+    }
+  ]
+}

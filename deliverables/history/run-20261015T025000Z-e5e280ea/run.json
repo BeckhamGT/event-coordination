@@ -1,0 +1,35 @@
+{
+  "run_id": "run-20261015T025000Z-e5e280ea",
+  "status": "blocked",
+  "selected_option": null,
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "checks": [
+      "Reopened CSV identities,amounts,quotes,headcounts,feasibility and approvals",
+      "Parsed actual ICS exact source records,deadline,programme identities,timestamps,UIDs,timezone,status and nonoverlap",
+      "Actual Markdown current amounts,headcounts,approvals and programme match serialized state"
+    ],
+    "chain": {
+      "valid": true,
+      "checks": [
+        "Schema/date-time validation",
+        "Unique snapshot IDs and one run",
+        "Immediate predecessor bytes,IDs and hashes",
+        "Consumed/produced records and evidence references",
+        "Actual retained source hashes"
+      ]
+    }
+  },
+  "source_mode": "live remote retrieval",
+  "observed_at": "2026-10-15T02:50:03.716242+00:00",
+  "source_failures": [
+    "E-BRIEF",
+    "E-ATTENDEES",
+    "E-BUDGET",
+    "E-CALENDAR",
+    "E-VENDORS"
+  ],
+  "supersedes_run_id": "prep-decisions-20261014T222533Z",
+  "stakeholder_approvals": "pending"
+}

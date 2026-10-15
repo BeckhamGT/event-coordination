@@ -1,0 +1,28 @@
+test_actual_calendar_duplicate_demo_is_detected (test_pipeline.PipelineChecks) ... ok
+test_allocation_variance_differs_from_approval_limit_breach (test_pipeline.PipelineChecks) ... ok
+test_attendance_261_invalidates_smaller_package_only (test_pipeline.PipelineChecks) ... ok
+test_attendance_301_invalidates_both_packages (test_pipeline.PipelineChecks) ... ok
+test_baseline_artifacts_chain_calendar_and_actual_amounts (test_pipeline.PipelineChecks) ... ok
+test_changed_keynote_conflict_with_brief_is_preserved (test_pipeline.PipelineChecks) ... ok
+test_commitments_reduce_headroom_and_total_ceiling_is_hard (test_pipeline.PipelineChecks) ... ok
+test_corrupt_and_missing_drafts_recover_into_new_preserved_run (test_pipeline.PipelineChecks) ... ok
+test_corrupt_predecessor_is_preserved_diagnosed_and_repaired (test_pipeline.PipelineChecks) ... ok
+test_deliverables_symlink_is_rejected_before_outside_write (test_pipeline.PipelineChecks) ... ok
+test_each_required_calendar_meaning_is_held_when_missing (test_pipeline.PipelineChecks) ... ok
+test_expired_quote_is_evaluated_at_exercise_clock (test_pipeline.PipelineChecks) ... ok
+test_history_run_id_traversal_is_rejected_before_outside_write (test_pipeline.PipelineChecks) ... ok
+test_history_symlink_is_rejected_before_outside_write (test_pipeline.PipelineChecks) ... ok
+test_incompatible_needs_unit_and_ambiguous_calendar_type_are_rejected (test_pipeline.PipelineChecks) ... ok
+test_invalid_required_number_is_not_guessed (test_pipeline.PipelineChecks) ... ok
+test_malformed_prior_provenance_is_preserved_without_invented_decision_change (test_pipeline.PipelineChecks) ... ok
+test_missing_and_duplicate_identity_headers_are_rejected (test_pipeline.PipelineChecks) ... ok
+test_missing_floor_plan_withholds_media_claims_and_records_owner (test_pipeline.PipelineChecks) ... ok
+test_missing_vendor_source_never_reuses_prior_success_as_current (test_pipeline.PipelineChecks) ... ok
+test_reordered_headers_records_and_extra_columns_combined (test_pipeline.PipelineChecks) ... ok
+test_stable_source_ids_cannot_silently_change_business_meaning (test_pipeline.PipelineChecks) ... ok
+test_unconfirmed_readiness_stays_conditional (test_pipeline.PipelineChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 3.814s
+
+OK

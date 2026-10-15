@@ -1,74 +1,38 @@
 {
   "schema_version": "event-coordination-stage-snapshot/2",
-  "snapshot_id": "prep-decisions-20261014T222533Z-04",
-  "run_id": "prep-decisions-20261014T222533Z",
+  "snapshot_id": "run-20261015T030818Z-00ca2bd3-04",
+  "run_id": "run-20261015T030818Z-00ca2bd3",
   "stage": "planning-baseline",
   "sequence": 4,
-  "created_at": "2026-10-14T22:25:33.934746+00:00",
-  "status": "partial",
+  "created_at": "2026-10-15T03:08:22.174139+00:00",
+  "status": "complete",
   "predecessor": {
-    "snapshot_id": "prep-decisions-20261014T222533Z-03",
+    "snapshot_id": "run-20261015T030818Z-00ca2bd3-03",
     "path": "deliverables/snapshots/03-constraint-model.json",
-    "sha256": "sha256:2a52c7a466b17a6352587603d59b082d6a4691c29c1739c47725aac5ac61c2f1"
+    "sha256": "sha256:4d8a5b338f1569e7ad934ff3a5a00139b36c143b0324e9fa3085731c1ce91aef"
   },
   "consumed_record_ids": [
-    "HC-CLOCK",
-    "HC-MONEY",
+    "HC-CEILING",
     "HC-ACCESS",
     "HC-SCHEDULE",
-    "HC-DRAFT",
-    "P-FAMILIAR",
-    "P-DATE",
-    "U-SETUP",
-    "U-LIVE",
-    "U-FALLBACK",
-    "U-APPROVAL",
-    "U-REAL-ACCESS",
-    "U-PROGRAMME",
-    "C-FALLBACK",
-    "C-TIME",
-    "C-TWO-FEASIBLE",
-    "R-DEADLINE",
-    "R-READINESS",
-    "R-DIET",
-    "R-LEARNER-POLICY",
-    "D-L-01",
-    "D-L-02",
-    "D-L-03",
-    "D-L-04"
+    "P-Q003",
+    "A-ALLOCATION"
   ],
   "produced_record_ids": [
     "B-HEADCOUNT",
-    "B-CAPACITY",
     "B-SCHEDULE",
-    "B-PREREQUISITES",
-    "B-READINESS",
     "B-BUDGET",
-    "B-COST-SENSITIVITY",
-    "B-COST-CONDITIONS",
-    "B-SPATIAL",
-    "B-ACCESS-BASIS"
+    "B-MEDIA"
   ],
   "state": {
     "headcount_basis": [
       {
         "id": "B-HEADCOUNT",
-        "summary": "148 fellows +32 partners +18 staff +12 speakers +35 expected walk-ins = 245; registered population 180, check-in target144; no needs added.",
+        "summary": "Separate populations summed;needs overlap;registered success target doesnot reduce servicecapacity",
         "evidence_ids": [
           "E-ATTENDEES",
           "E-INTERVIEW",
-          "E-BRIEF"
-        ],
-        "owner": null
-      },
-      {
-        "id": "B-CAPACITY",
-        "summary": "245 leaves 15 in 260 catering package and55 in300. Illustrative +10% gives270 and exceeds260; learner chose245 baseline with no additional margin; +10% remains a sensitivity only. Quiet-room9 simultaneous users vs room/staffing20; 6 wheelchair needs exactly match fictional6 spaces.",
-        "evidence_ids": [
-          "E-ATTENDEES",
-          "E-VENDORS",
-          "E-BRIEF",
-          "E-LEARNER-DECISIONS"
+          "E-LEARNER"
         ],
         "owner": null
       }
@@ -76,26 +40,9 @@
     "schedule_dependencies": [
       {
         "id": "B-SCHEDULE",
-        "summary": "450-minute programme minus60-minute keynote and156-minute demo/changeover block leaves234 minutes for opening, meals, breaks and other activities; this is arithmetic only, not a verified run of show.",
+        "summary": "Actual calendar retained;walkthrough awaitsvenueconfirmation;12 explicitdemo slots notpeoplecounts",
         "evidence_ids": [
           "E-CALENDAR",
-          "E-BRIEF",
-          "E-INTERVIEW"
-        ],
-        "owner": null
-      },
-      {
-        "id": "B-PREREQUISITES",
-        "summary": "Decision September4 17:00; hold expiry September5 date-only; venue confirmation before September25 14:00–16:00 walkthrough; October16 15:00–18:00 rehearsal with remote backup; October17 opening9:30 and teardown18:30. All8 calendar records retained.",
-        "evidence_ids": [
-          "E-CALENDAR"
-        ],
-        "owner": null
-      },
-      {
-        "id": "B-READINESS",
-        "summary": "Exercise R2 supports base bundles ready in07:30–09:30 and cleared17:00–18:30; no exact vendor durations or mandatory buffer inferred.",
-        "evidence_ids": [
           "E-BRIEF"
         ],
         "owner": null
@@ -104,470 +51,771 @@
     "budget_baseline": [
       {
         "id": "B-BUDGET",
-        "summary": "Allocations 510000; commitments 0; ceiling520000; unallocated10000; category threshold sum610000 is not spending permission.",
+        "summary": "Commitments,allocations,approval limits,totalceiling and included contingency kept separate",
         "evidence_ids": [
           "E-BUDGET",
-          "E-INTERVIEW",
-          "E-BRIEF"
-        ],
-        "owner": null
-      },
-      {
-        "id": "B-COST-SENSITIVITY",
-        "summary": "Base quoted services with Q003=429000; Q004=447000. Retaining communications25000 and contingency40000 gives494000 and512000; ceiling margins26000 and8000. No alternative selected.",
-        "evidence_ids": [
-          "E-BUDGET",
-          "E-VENDORS"
-        ],
-        "owner": null
-      },
-      {
-        "id": "B-COST-CONDITIONS",
-        "summary": "Catering108000/126000 vs limit135000; captions42000 +quiet staffing18000 =60000 vs accessibilitylimit80000; AV78000 vs100000; security28000 vs35000 but above planned25000. Livestream adds55000: production133000 and totals549000/567000; over threshold and ceiling, with unresolved conditions.",
-        "evidence_ids": [
-          "E-BUDGET",
-          "E-VENDORS",
-          "E-BRIEF"
+          "E-LEARNER"
         ],
         "owner": null
       }
     ],
     "accessibility_baseline": [
       {
-        "id": "B-SPATIAL",
-        "summary": "Page1 shows Plenary Hall on right, VIP Room on left with Room401 between, wheelchair-area markers near sloped seating banks, accessible elevator/restroom symbols per legend. Areas/symbols do not enumerate six usable wheelchair seats.",
+        "id": "B-MEDIA",
+        "summary": "Official visual observations require retainedhashmatchingreview;fictional capacities/readiness are not realcertification",
         "evidence_ids": [
           "E-FLOOR",
-          "E-ACCESS"
-        ],
-        "owner": null
-      },
-      {
-        "id": "B-ACCESS-BASIS",
-        "summary": "500 places including6 wheelchair spaces, quiet-room20, step-free routes and base service/dietary coordination are exercise venue-record facts; not independently certified by PDF. Current operations, widths, obstacles and acoustic performance remain outside PDF evidence.",
-        "evidence_ids": [
-          "E-BRIEF",
-          "E-FLOOR"
-        ],
-        "owner": null
-      }
-    ],
-    "calculations": {
-      "run_id": "prep-decisions-20261014T222533Z",
-      "observed_at": "2026-10-14T22:25:33.934184+00:00",
-      "methods": [
-        "Named-column CSV arithmetic from actual captures",
-        "Independent original-XLSX field-by-field verification using openpyxl; numeric comparator corrected for formatting",
-        "Reconcile expected headcount with independently retrieved event brief 245",
-        "Calendar interval subtraction and per-demo 10+3 minute multiplication"
-      ],
-      "attendance": {
-        "registered": 180,
-        "staff": 18,
-        "speakers": 12,
-        "forecast_walk_ins": 35,
-        "expected_people": 245,
-        "registered_checkin_target": 144,
-        "incorrect_all_signal_sum": 338,
-        "additional_needs_not_people": [
-          "SIG-006",
-          "SIG-007",
-          "SIG-008",
-          "SIG-009",
-          "SIG-010",
-          "SIG-011",
-          "SIG-012",
-          "SIG-013"
-        ],
-        "capacity_margins": {
-          "Q-003": 15,
-          "Q-004": 55,
-          "venue": 255,
-          "quiet_room": 11
-        },
-        "ten_percent_extra_illustration": 270,
-        "ten_percent_is_approved": false
-      },
-      "budget": {
-        "ceiling_twd": 520000,
-        "planned_allocations_twd": 510000,
-        "commitments_twd": 0,
-        "headroom_after_commitments_twd": 520000,
-        "unallocated_vs_baseline_twd": 10000,
-        "category_threshold_sum_twd": 610000,
-        "quote_only_green_twd": 429000,
-        "quote_only_city_twd": 447000,
-        "allowances_retained_twd": 65000,
-        "green_with_allowances_twd": 494000,
-        "city_with_allowances_twd": 512000,
-        "green_remaining_twd": 26000,
-        "city_remaining_twd": 8000,
-        "streaming_production_twd": 133000,
-        "streaming_threshold_excess_twd": 33000,
-        "green_streaming_total_twd": 549000,
-        "city_streaming_total_twd": 567000,
-        "interpretation": "Allocation variances are not threshold breaches. Category threshold sum does not raise total ceiling. No cost sensitivity constitutes selection or approval."
-      },
-      "calendar": {
-        "event_minutes": 450,
-        "keynote_minutes": 60,
-        "demo_minutes": 120,
-        "demo_changeover_minutes": 36,
-        "demo_block_minutes": 156,
-        "remaining_event_minutes_before_other_activities": 234,
-        "setup_readiness_window_minutes": 120,
-        "teardown_window_minutes": 90,
-        "rehearsal_minutes": 180,
-        "walkthrough_minutes": 120,
-        "full_programme_verified": false
-      },
-      "quote_date_checks": [
-        {
-          "quote_id": "Q-001",
-          "available_date": "2026-10-17 00:00:00",
-          "valid_until": "2026-09-05 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "held",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        },
-        {
-          "quote_id": "Q-002",
-          "available_date": "2026-10-24 00:00:00",
-          "valid_until": "2026-09-05 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "available",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        },
-        {
-          "quote_id": "Q-003",
-          "available_date": "2026-10-17 00:00:00",
-          "valid_until": "2026-09-07 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "available",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        },
-        {
-          "quote_id": "Q-004",
-          "available_date": "2026-10-17 00:00:00",
-          "valid_until": "2026-09-12 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "available",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        },
-        {
-          "quote_id": "Q-005",
-          "available_date": "2026-10-17 00:00:00",
-          "valid_until": "2026-09-10 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "available",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        },
-        {
-          "quote_id": "Q-006",
-          "available_date": "2026-10-17 00:00:00",
-          "valid_until": "2026-09-08 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "available",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        },
-        {
-          "quote_id": "Q-007",
-          "available_date": "2026-10-17 00:00:00",
-          "valid_until": "2026-09-08 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "available",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        },
-        {
-          "quote_id": "Q-008",
-          "available_date": "2026-10-17 00:00:00",
-          "valid_until": "2026-09-11 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "conditional",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        },
-        {
-          "quote_id": "Q-009",
-          "available_date": "2026-10-17 00:00:00",
-          "valid_until": "2026-09-15 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "available",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        },
-        {
-          "quote_id": "Q-010",
-          "available_date": "2026-10-17 00:00:00",
-          "valid_until": "2026-09-10 00:00:00",
-          "expiry_after_exercise_clock_date": true,
-          "status": "available",
-          "precision_note": "Date-only expiry; no guessed expiry hour."
-        }
-      ],
-      "learner_decision_ids": [
-        "D-L-01",
-        "D-L-02",
-        "D-L-03",
-        "D-L-04"
-      ],
-      "new_remote_retrieval": false,
-      "calculation_basis": "Original captured records rehashed and re-parsed in new preparation run",
-      "decision_binding": {
-        "additional_margin": 0,
-        "contingency_already_included_twd": 40000,
-        "communications_already_included_twd": 25000,
-        "final_recommendation": null,
-        "livestream_base_status": "excluded by learner choice; rejected alternative retained for future comparison",
-        "future_test_results": "not run"
-      }
-    },
-    "full_run_status": "partial preparation; learner choices recorded, final recommendation/implementation unperformed",
-    "learner_decisions": [
-      {
-        "id": "D-L-01",
-        "summary": "Baseline245; no additional margin; preserve medium-confidence35 walk-ins and test >260.",
-        "rationale": "245 already includes35 forecast walk-ins; do not reduce service capacity using80% check-in target.",
-        "tradeoffs": [
-          "Q-003 retains15 spare places; above260 requires reevaluation."
-        ],
-        "evidence_ids": [
-          "E-LEARNER-DECISIONS",
-          "E-ATTENDEES",
-          "E-BRIEF",
-          "E-VENDORS"
-        ],
-        "owner": "Learner",
-        "decision_kind": "learner-draft-planning",
-        "recorded_at": "2026-10-14T22:25:33.931659+00:00",
-        "grants_stakeholder_or_facilitator_approval": false
-      },
-      {
-        "id": "D-L-02",
-        "summary": "CarryQ-003/Q-004 for comparison; retain communications25000 and contingency40000; Q-003 is preliminary preference.",
-        "rationale": "Q-003 covers245 with15 spare places and more headroom; Q-004 retained for updated attendance.",
-        "tradeoffs": [
-          "494000 vs512000 totals include40000 contingency; remaining headroom26000 vs8000. Allocation variance differs from approval-limit breach."
-        ],
-        "evidence_ids": [
-          "E-LEARNER-DECISIONS",
-          "E-BUDGET",
-          "E-VENDORS"
-        ],
-        "owner": "Learner",
-        "decision_kind": "learner-draft-planning",
-        "recorded_at": "2026-10-14T22:25:33.931659+00:00",
-        "grants_stakeholder_or_facilitator_approval": false
-      },
-      {
-        "id": "D-L-03",
-        "summary": "ExcludeQ-008 from base; retain rejected alternative with ceiling/production-limit reasons and unresolved test.",
-        "rationale": "Livestream exceeds overall ceiling and production approval limit; category approval cannot override ceiling.",
-        "tradeoffs": [
-          "Livestream omitted from base; network test and venue confirmation remain unresolved, not completed."
-        ],
-        "evidence_ids": [
-          "E-LEARNER-DECISIONS",
-          "E-BUDGET",
-          "E-VENDORS",
           "E-BRIEF"
         ],
-        "owner": "Learner",
-        "decision_kind": "learner-draft-planning",
-        "recorded_at": "2026-10-14T22:25:33.931659+00:00",
-        "grants_stakeholder_or_facilitator_approval": false
-      },
-      {
-        "id": "D-L-04",
-        "summary": "Accept proposed Python pipeline and verification/recovery approach after required verification.",
-        "rationale": "Require full non-overlapping programme, all calendar dependencies,9 linked snapshots,4 consistent drafts and reproduction command.",
-        "tradeoffs": [
-          "Keep official spatial observations distinct from fictional venue claims; October24 loses keynote; tests remain planned until executed."
-        ],
-        "evidence_ids": [
-          "E-LEARNER-DECISIONS",
-          "E-CALENDAR",
-          "E-BRIEF",
-          "E-FLOOR"
-        ],
-        "owner": "Learner",
-        "decision_kind": "learner-draft-planning",
-        "recorded_at": "2026-10-14T22:25:33.931659+00:00",
-        "grants_stakeholder_or_facilitator_approval": false
+        "owner": null
       }
     ],
-    "learner_policy": {
-      "baseline_people": 245,
-      "forecast_walk_ins": 35,
-      "forecast_confidence": "medium",
-      "extra_margin_people": 0,
-      "communications_allowance_twd": 25000,
-      "contingency_allowance_twd": 40000,
-      "catering_comparison_quote_ids": [
-        "Q-003",
-        "Q-004"
-      ],
-      "preliminary_preference": "Q-003",
-      "final_recommendation": null,
-      "excluded_from_base_quote_ids": [
-        "Q-008"
-      ],
-      "stakeholder_approvals": "pending",
-      "facilitator_verification": "pending"
-    },
-    "approval_requirements": [
-      {
-        "owner": "Operations",
-        "scope": "Plan/date/venue",
-        "status": "pending"
+    "model": {
+      "people": 245,
+      "registered": 180,
+      "checkin_target": 144,
+      "population": {
+        "fellows": {
+          "people": 148,
+          "confidence": "high",
+          "signal_id": "SIG-001"
+        },
+        "partners": {
+          "people": 32,
+          "confidence": "high",
+          "signal_id": "SIG-002"
+        },
+        "staff": {
+          "people": 18,
+          "confidence": "high",
+          "signal_id": "SIG-003"
+        },
+        "speakers": {
+          "people": 12,
+          "confidence": "high",
+          "signal_id": "SIG-004"
+        },
+        "walk_ins": {
+          "people": 35,
+          "confidence": "medium",
+          "signal_id": "SIG-005"
+        }
       },
-      {
-        "owner": "Category budget owners",
-        "scope": "Spending and threshold exceptions",
-        "status": "pending"
+      "needs": {
+        "wheelchair_spaces": 6,
+        "mobility_companions": 4,
+        "live_caption_requests": 23,
+        "hearing_loop_requests": 7,
+        "quiet_room_requests": 9,
+        "vegetarian_meals": 28,
+        "halal_meals": 12,
+        "severe_allergy_follow_up": 4
       },
-      {
-        "owner": "Facilitator",
-        "scope": "Required setup verification before assessed work",
-        "status": "pending"
-      }
-    ]
-  },
-  "unresolved": [
-    {
-      "id": "U-SETUP",
-      "summary": "No Project C facilitator verification record: identity, interview/export, coding capture, runtime/source access and submission destination. Parent onboarding is historical and includes unresolved identity/trainer checks; technical Entire capture now passes.",
-      "evidence_ids": [
-        "CHECK-SETUP"
+      "quiet_users": 9,
+      "budget": [
+        {
+          "category": "venue",
+          "planned_amount_twd": "155000.0",
+          "approval_limit_twd": "180000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Operations",
+          "record_version": "budget-2026-08-26"
+        },
+        {
+          "category": "catering",
+          "planned_amount_twd": "115000.0",
+          "approval_limit_twd": "135000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Operations",
+          "record_version": "budget-2026-08-26"
+        },
+        {
+          "category": "accessibility",
+          "planned_amount_twd": "65000.0",
+          "approval_limit_twd": "80000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Learner Experience",
+          "record_version": "budget-2026-08-26"
+        },
+        {
+          "category": "production",
+          "planned_amount_twd": "85000.0",
+          "approval_limit_twd": "100000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Programme",
+          "record_version": "budget-2026-08-26"
+        },
+        {
+          "category": "communications",
+          "planned_amount_twd": "25000.0",
+          "approval_limit_twd": "30000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Communications",
+          "record_version": "budget-2026-08-26"
+        },
+        {
+          "category": "security",
+          "planned_amount_twd": "25000.0",
+          "approval_limit_twd": "35000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Operations",
+          "record_version": "budget-2026-08-26"
+        },
+        {
+          "category": "contingency",
+          "planned_amount_twd": "40000.0",
+          "approval_limit_twd": "50000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Operations",
+          "record_version": "budget-2026-08-26"
+        }
       ],
-      "owner": "Facilitator"
-    },
-    {
-      "id": "U-LIVE",
-      "summary": "Q-008 requires network test and venue confirmation, neither is evidenced as completed.",
-      "evidence_ids": [
-        "E-VENDORS",
-        "E-BRIEF"
+      "budget_by_category": {
+        "venue": {
+          "category": "venue",
+          "planned_amount_twd": "155000.0",
+          "approval_limit_twd": "180000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Operations",
+          "record_version": "budget-2026-08-26"
+        },
+        "catering": {
+          "category": "catering",
+          "planned_amount_twd": "115000.0",
+          "approval_limit_twd": "135000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Operations",
+          "record_version": "budget-2026-08-26"
+        },
+        "accessibility": {
+          "category": "accessibility",
+          "planned_amount_twd": "65000.0",
+          "approval_limit_twd": "80000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Learner Experience",
+          "record_version": "budget-2026-08-26"
+        },
+        "production": {
+          "category": "production",
+          "planned_amount_twd": "85000.0",
+          "approval_limit_twd": "100000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Programme",
+          "record_version": "budget-2026-08-26"
+        },
+        "communications": {
+          "category": "communications",
+          "planned_amount_twd": "25000.0",
+          "approval_limit_twd": "30000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Communications",
+          "record_version": "budget-2026-08-26"
+        },
+        "security": {
+          "category": "security",
+          "planned_amount_twd": "25000.0",
+          "approval_limit_twd": "35000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Operations",
+          "record_version": "budget-2026-08-26"
+        },
+        "contingency": {
+          "category": "contingency",
+          "planned_amount_twd": "40000.0",
+          "approval_limit_twd": "50000.0",
+          "committed_amount_twd": "0.0",
+          "owner": "Operations",
+          "record_version": "budget-2026-08-26"
+        }
+      },
+      "quotes": {
+        "Q-001": {
+          "quote_id": "Q-001",
+          "vendor": "TICC",
+          "category": "venue",
+          "option": "4F Plenary Hall front-500 allocation plus V.I.P. Room",
+          "quote_amount_twd": "155000.0",
+          "capacity": "500.0",
+          "available_date": "2026-10-17T00:00:00",
+          "valid_until": "2026-09-05T00:00:00",
+          "status": "held",
+          "notes": "Synthetic full-day package; see venue coordination note; no real reservation"
+        },
+        "Q-002": {
+          "quote_id": "Q-002",
+          "vendor": "TICC",
+          "category": "venue",
+          "option": "4F Plenary Hall front-500 allocation plus V.I.P. Room",
+          "quote_amount_twd": "155000.0",
+          "capacity": "500.0",
+          "available_date": "2026-10-24T00:00:00",
+          "valid_until": "2026-09-05T00:00:00",
+          "status": "available",
+          "notes": "Keynote is unavailable on this date; Synthetic full-day package; see venue coordination note; no real reservation"
+        },
+        "Q-003": {
+          "quote_id": "Q-003",
+          "vendor": "Green Table",
+          "category": "catering",
+          "option": "lunch and two breaks",
+          "quote_amount_twd": "108000.0",
+          "capacity": "260.0",
+          "available_date": "2026-10-17T00:00:00",
+          "valid_until": "2026-09-07T00:00:00",
+          "status": "available",
+          "notes": "Supports listed vegetarian and halal meals; supplied through TICC coordination in this synthetic case"
+        },
+        "Q-004": {
+          "quote_id": "Q-004",
+          "vendor": "City Pantry",
+          "category": "catering",
+          "option": "lunch and two breaks",
+          "quote_amount_twd": "126000.0",
+          "capacity": "300.0",
+          "available_date": "2026-10-17T00:00:00",
+          "valid_until": "2026-09-12T00:00:00",
+          "status": "available",
+          "notes": "Allergy process requires named contacts; supplied through TICC coordination in this synthetic case"
+        },
+        "Q-005": {
+          "quote_id": "Q-005",
+          "vendor": "ClearText",
+          "category": "accessibility",
+          "option": "live captions and transcript",
+          "quote_amount_twd": "42000.0",
+          "capacity": "500.0",
+          "available_date": "2026-10-17T00:00:00",
+          "valid_until": "2026-09-10T00:00:00",
+          "status": "available",
+          "notes": "Two captioners included"
+        },
+        "Q-006": {
+          "quote_id": "Q-006",
+          "vendor": "SoundArc",
+          "category": "production",
+          "option": "AV package with hearing loop",
+          "quote_amount_twd": "78000.0",
+          "capacity": "500.0",
+          "available_date": "2026-10-17T00:00:00",
+          "valid_until": "2026-09-08T00:00:00",
+          "status": "available",
+          "notes": "Setup starts at 07:30; supplied through TICC coordination in this synthetic case"
+        },
+        "Q-007": {
+          "quote_id": "Q-007",
+          "vendor": "LiteStage",
+          "category": "production",
+          "option": "basic AV package",
+          "quote_amount_twd": "52000.0",
+          "capacity": "500.0",
+          "available_date": "2026-10-17T00:00:00",
+          "valid_until": "2026-09-08T00:00:00",
+          "status": "available",
+          "notes": "No hearing loop included; supplied through TICC coordination in this synthetic case"
+        },
+        "Q-008": {
+          "quote_id": "Q-008",
+          "vendor": "StreamNorth",
+          "category": "production",
+          "option": "livestream add-on",
+          "quote_amount_twd": "55000.0",
+          "capacity": "1000.0",
+          "available_date": "2026-10-17T00:00:00",
+          "valid_until": "2026-09-11T00:00:00",
+          "status": "conditional",
+          "notes": "Network test required; supplied through TICC coordination in this synthetic case"
+        },
+        "Q-009": {
+          "quote_id": "Q-009",
+          "vendor": "SafeVenue",
+          "category": "security",
+          "option": "four staff",
+          "quote_amount_twd": "28000.0",
+          "capacity": "500.0",
+          "available_date": "2026-10-17T00:00:00",
+          "valid_until": "2026-09-15T00:00:00",
+          "status": "available",
+          "notes": "Includes first aid lead"
+        },
+        "Q-010": {
+          "quote_id": "Q-010",
+          "vendor": "QuietWorks",
+          "category": "accessibility",
+          "option": "quiet room staffing",
+          "quote_amount_twd": "18000.0",
+          "capacity": "20.0",
+          "available_date": "2026-10-17T00:00:00",
+          "valid_until": "2026-09-10T00:00:00",
+          "status": "available",
+          "notes": "Room itself supplied by venue"
+        }
+      },
+      "calendar": [
+        {
+          "constraint_id": "CAL-001",
+          "owner": "Operations",
+          "constraint_type": "preferred_event_window",
+          "start_at": "2026-10-17T09:30:00+08:00",
+          "end_at": "2026-10-17T17:00:00+08:00",
+          "priority": "hard",
+          "notes": "Preferred event date",
+          "record_version": "calendar-2026-08-26"
+        },
+        {
+          "constraint_id": "CAL-002",
+          "owner": "Operations",
+          "constraint_type": "fallback_event_window",
+          "start_at": "2026-10-24T09:30:00+08:00",
+          "end_at": "2026-10-24T17:00:00+08:00",
+          "priority": "soft",
+          "notes": "Fallback date",
+          "record_version": "calendar-2026-08-26"
+        },
+        {
+          "constraint_id": "CAL-003",
+          "owner": "TICC",
+          "constraint_type": "venue_hold",
+          "start_at": "2026-10-17T07:30:00+08:00",
+          "end_at": "2026-10-17T18:30:00+08:00",
+          "priority": "hard",
+          "notes": "Hold expires 2026-09-05",
+          "record_version": "calendar-2026-08-26"
+        },
+        {
+          "constraint_id": "CAL-004",
+          "owner": "Programme",
+          "constraint_type": "keynote_availability",
+          "start_at": "2026-10-17T10:00:00+08:00",
+          "end_at": "2026-10-17T11:00:00+08:00",
+          "priority": "hard",
+          "notes": "Keynote unavailable on fallback date",
+          "record_version": "calendar-2026-08-26"
+        },
+        {
+          "constraint_id": "CAL-005",
+          "owner": "Operations",
+          "constraint_type": "decision_deadline",
+          "start_at": "2026-09-04T17:00:00+08:00",
+          "end_at": "2026-09-04T17:00:00+08:00",
+          "priority": "hard",
+          "notes": "Plan and budget decision",
+          "record_version": "calendar-2026-08-26"
+        },
+        {
+          "constraint_id": "CAL-006",
+          "owner": "Learner Experience",
+          "constraint_type": "accessibility_walkthrough",
+          "start_at": "2026-09-25T14:00:00+08:00",
+          "end_at": "2026-09-25T16:00:00+08:00",
+          "priority": "hard",
+          "notes": "Venue confirmation required first",
+          "record_version": "calendar-2026-08-26"
+        },
+        {
+          "constraint_id": "CAL-007",
+          "owner": "Programme",
+          "constraint_type": "rehearsal_window",
+          "start_at": "2026-10-16T15:00:00+08:00",
+          "end_at": "2026-10-16T18:00:00+08:00",
+          "priority": "soft",
+          "notes": "Remote backup acceptable",
+          "record_version": "calendar-2026-08-26"
+        },
+        {
+          "constraint_id": "CAL-008",
+          "owner": "TICC",
+          "constraint_type": "teardown_deadline",
+          "start_at": "2026-10-17T17:00:00+08:00",
+          "end_at": "2026-10-17T18:30:00+08:00",
+          "priority": "hard",
+          "notes": "All vendors clear by 18:30",
+          "record_version": "calendar-2026-08-26"
+        }
       ],
-      "owner": "Operations / Programme"
-    },
-    {
-      "id": "U-FALLBACK",
-      "summary": "24 October loses keynote and no replacement speaker/date-specific base service quotes/readiness are provided.",
-      "evidence_ids": [
-        "E-CALENDAR",
-        "E-VENDORS",
-        "E-BRIEF"
+      "policy": {
+        "baseline_people": 245,
+        "extra_margin_people": 0,
+        "communications_allowance_twd": 25000,
+        "contingency_allowance_twd": 40000,
+        "ceiling_twd": 520000,
+        "preferred_caterer": "Q-003",
+        "livestream_in_base": false,
+        "decision_ids": [
+          "D-L-01",
+          "D-L-02",
+          "D-L-03",
+          "D-L-04"
+        ],
+        "facilitator_signoff_required": false
+      },
+      "ceiling_twd": 520000,
+      "planned_twd": 510000,
+      "committed_twd": 0,
+      "venue_capacity": 500,
+      "wheelchair_places": 6,
+      "quiet_capacity": 20,
+      "readiness_confirmed": true,
+      "step_free_case_confirmed": true,
+      "demo_ids": [
+        "DEMO-01",
+        "DEMO-02",
+        "DEMO-03",
+        "DEMO-04",
+        "DEMO-05",
+        "DEMO-06",
+        "DEMO-07",
+        "DEMO-08",
+        "DEMO-09",
+        "DEMO-10",
+        "DEMO-11",
+        "DEMO-12"
       ],
-      "owner": "Operations / Programme"
-    },
-    {
-      "id": "U-APPROVAL",
-      "summary": "All bookings/spending/plan/date approvals pending; available/held labels are not approval or booking.",
-      "evidence_ids": [
-        "E-BRIEF",
-        "E-INTERVIEW",
-        "E-VENDORS"
-      ],
-      "owner": "Operations and category owners"
-    },
-    {
-      "id": "U-REAL-ACCESS",
-      "summary": "Official plan is spatial evidence, not current elevator/route/acoustic certification; exercise coordination is fictional.",
-      "evidence_ids": [
-        "E-FLOOR",
-        "E-BRIEF"
-      ],
-      "owner": "Operations"
-    },
-    {
-      "id": "U-PROGRAMME",
-      "summary": "Detailed demo grouping, meal/break durations and setup/check sequence remain planner choices; no fabricated mandatory vendor durations.",
-      "evidence_ids": [
-        "E-BRIEF",
-        "E-INTERVIEW",
-        "E-CALENDAR"
-      ],
-      "owner": "Learner / Programme"
+      "demo_minutes": 10,
+      "changeover_minutes": 3,
+      "brief_text": "Project 3 Event Coordination — Event Brief\nEvent brief\nBrief version: EVENT-BRIEF-2026-08-26\nPlan the Quillhaven AI Fellowship Demo Day at Taipei International Convention Center. The preferred date is Saturday 17 October 2026, with Saturday 24 October as a fallback. Plan for 245 people including attendees, speakers, and staff.\nThe event should let fellows present work, give partners a useful programme overview, and support accessible participation. The draft must include two feasible options, a recommended option with trade-offs, a cost and risk view, floor-plan observations with page or region references, a run of show, calendar drafts, and unsent attendee and vendor messages.\nHard requirements are step-free access to the main programme and restrooms, wheelchair seating, live captions, a staffed quiet room, a 09:30 opening, and completion by 17:00. The total approved planning ceiling is TWD 520000. The recommendation must not assume an expired quote or unconfirmed availability.\nSuccess means at least 80 percent of registered attendees check in, all scheduled fellow demos run, and accessibility requests receive a documented response before the event.\nOperations approves the plan. Budget owners approve spending. Do not send invitations, book a venue, commit to a vendor, make payment, or write to a production calendar automatically.\nExercise source clarification — authored 12 September 2026\nUse the simulated business clock 26 August 2026 when evaluating the supplied dated quotes and hold; record actual source retrieval separately. The venue coordination record supplies the fictional room allocation and service basis. Recommend within supported evidence; an option with a remaining hard-constraint dependency is conditional, not feasible. Retain two materially different alternatives when supported; do not fabricate a second feasible option if source failure or a material update makes one unavailable. All original hard requirements and the TWD 520,000 ceiling remain.\nVenue coordination record\nRecord: VEN-2026-08-26; case clock: 26 August 2026, Asia/Taipei.\nThis is a newly authored fictional business document for the Quillhaven exercise. It is not a statement from TICC, a real quote, accessibility certification, reservation or permission to use an outside supplier. Public venue rules continue to govern claims about the real venue.\nOperations' exercise record covers 17 October and 24 October 2026, 07:30–18:30. The quoted TWD 155,000 package is a synthetic negotiated all-inclusive venue amount, not an official published tariff. It allocates 500 usable audience places in the 4F Plenary Hall, including six wheelchair spaces; companions use ordinary places. The V.I.P. Room on the same floor is the quiet space, with occupancy up to 20 people. Room 401 is not selected: the official venue description warns about sound interference during Plenary Hall use.\nFor this case, venue coordination confirms step-free access between the 4F accessible elevators, audience area, V.I.P. Room and accessible restroom. The public floor plan supplies spatial locators; it does not prove today's elevator operation, unobstructed route, seating configuration or acoustic performance. Those case conditions are supplied by this fictional coordination record, and a real deployment must obtain current confirmation rather than treat this exercise note as evidence about TICC.\nThe package includes setup and teardown access, the quiet space and its separation from the programme. QuietWorks supplies staffing under Q-010; ClearText supplies captions under Q-005. Q-003/Q-004 catering and Q-006/Q-007 AV are fictional TICC-coordinated service offers, not permission to bring external food or equipment. StreamNorth Q-008 still requires its stated network test and venue confirmation before use. The exercise record confirms adequate captioning, hearing-loop and allergy coordination for the base plan using Q-004/Q-005/Q-006/Q-010; both catering options include an Operations-coordinated dietary response for the 28 vegetarian meals, 12 halal meals and four severe-allergy requests. Named contacts are held by Operations; the learner records the response state without inventing or publishing personal medical details. The two menus differ in capacity and cost, not in whether safety may be ignored.\nNo booking or spend has been approved. Operations receives the versioned plan, selected date/room, headcount policy, per-option hard-constraint results and unresolved issues. Budget owners receive their category cost, remaining ceiling and cited quote validity. They may approve, reject, request changes or defer with reasons and affected scope. In this exercise the completed output is a review-ready draft, not obtaining those decisions. If a later actual response is provided, retain actor, subject, plan revision, timestamp, outcome and reasons; stale or unrelated replies confer no authority.\nExercise readiness confirmation — authored 12 September 2026\nCoordination clarification: VEN-2026-08-26-R2; the simulated business clock remains 26 August 2026.\nFor the 17 October 2026 exercise plan, Operations' fictional supplier-coordination record confirms that the venue arrangement and the base service bundles using either Q-003 or Q-004 together with Q-005, Q-006, Q-009 and Q-010 can complete setup and all pre-opening readiness checks between 07:30 and the 09:30 opening. The required captioning, hearing-loop, staffed quiet space and security services are ready by 09:30; the catering service covers the planned event window. These base bundles can finish teardown and clear the venue between the 17:00 programme finish and 18:30. This confirms schedule feasibility for the exercise only, not a completed real-world test, booking, spending approval or an optional livestream; Q-008's network-test and venue-confirmation conditions remain unresolved until evidenced.\nThe planner may choose a compatible setup and check sequence within 07:30–09:30 and a compatible teardown sequence within 17:00–18:30. No individual vendor duration or additional mandatory buffer is specified. Q-009 is SafeVenue security and first-aid staffing; communications and contingency are budget allowances, not additional vendor services covered by this readiness confirmation.\nExercise programme confirmation — authored 12 September 2026\nProgramme clarification: PROG-2026-08-26-R3; the simulated business clock remains 26 August 2026.\nProgramme has scheduled twelve team demonstrations for 17 October 2026: DEMO-01, DEMO-02, DEMO-03, DEMO-04, DEMO-05, DEMO-06, DEMO-07, DEMO-08, DEMO-09, DEMO-10, DEMO-11 and DEMO-12. Each demonstration needs 10 minutes of presentation plus a separate 3-minute changeover allowance. Include each demonstration once. These are team slots, not counts inferred from the 148 fellow attendees or 12 speakers; they add no people to the declared attendance.\nKeep the existing 10:00–11:00 keynote and 09:30–17:00 event window. The planner chooses the demonstration order, grouping and compatible meal and break schedule. Programme owns roster or duration changes. This is newly authored fictional planning knowledge, not confirmation that a demonstration has run or that a plan has been approved.",
+      "unknowns": [],
+      "media_verified": true,
+      "source_failures": [],
+      "business_clock": "2026-08-26T12:00:00+08:00",
+      "programme": [
+        {
+          "event_id": "SETUP",
+          "summary": "Draft coordinated setup and service installation",
+          "start_at": "2026-10-17T07:30:00+08:00",
+          "end_at": "2026-10-17T08:30:00+08:00",
+          "duration_minutes": 60,
+          "kind": "setup",
+          "dependencies": [],
+          "status": "TENTATIVE"
+        },
+        {
+          "event_id": "READINESS",
+          "summary": "Draft caption/loop/accessibility/security readiness checks",
+          "start_at": "2026-10-17T08:30:00+08:00",
+          "end_at": "2026-10-17T09:30:00+08:00",
+          "duration_minutes": 60,
+          "kind": "setup",
+          "dependencies": [
+            "SETUP"
+          ],
+          "status": "TENTATIVE"
+        },
+        {
+          "event_id": "OPEN",
+          "summary": "Opening and programme orientation",
+          "start_at": "2026-10-17T09:30:00+08:00",
+          "end_at": "2026-10-17T10:00:00+08:00",
+          "duration_minutes": 30,
+          "kind": "programme",
+          "dependencies": [
+            "READINESS"
+          ],
+          "status": "TENTATIVE"
+        },
+        {
+          "event_id": "KEYNOTE",
+          "summary": "Keynote",
+          "start_at": "2026-10-17T10:00:00+08:00",
+          "end_at": "2026-10-17T11:00:00+08:00",
+          "duration_minutes": 60,
+          "kind": "programme",
+          "dependencies": [
+            "OPEN"
+          ],
+          "status": "TENTATIVE"
+        },
+        {
+          "event_id": "MORNING-BREAK",
+          "summary": "Morning refreshment break",
+          "start_at": "2026-10-17T11:00:00+08:00",
+          "end_at": "2026-10-17T11:20:00+08:00",
+          "duration_minutes": 20,
+          "kind": "programme",
+          "dependencies": [
+            "KEYNOTE"
+          ],
+          "status": "TENTATIVE"
+        },
+        {
+          "event_id": "DEMO-01",
+          "summary": "DEMO-01 presentation and changeover",
+          "start_at": "2026-10-17T11:20:00+08:00",
+          "end_at": "2026-10-17T11:33:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "KEYNOTE"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-02",
+          "summary": "DEMO-02 presentation and changeover",
+          "start_at": "2026-10-17T11:33:00+08:00",
+          "end_at": "2026-10-17T11:46:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-01"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-03",
+          "summary": "DEMO-03 presentation and changeover",
+          "start_at": "2026-10-17T11:46:00+08:00",
+          "end_at": "2026-10-17T11:59:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-02"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-04",
+          "summary": "DEMO-04 presentation and changeover",
+          "start_at": "2026-10-17T11:59:00+08:00",
+          "end_at": "2026-10-17T12:12:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-03"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-05",
+          "summary": "DEMO-05 presentation and changeover",
+          "start_at": "2026-10-17T12:12:00+08:00",
+          "end_at": "2026-10-17T12:25:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-04"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-06",
+          "summary": "DEMO-06 presentation and changeover",
+          "start_at": "2026-10-17T12:25:00+08:00",
+          "end_at": "2026-10-17T12:38:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-05"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "LUNCH",
+          "summary": "Lunch and dietary service",
+          "start_at": "2026-10-17T12:38:00+08:00",
+          "end_at": "2026-10-17T13:38:00+08:00",
+          "duration_minutes": 60,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-06"
+          ],
+          "status": "TENTATIVE"
+        },
+        {
+          "event_id": "DEMO-07",
+          "summary": "DEMO-07 presentation and changeover",
+          "start_at": "2026-10-17T13:38:00+08:00",
+          "end_at": "2026-10-17T13:51:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "LUNCH"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-08",
+          "summary": "DEMO-08 presentation and changeover",
+          "start_at": "2026-10-17T13:51:00+08:00",
+          "end_at": "2026-10-17T14:04:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-07"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-09",
+          "summary": "DEMO-09 presentation and changeover",
+          "start_at": "2026-10-17T14:04:00+08:00",
+          "end_at": "2026-10-17T14:17:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-08"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-10",
+          "summary": "DEMO-10 presentation and changeover",
+          "start_at": "2026-10-17T14:17:00+08:00",
+          "end_at": "2026-10-17T14:30:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-09"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-11",
+          "summary": "DEMO-11 presentation and changeover",
+          "start_at": "2026-10-17T14:30:00+08:00",
+          "end_at": "2026-10-17T14:43:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-10"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "DEMO-12",
+          "summary": "DEMO-12 presentation and changeover",
+          "start_at": "2026-10-17T14:43:00+08:00",
+          "end_at": "2026-10-17T14:56:00+08:00",
+          "duration_minutes": 13,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-11"
+          ],
+          "status": "TENTATIVE",
+          "presentation_minutes": 10,
+          "changeover_minutes": 3
+        },
+        {
+          "event_id": "BREAK",
+          "summary": "Afternoon break",
+          "start_at": "2026-10-17T14:56:00+08:00",
+          "end_at": "2026-10-17T15:16:00+08:00",
+          "duration_minutes": 20,
+          "kind": "programme",
+          "dependencies": [
+            "DEMO-12"
+          ],
+          "status": "TENTATIVE"
+        },
+        {
+          "event_id": "PARTNERS",
+          "summary": "Partner discussion and accessible networking",
+          "start_at": "2026-10-17T15:16:00+08:00",
+          "end_at": "2026-10-17T16:45:00+08:00",
+          "duration_minutes": 89,
+          "kind": "programme",
+          "dependencies": [
+            "BREAK"
+          ],
+          "status": "TENTATIVE"
+        },
+        {
+          "event_id": "CLOSE",
+          "summary": "Closing and next steps",
+          "start_at": "2026-10-17T16:45:00+08:00",
+          "end_at": "2026-10-17T17:00:00+08:00",
+          "duration_minutes": 15,
+          "kind": "programme",
+          "dependencies": [
+            "PARTNERS"
+          ],
+          "status": "TENTATIVE"
+        },
+        {
+          "event_id": "TEARDOWN",
+          "summary": "Draft teardown and vendor clearance",
+          "start_at": "2026-10-17T17:00:00+08:00",
+          "end_at": "2026-10-17T18:30:00+08:00",
+          "duration_minutes": 90,
+          "kind": "teardown",
+          "dependencies": [
+            "CLOSE"
+          ],
+          "status": "TENTATIVE"
+        }
+      ]
     }
-  ],
+  },
+  "unresolved": [],
   "decisions": [
     {
       "id": "D-L-01",
-      "summary": "Baseline245; no additional margin; preserve medium-confidence35 walk-ins and test >260.",
-      "rationale": "245 already includes35 forecast walk-ins; do not reduce service capacity using80% check-in target.",
-      "tradeoffs": [
-        "Q-003 retains15 spare places; above260 requires reevaluation."
-      ],
+      "summary": "Use245 baseline,no extra margin;forecast35 medium-confidence walk-ins already included",
       "evidence_ids": [
-        "E-LEARNER-DECISIONS",
-        "E-ATTENDEES",
-        "E-BRIEF",
-        "E-VENDORS"
+        "E-LEARNER"
       ],
-      "owner": "Learner",
-      "decision_kind": "learner-draft-planning",
-      "recorded_at": "2026-10-14T22:25:33.931659+00:00",
-      "grants_stakeholder_or_facilitator_approval": false
+      "owner": null,
+      "rationale": "User recorded this choice in actual captured conversation",
+      "tradeoffs": [
+        "Q-003 has15 spare at245;attendance above260 requires reevaluation"
+      ]
     },
     {
       "id": "D-L-02",
-      "summary": "CarryQ-003/Q-004 for comparison; retain communications25000 and contingency40000; Q-003 is preliminary preference.",
-      "rationale": "Q-003 covers245 with15 spare places and more headroom; Q-004 retained for updated attendance.",
-      "tradeoffs": [
-        "494000 vs512000 totals include40000 contingency; remaining headroom26000 vs8000. Allocation variance differs from approval-limit breach."
-      ],
+      "summary": "CompareQ-003/Q-004;retain communications25000 and contingency40000;Q-003 preliminary preference",
       "evidence_ids": [
-        "E-LEARNER-DECISIONS",
-        "E-BUDGET",
-        "E-VENDORS"
+        "E-LEARNER"
       ],
-      "owner": "Learner",
-      "decision_kind": "learner-draft-planning",
-      "recorded_at": "2026-10-14T22:25:33.931659+00:00",
-      "grants_stakeholder_or_facilitator_approval": false
+      "owner": null,
+      "rationale": "Baseline covered with greater headroom;keep extra-capacity alternative",
+      "tradeoffs": [
+        "Contingency included;remaining headroom counted separately"
+      ]
     },
     {
       "id": "D-L-03",
-      "summary": "ExcludeQ-008 from base; retain rejected alternative with ceiling/production-limit reasons and unresolved test.",
-      "rationale": "Livestream exceeds overall ceiling and production approval limit; category approval cannot override ceiling.",
-      "tradeoffs": [
-        "Livestream omitted from base; network test and venue confirmation remain unresolved, not completed."
-      ],
+      "summary": "Exclude livestream from base;retain rejected alternative",
       "evidence_ids": [
-        "E-LEARNER-DECISIONS",
-        "E-BUDGET",
-        "E-VENDORS",
-        "E-BRIEF"
+        "E-LEARNER"
       ],
-      "owner": "Learner",
-      "decision_kind": "learner-draft-planning",
-      "recorded_at": "2026-10-14T22:25:33.931659+00:00",
-      "grants_stakeholder_or_facilitator_approval": false
+      "owner": null,
+      "rationale": "Over overall ceiling and production limit;network test uncompleted",
+      "tradeoffs": [
+        "No category approval can override total ceiling"
+      ]
     },
     {
       "id": "D-L-04",
-      "summary": "Accept proposed Python pipeline and verification/recovery approach after required verification.",
-      "rationale": "Require full non-overlapping programme, all calendar dependencies,9 linked snapshots,4 consistent drafts and reproduction command.",
-      "tradeoffs": [
-        "Keep official spatial observations distinct from fictional venue claims; October24 loses keynote; tests remain planned until executed."
-      ],
+      "summary": "Use Python pipeline,nine boundaries,independent validation and recovery",
       "evidence_ids": [
-        "E-LEARNER-DECISIONS",
-        "E-CALENDAR",
-        "E-BRIEF",
-        "E-FLOOR"
+        "E-LEARNER"
       ],
-      "owner": "Learner",
-      "decision_kind": "learner-draft-planning",
-      "recorded_at": "2026-10-14T22:25:33.931659+00:00",
-      "grants_stakeholder_or_facilitator_approval": false
+      "owner": null,
+      "rationale": "User accepted design and requires actual cross-checks",
+      "tradeoffs": [
+        "No planned test reported as passed;source failures remain traceable"
+      ]
     }
-  ],
-  "output_repair": {
-    "observed_at": "2026-10-14T22:27:09.146878+00:00",
-    "reason": "Remove stale policy-pending wording after actual learner policy decision",
-    "retained_attempt": "deliverables/snapshots/evidence/snapshot04-before-policy-wording-repair.json",
-    "retained_sha256": "sha256:aa65f95c4eb1d77a2ec60256afaae4d4e025625bde93eb7e764657f87112883c",
-    "old_summary": "245 leaves 15 in 260 catering package and55 in300. Illustrative +10% gives270 and exceeds260; policy pending. Quiet-room9 simultaneous users vs room/staffing20; 6 wheelchair needs exactly match fictional6 spaces.",
-    "new_summary": "245 leaves 15 in 260 catering package and55 in300. Illustrative +10% gives270 and exceeds260; learner chose245 baseline with no additional margin; +10% remains a sensitivity only. Quiet-room9 simultaneous users vs room/staffing20; 6 wheelchair needs exactly match fictional6 spaces."
-  }
+  ]
 }

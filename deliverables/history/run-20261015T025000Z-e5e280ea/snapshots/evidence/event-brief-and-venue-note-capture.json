@@ -1,0 +1,42 @@
+{
+  "id": "E-BRIEF",
+  "summary": "event-brief-and-venue-note",
+  "evidence_ids": [
+    "E-BRIEF"
+  ],
+  "source_role": "event-brief",
+  "locator": "https://app.notion.com/p/3ba0b700541e81d0af55dc1a8f49f5af",
+  "retrieved_at": "2026-10-15T02:50:00.440539+00:00",
+  "retrieval_status": "unavailable",
+  "content_type": "application/octet-stream",
+  "version_metadata": {},
+  "content_hash": null,
+  "local_reference": null,
+  "observations": [],
+  "attempts": [
+    {
+      "method": "HTTPS read",
+      "url": "https://private-pecorino-70e.notion.site/Project-3-Event-Coordination-Event-Brief-3ba0b700541e81d0af55dc1a8f49f5af",
+      "observed_at": "2026-10-15T02:50:00.440562+00:00",
+      "completed_at": "2026-10-15T02:50:00.752466+00:00",
+      "status": "unavailable",
+      "error": "InputError:Public HTML is a JavaScript shell, not the disclosed brief"
+    },
+    {
+      "method": "HTTPS read",
+      "url": "https://www.notion.so/api/v3/loadPageChunk",
+      "observed_at": "2026-10-15T02:50:00.752510+00:00",
+      "completed_at": "2026-10-15T02:50:01.032909+00:00",
+      "status": "unavailable",
+      "error": "InputError:Notion page identity/content could not be verified"
+    },
+    {
+      "method": "HTTPS read",
+      "url": "https://private-pecorino-70e.notion.site/api/v3/loadPageChunk",
+      "observed_at": "2026-10-15T02:50:01.032971+00:00",
+      "completed_at": "2026-10-15T02:50:01.267574+00:00",
+      "status": "unavailable",
+      "error": "InputError:Notion page identity/content could not be verified"
+    }
+  ]
+}
